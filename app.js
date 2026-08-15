@@ -292,6 +292,21 @@ function savePoints() {
 savePoints();
 
 
+function updatePointsUI() {
+
+    localStorage.setItem(
+        "aiClubPoints",
+        String(points)
+    );
+
+    pointsElement.textContent = points;
+
+    updatePremiumUI();
+}
+
+updatePointsUI()
+
+
 /*
 ==================================================
  ŁADOWANIE MODELI
