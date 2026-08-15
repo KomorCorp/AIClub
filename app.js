@@ -1,10 +1,8 @@
 "use strict";
 
-/*
-==================================================
- AI CLUB - OFFLINE ENGINE
-==================================================
-*/
+/* =========================================================
+   AI CLUB - OFFLINE ENGINE
+   ========================================================= */
 
 const modelFiles = [
     "GPT-OSS-20B.json",
@@ -15,95 +13,95 @@ const modelFiles = [
     "Dog-1.0.json"
 ];
 
-/*
-==================================================
- COMMUNITY
-==================================================
-*/
-
 const COMMUNITY_INDEX = "community/index.json";
 
 const GITHUB_OWNER = "KomorCorp";
 const GITHUB_REPO = "AIClub";
 const GITHUB_BRANCH = "main";
 
-/*
-==================================================
- STAN
-==================================================
-*/
-
 let models = [];
 let communityModels = [];
 let selectedModel = null;
 
+/* =========================================================
+   PUNKTY
+   ========================================================= */
+
 let points =
     Number(localStorage.getItem("aiClubPoints")) || 100;
 
+const PREMIUM_PRICE = 100;
 let premium =
     localStorage.getItem("aiClubPremium") === "true";
 
-const PREMIUM_PRICE = 100;
 const DAILY_REWARD = 200;
 
-/*
-==================================================
- DOM
-==================================================
-*/
+/* =========================================================
+   DOM
+   ========================================================= */
 
-const $ = id => document.getElementById(id);
+const modelsGrid = document.getElementById("modelsGrid");
+const modelCount = document.getElementById("modelCount");
+const heroModelCount = document.getElementById("heroModelCount");
+const pointsElement = document.getElementById("points");
 
-const modelsGrid = $("modelsGrid");
-const modelCount = $("modelCount");
-const heroModelCount = $("heroModelCount");
-const pointsElement = $("points");
+const overlay = document.getElementById("chatOverlay");
+const closeChat = document.getElementById("closeChat");
+const messages = document.getElementById("messages");
+const examples = document.getElementById("examples");
+const messageInput = document.getElementById("messageInput");
+const sendButton = document.getElementById("sendButton");
 
-const overlay = $("chatOverlay");
-const closeChat = $("closeChat");
-const messages = $("messages");
-const examples = $("examples");
-const messageInput = $("messageInput");
-const sendButton = $("sendButton");
+const chatModelName = document.getElementById("chatModelName");
+const chatModelProvider = document.getElementById("chatModelProvider");
+const chatModelIcon = document.getElementById("chatModelIcon");
 
-const chatModelName = $("chatModelName");
-const chatModelProvider = $("chatModelProvider");
-const chatModelIcon = $("chatModelIcon");
+const buyPremiumBtn = document.getElementById("buyPremiumBtn");
+const premiumStatus = document.getElementById("premiumStatus");
 
-const buyPremiumBtn = $("buyPremiumBtn");
-const premiumStatus = $("premiumStatus");
+const dailyBtn = document.getElementById("dailyBtn");
+const dailyStatus = document.getElementById("dailyStatus");
 
-const dailyBtn = $("dailyBtn");
-const dailyStatus = $("dailyStatus");
+/* Community */
 
-const publishOverlay = $("publishOverlay");
-const publishModelButton = $("publishModelButton");
-const closePublish = $("closePublish");
-const submitCommunityModel = $("submitCommunityModel");
+const publishOverlay =
+    document.getElementById("publishOverlay");
 
-const communityModelName = $("communityModelName");
-const communityModelAuthor = $("communityModelAuthor");
+const publishModelButton =
+    document.getElementById("publishModelButton");
+
+const closePublish =
+    document.getElementById("closePublish");
+
+const submitCommunityModel =
+    document.getElementById("submitCommunityModel");
+
+const communityModelName =
+    document.getElementById("communityModelName");
+
+const communityModelAuthor =
+    document.getElementById("communityModelAuthor");
+
 const communityModelDescription =
-    $("communityModelDescription");
-const communityModelJSON = $("communityModelJSON");
-const jsonValidation = $("jsonValidation");
+    document.getElementById("communityModelDescription");
 
-/*
-==================================================
- BEZPIECZNE EVENTY
-==================================================
-*/
+const communityModelJSON =
+    document.getElementById("communityModelJSON");
 
-function on(element, event, callback) {
-    if (!element) return;
-    element.addEventListener(event, callback);
+const jsonValidation =
+    document.getElementById("jsonValidation");
+
+/* =========================================================
+   POMOCNICZE DOM
+   ========================================================= */
+
+function exists(element) {
+    return element !== null && element !== undefined;
 }
 
-/*
-==================================================
- PUNKTY
-==================================================
-*/
+/* =========================================================
+   PUNKTY
+   ========================================================= */
 
 function savePoints() {
     localStorage.setItem(
@@ -111,8 +109,9 @@ function savePoints() {
         String(points)
     );
 
-    if (pointsElement) {
-        pointsElement.textContent = points;
+    if (exists(pointsElement)) {
+        pointsElement.textContent =
+            points.toLocaleString("pl-PL");
     }
 }
 
@@ -123,15 +122,13 @@ function updatePointsUI() {
 
 savePoints();
 
-/*
-==================================================
- PREMIUM
-==================================================
-*/
+/* =========================================================
+   PREMIUM
+   ========================================================= */
 
 function updatePremiumUI() {
 
-    if (!premiumStatus || !buyPremiumBtn) {
+    if (!exists(premiumStatus) || !exists(buyPremiumBtn)) {
         return;
     }
 
@@ -143,7 +140,8 @@ function updatePremiumUI() {
         buyPremiumBtn.textContent =
             "Premium aktywne";
 
-        buyPremiumBtn.disabled = true;
+        buyPremiumBtn.disabled =
+            true;
 
     } else {
 
@@ -158,51 +156,55 @@ function updatePremiumUI() {
     }
 }
 
-on(
-    buyPremiumBtn,
-    "click",
-    () => {
+if (exists(buyPremiumBtn)) {
 
-        if (premium) return;
+    buyPremiumBtn.addEventListener(
+        "click",
+        () => {
 
-        if (points < PREMIUM_PRICE) {
+            if (premium) {
+                return;
+            }
 
-            alert(
-                `Potrzebujesz ${PREMIUM_PRICE} pkt.`
+            if (points < PREMIUM_PRICE) {
+
+                alert(
+                    `Potrzebujesz ${PREMIUM_PRICE} pkt.`
+                );
+
+                return;
+            }
+
+            if (
+                !confirm(
+                    `Kupić AI Club Premium za ${PREMIUM_PRICE} pkt?`
+                )
+            ) {
+                return;
+            }
+
+            points -= PREMIUM_PRICE;
+            premium = true;
+
+            localStorage.setItem(
+                "aiClubPremium",
+                "true"
             );
 
-            return;
+            updatePointsUI();
+
+            alert(
+                "⭐ AI Club Premium zostało odblokowane!"
+            );
         }
+    );
+}
 
-        if (
-            !confirm(
-                `Kupić AI Club Premium za ${PREMIUM_PRICE} pkt?`
-            )
-        ) {
-            return;
-        }
+updatePremiumUI();
 
-        points -= PREMIUM_PRICE;
-        premium = true;
-
-        localStorage.setItem(
-            "aiClubPremium",
-            "true"
-        );
-
-        updatePointsUI();
-
-        alert(
-            "⭐ AI Club Premium zostało odblokowane!"
-        );
-    }
-);
-
-/*
-==================================================
- DAILY REWARD
-==================================================
-*/
+/* =========================================================
+   DAILY REWARD
+   ========================================================= */
 
 function getToday() {
 
@@ -217,7 +219,7 @@ function getToday() {
 
 function updateDailyUI() {
 
-    if (!dailyBtn || !dailyStatus) {
+    if (!exists(dailyBtn) || !exists(dailyStatus)) {
         return;
     }
 
@@ -229,7 +231,9 @@ function updateDailyUI() {
     if (lastClaim === today) {
 
         dailyBtn.disabled = true;
-        dailyBtn.textContent = "Odebrano ✓";
+
+        dailyBtn.textContent =
+            "Odebrano ✓";
 
         dailyStatus.textContent =
             "Wróć jutro po kolejne 200 pkt";
@@ -237,6 +241,7 @@ function updateDailyUI() {
     } else {
 
         dailyBtn.disabled = false;
+
         dailyBtn.textContent =
             "Odbierz 200 pkt";
 
@@ -245,143 +250,60 @@ function updateDailyUI() {
     }
 }
 
-on(
-    dailyBtn,
-    "click",
-    () => {
+if (exists(dailyBtn)) {
 
-        const today = getToday();
+    dailyBtn.addEventListener(
+        "click",
+        () => {
 
-        if (
-            localStorage.getItem(
-                "aiClubDaily"
-            ) === today
-        ) {
-            return;
+            const today = getToday();
+
+            if (
+                localStorage.getItem(
+                    "aiClubDaily"
+                ) === today
+            ) {
+                return;
+            }
+
+            points += DAILY_REWARD;
+
+            localStorage.setItem(
+                "aiClubDaily",
+                today
+            );
+
+            updatePointsUI();
+            updateDailyUI();
+
+            alert(
+                "🎁 Otrzymujesz 200 punktów!"
+            );
         }
-
-        points += DAILY_REWARD;
-
-        localStorage.setItem(
-            "aiClubDaily",
-            today
-        );
-
-        updatePointsUI();
-        updateDailyUI();
-
-        alert(
-            "🎁 Otrzymujesz 200 punktów!"
-        );
-    }
-);
+    );
+}
 
 updateDailyUI();
 
-/*
-==================================================
- FETCH JSON
-==================================================
-*/
-
-async function fetchJSON(url) {
-
-    const separator =
-        url.includes("?") ? "&" : "?";
-
-    const response =
-        await fetch(
-            url +
-            separator +
-            "v=" +
-            Date.now(),
-            {
-                cache: "no-store"
-            }
-        );
-
-    if (!response.ok) {
-
-        throw new Error(
-            `HTTP ${response.status}: ${url}`
-        );
-    }
-
-    return await response.json();
-}
-
-/*
-==================================================
- WALIDACJA MODELU
-==================================================
-*/
-
-function prepareModel(model, options = {}) {
-
-    if (
-        !model ||
-        typeof model !== "object"
-    ) {
-        return null;
-    }
-
-    if (
-        typeof model.id !== "string" ||
-        !model.id.trim()
-    ) {
-        return null;
-    }
-
-    if (
-        typeof model.name !== "string" ||
-        !model.name.trim()
-    ) {
-        return null;
-    }
-
-    if (!Array.isArray(model.examples)) {
-        model.examples = [];
-    }
-
-    if (options.community) {
-
-        model.community = true;
-
-        model.provider =
-            model.provider ||
-            "AI Club Community";
-
-        model.author =
-            model.author ||
-            options.author ||
-            "Community";
-
-        model.version =
-            model.version ||
-            options.version ||
-            "1.0";
-    }
-
-    return model;
-}
-
-/*
-==================================================
- ŁADOWANIE OFFICIAL MODELS
-==================================================
-*/
+/* =========================================================
+   ŁADOWANIE OFFICIAL MODELS
+   ========================================================= */
 
 async function loadModels() {
 
-    if (modelsGrid) {
-
-        modelsGrid.innerHTML = `
-            <div class="loading">
-                <div class="spinner"></div>
-                <span>Ładowanie modeli...</span>
-            </div>
-        `;
+    if (!exists(modelsGrid)) {
+        console.error(
+            "AI Club: brak #modelsGrid w HTML."
+        );
+        return;
     }
+
+    modelsGrid.innerHTML = `
+        <div class="loading">
+            <div class="spinner"></div>
+            <span>Ładowanie modeli...</span>
+        </div>
+    `;
 
     const loaded = [];
 
@@ -389,26 +311,54 @@ async function loadModels() {
 
         try {
 
-            const model =
-                await fetchJSON(
+            const response =
+                await fetch(
                     "models/" +
-                    encodeURIComponent(file)
+                    encodeURIComponent(file) +
+                    "?v=" +
+                    Date.now(),
+                    {
+                        cache: "no-store"
+                    }
                 );
 
-            const prepared =
-                prepareModel(model);
-
-            if (!prepared) {
+            if (!response.ok) {
 
                 console.warn(
-                    "Niepoprawny model:",
-                    file
+                    `Nie znaleziono modelu: ${file}`
                 );
 
                 continue;
             }
 
-            loaded.push(prepared);
+            const model =
+                await response.json();
+
+            if (
+                !model ||
+                typeof model !== "object" ||
+                !model.id ||
+                !model.name
+            ) {
+
+                console.warn(
+                    `Niepoprawny JSON modelu: ${file}`
+                );
+
+                continue;
+            }
+
+            if (
+                !Array.isArray(
+                    model.examples
+                )
+            ) {
+                model.examples = [];
+            }
+
+            model.community = false;
+
+            loaded.push(model);
 
         } catch (error) {
 
@@ -422,22 +372,42 @@ async function loadModels() {
     models = loaded;
 
     renderModels();
+
+    /*
+     * Community uruchamiamy osobno.
+     * Awaria Community nie rozwali Official.
+     */
+
+    loadCommunityModels();
 }
 
-/*
-==================================================
- ŁADOWANIE COMMUNITY MODELS
-==================================================
-*/
+/* =========================================================
+   COMMUNITY MODELS
+   ========================================================= */
 
 async function loadCommunityModels() {
 
     try {
 
-        const registry =
-            await fetchJSON(
-                COMMUNITY_INDEX
+        const response =
+            await fetch(
+                COMMUNITY_INDEX +
+                "?v=" +
+                Date.now(),
+                {
+                    cache: "no-store"
+                }
             );
+
+        if (!response.ok) {
+
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+        }
+
+        const registry =
+            await response.json();
 
         if (
             !registry ||
@@ -445,15 +415,14 @@ async function loadCommunityModels() {
         ) {
 
             throw new Error(
-                "community/index.json musi posiadać tablicę models"
+                "community/index.json musi zawierać models[]"
             );
         }
 
         const loaded = [];
 
         for (
-            const entry
-            of registry.models
+            const entry of registry.models
         ) {
 
             try {
@@ -465,42 +434,84 @@ async function loadCommunityModels() {
                     continue;
                 }
 
-                const path =
+                /*
+                 * Ważne:
+                 * encodeURIComponent koduje spacje jako %20,
+                 * co działa z GitHub Pages.
+                 */
+
+                const url =
                     "community/" +
                     entry.file
                         .split("/")
-                        .map(encodeURIComponent)
-                        .join("/");
+                        .map(
+                            part =>
+                                encodeURIComponent(part)
+                        )
+                        .join("/") +
+                    "?v=" +
+                    Date.now();
 
-                const model =
-                    await fetchJSON(path);
-
-                const prepared =
-                    prepareModel(
-                        model,
+                const response =
+                    await fetch(
+                        url,
                         {
-                            community: true,
-                            author: entry.author,
-                            version: entry.version
+                            cache: "no-store"
                         }
                     );
 
-                if (!prepared) {
+                if (!response.ok) {
 
                     console.warn(
-                        "Niepoprawny Community Model:",
-                        entry.file
+                        `Community model niedostępny: ${entry.file}`
                     );
 
                     continue;
                 }
 
-                loaded.push(prepared);
+                const model =
+                    await response.json();
+
+                if (
+                    !model ||
+                    typeof model !== "object" ||
+                    !model.id ||
+                    !model.name
+                ) {
+
+                    console.warn(
+                        `Niepoprawny community model: ${entry.file}`
+                    );
+
+                    continue;
+                }
+
+                if (
+                    !Array.isArray(
+                        model.examples
+                    )
+                ) {
+                    model.examples = [];
+                }
+
+                model.community = true;
+
+                model.author =
+                    model.author ||
+                    entry.author ||
+                    "Community";
+
+                model.version =
+                    model.version ||
+                    entry.version ||
+                    "1.0";
+
+                loaded.push(model);
 
             } catch (error) {
 
                 console.error(
-                    `Błąd community/${entry.file}:`,
+                    `Błąd community modelu ${entry.file}:`,
                     error
                 );
             }
@@ -508,9 +519,15 @@ async function loadCommunityModels() {
 
         communityModels = loaded;
 
+        /*
+         * Usuwamy poprzednie Community,
+         * żeby nie pojawiały się dwa razy.
+         */
+
         models = [
             ...models.filter(
-                model => !model.community
+                model =>
+                    !model.community
             ),
             ...communityModels
         ];
@@ -518,45 +535,41 @@ async function loadCommunityModels() {
         renderModels();
 
         console.log(
-            `Community Models: ${communityModels.length}`
+            `AI Club: załadowano ${communityModels.length} Community Models.`
         );
 
     } catch (error) {
 
         /*
-         * Brak Community nie blokuje
-         * oficjalnych modeli.
+         * Community jest opcjonalne.
+         * Official nadal działa.
          */
 
         console.warn(
             "Community Models niedostępne:",
             error
         );
-
-        renderModels();
     }
 }
 
-/*
-==================================================
- RENDER MODELS
-==================================================
-*/
+/* =========================================================
+   RENDER MODELS
+   ========================================================= */
 
 function renderModels() {
 
-    if (!modelsGrid) {
+    if (!exists(modelsGrid)) {
         return;
     }
 
     modelsGrid.innerHTML = "";
 
-    if (modelCount) {
+    if (exists(modelCount)) {
         modelCount.textContent =
             `${models.length} modeli`;
     }
 
-    if (heroModelCount) {
+    if (exists(heroModelCount)) {
         heroModelCount.textContent =
             models.length;
     }
@@ -575,25 +588,36 @@ function renderModels() {
     for (const model of models) {
 
         const card =
-            document.createElement("article");
+            document.createElement(
+                "article"
+            );
 
         card.className =
             "model-card";
 
-        const badge =
+        const communityBadge =
             model.community
-                ? `<span class="community-badge">COMMUNITY</span>`
-                : `<span class="official-badge">OFFICIAL</span>`;
+                ? `
+                    <span class="community-badge">
+                        COMMUNITY
+                    </span>
+                  `
+                : `
+                    <span class="official-badge">
+                        OFFICIAL
+                    </span>
+                  `;
 
         const author =
             model.community
                 ? `
                     <div class="model-author">
                         👤 ${escapeHTML(
-                            model.author || "Community"
+                            model.author ||
+                            "Community"
                         )}
                     </div>
-                `
+                  `
                 : "";
 
         card.innerHTML = `
@@ -611,7 +635,7 @@ function renderModels() {
                     "AI Club Local"
                 )}
 
-                ${badge}
+                ${communityBadge}
             </div>
 
             ${author}
@@ -636,7 +660,9 @@ function renderModels() {
                 <button
                     type="button"
                     class="use-button"
-                    data-model-id="${escapeHTML(model.id)}"
+                    data-model-id="${escapeHTML(
+                        model.id
+                    )}"
                 >
                     Użyj →
                 </button>
@@ -647,90 +673,90 @@ function renderModels() {
         modelsGrid.appendChild(card);
     }
 
-    modelsGrid
-        .querySelectorAll(".use-button")
-        .forEach(button => {
+    /*
+     * Event delegation.
+     * Dzięki temu przyciski Community
+     * również zawsze działają.
+     */
 
-            button.addEventListener(
-                "click",
-                () => {
+    modelsGrid.onclick = event => {
 
-                    const model =
-                        models.find(
-                            item =>
-                                item.id ===
-                                button.dataset.modelId
-                        );
-
-                    if (model) {
-                        openChat(model);
-                    }
-                }
+        const button =
+            event.target.closest(
+                ".use-button"
             );
-        });
+
+        if (!button) {
+            return;
+        }
+
+        const id =
+            button.dataset.modelId;
+
+        const model =
+            models.find(
+                item =>
+                    String(item.id) ===
+                    String(id)
+            );
+
+        if (model) {
+            openChat(model);
+        }
+    };
 }
 
-/*
-==================================================
- CHAT
-==================================================
-*/
+/* =========================================================
+   CHAT
+   ========================================================= */
 
 function openChat(model) {
 
     selectedModel = model;
 
-    if (chatModelName) {
+    if (exists(chatModelName)) {
         chatModelName.textContent =
             model.name;
     }
 
-    if (chatModelProvider) {
+    if (exists(chatModelProvider)) {
 
         chatModelProvider.textContent =
             `${model.provider || "AI Club Local"} · OFFLINE`;
     }
 
-    if (chatModelIcon) {
-        chatModelIcon.textContent =
-            "✦";
+    if (exists(chatModelIcon)) {
+        chatModelIcon.textContent = "✦";
     }
 
-    if (messages) {
+    if (exists(messages)) {
         messages.innerHTML = "";
-    }
 
-    addMessage(
-        "system",
-        `Rozpoczęto rozmowę z ${model.name}.`
-    );
+        addMessage(
+            "system",
+            `Rozpoczęto rozmowę z ${model.name}.`
+        );
+    }
 
     renderExamples(model);
 
-    if (overlay) {
+    if (exists(overlay)) {
         overlay.classList.remove("hidden");
     }
 
-    if (messageInput) {
-
+    if (exists(messageInput)) {
         messageInput.value = "";
-
-        setTimeout(
-            () => messageInput.focus(),
-            50
-        );
+        messageInput.focus();
     }
 }
 
-/*
-==================================================
- EXAMPLES
-==================================================
-*/
+/* =========================================================
+   EXAMPLES
+   ========================================================= */
 
 function renderExamples(model) {
 
-    if (!examples) {
+    if (!exists(examples)) {
         return;
     }
 
@@ -747,21 +773,19 @@ function renderExamples(model) {
         of model.examples.slice(0, 8)
     ) {
 
-        let question = null;
+        let question = "";
 
         if (
             Array.isArray(
                 example.questions
             )
         ) {
-
             question =
-                example.questions[0];
-
+                example.questions[0] || "";
         } else if (
-            typeof example.question === "string"
+            typeof example.question ===
+            "string"
         ) {
-
             question =
                 example.question;
         }
@@ -771,7 +795,9 @@ function renderExamples(model) {
         }
 
         const button =
-            document.createElement("button");
+            document.createElement(
+                "button"
+            );
 
         button.type = "button";
 
@@ -785,7 +811,7 @@ function renderExamples(model) {
             "click",
             () => {
 
-                if (!messageInput) {
+                if (!exists(messageInput)) {
                     return;
                 }
 
@@ -800,15 +826,17 @@ function renderExamples(model) {
     }
 }
 
-/*
-==================================================
- SEND MESSAGE
-==================================================
-*/
+/* =========================================================
+   SEND MESSAGE
+   ========================================================= */
 
 async function sendMessage() {
 
-    if (!selectedModel || !messageInput) {
+    if (!selectedModel) {
+        return;
+    }
+
+    if (!exists(messageInput)) {
         return;
     }
 
@@ -818,6 +846,13 @@ async function sendMessage() {
     if (!text) {
         return;
     }
+
+    addMessage(
+        "user",
+        text
+    );
+
+    messageInput.value = "";
 
     const cost =
         Number(
@@ -833,13 +868,6 @@ async function sendMessage() {
 
         return;
     }
-
-    addMessage(
-        "user",
-        text
-    );
-
-    messageInput.value = "";
 
     points -= cost;
 
@@ -869,13 +897,14 @@ async function sendMessage() {
     }
 }
 
-/*
-==================================================
- LOCAL ANSWER
-==================================================
-*/
+/* =========================================================
+   FIND ANSWER
+   ========================================================= */
 
-function findLocalAnswer(input, model) {
+function findLocalAnswer(
+    input,
+    model
+) {
 
     if (
         !model ||
@@ -914,7 +943,8 @@ function findLocalAnswer(input, model) {
                 example.questions;
 
         } else if (
-            typeof example.question === "string"
+            typeof example.question ===
+            "string"
         ) {
 
             questions = [
@@ -928,7 +958,8 @@ function findLocalAnswer(input, model) {
         ) {
 
             if (
-                typeof question !== "string"
+                typeof question !==
+                "string"
             ) {
                 continue;
             }
@@ -954,27 +985,25 @@ function findLocalAnswer(input, model) {
                 score > bestScore
             ) {
 
-                bestScore = score;
+                bestScore =
+                    score;
+
                 bestAnswer =
                     example.answer;
             }
         }
     }
 
-    if (
-        bestScore >= 0.72
-    ) {
+    if (bestScore >= 0.72) {
         return bestAnswer;
     }
 
     return null;
 }
 
-/*
-==================================================
- NORMALIZE
-==================================================
-*/
+/* =========================================================
+   NORMALIZE
+   ========================================================= */
 
 function normalizeText(text) {
 
@@ -986,23 +1015,8 @@ function normalizeText(text) {
             ""
         )
         .replace(
-            /[ąćęłńóśźż]/g,
-            char => {
-
-                const map = {
-                    "ą": "a",
-                    "ć": "c",
-                    "ę": "e",
-                    "ł": "l",
-                    "ń": "n",
-                    "ó": "o",
-                    "ś": "s",
-                    "ź": "z",
-                    "ż": "z"
-                };
-
-                return map[char] || char;
-            }
+            /ł/g,
+            "l"
         )
         .replace(
             /[^\p{L}\p{N}\s]/gu,
@@ -1015,11 +1029,9 @@ function normalizeText(text) {
         .trim();
 }
 
-/*
-==================================================
- SIMILARITY
-==================================================
-*/
+/* =========================================================
+   SIMILARITY
+   ========================================================= */
 
 function getSimilarity(a, b) {
 
@@ -1049,7 +1061,8 @@ function getSimilarity(a, b) {
             );
 
         if (
-            smaller / larger >= 0.65
+            smaller / larger >=
+            0.65
         ) {
             return 0.90;
         }
@@ -1067,15 +1080,14 @@ function getSimilarity(a, b) {
     return Math.max(
         0,
         1 -
-        distance / maxLength
+        distance /
+        maxLength
     );
 }
 
-/*
-==================================================
- LEVENSHTEIN
-==================================================
-*/
+/* =========================================================
+   LEVENSHTEIN
+   ========================================================= */
 
 function levenshtein(a, b) {
 
@@ -1086,7 +1098,6 @@ function levenshtein(a, b) {
         i <= b.length;
         i++
     ) {
-
         matrix[i] = [i];
     }
 
@@ -1095,7 +1106,6 @@ function levenshtein(a, b) {
         j <= a.length;
         j++
     ) {
-
         matrix[0][j] = j;
     }
 
@@ -1134,11 +1144,9 @@ function levenshtein(a, b) {
     return matrix[b.length][a.length];
 }
 
-/*
-==================================================
- UNKNOWN
-==================================================
-*/
+/* =========================================================
+   UNKNOWN
+   ========================================================= */
 
 function getUnknownAnswer(text) {
 
@@ -1151,6 +1159,7 @@ function getUnknownAnswer(text) {
         "Nie znalazłem wystarczająco podobnego pytania w moim JSON-ie.",
 
         "Hmm... tego pytania jeszcze mnie nie nauczono. 😺"
+
     ];
 
     return responses[
@@ -1161,15 +1170,13 @@ function getUnknownAnswer(text) {
     ];
 }
 
-/*
-==================================================
- MESSAGE
-==================================================
-*/
+/* =========================================================
+   MESSAGE
+   ========================================================= */
 
 function addMessage(type, text) {
 
-    if (!messages) {
+    if (!exists(messages)) {
         return null;
     }
 
@@ -1190,15 +1197,107 @@ function addMessage(type, text) {
     return element;
 }
 
-/*
-==================================================
- PUBLISH COMMUNITY MODEL
-==================================================
-*/
+/* =========================================================
+   CHAT EVENTS
+   ========================================================= */
 
-function openPublishOverlay() {
+if (exists(messageInput)) {
 
-    if (!publishOverlay) {
+    messageInput.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                event.key === "Enter" &&
+                !event.shiftKey
+            ) {
+
+                event.preventDefault();
+
+                sendMessage();
+            }
+        }
+    );
+}
+
+if (exists(sendButton)) {
+    sendButton.addEventListener(
+        "click",
+        sendMessage
+    );
+}
+
+function closeChatOverlay() {
+
+    if (exists(overlay)) {
+        overlay.classList.add("hidden");
+    }
+
+    selectedModel = null;
+}
+
+if (exists(closeChat)) {
+    closeChat.addEventListener(
+        "click",
+        closeChatOverlay
+    );
+}
+
+if (exists(overlay)) {
+
+    overlay.addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target === overlay
+            ) {
+                closeChatOverlay();
+            }
+        }
+    );
+}
+
+/* =========================================================
+   ESC
+   ========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key !== "Escape"
+        ) {
+            return;
+        }
+
+        if (
+            exists(publishOverlay) &&
+            !publishOverlay.classList.contains("hidden")
+        ) {
+
+            publishOverlay.classList.add(
+                "hidden"
+            );
+
+            return;
+        }
+
+        closeChatOverlay();
+    }
+);
+
+/* =========================================================
+   COMMUNITY PUBLISH
+   ========================================================= */
+
+function openPublish() {
+
+    if (!exists(publishOverlay)) {
+        console.error(
+            "Brak #publishOverlay w HTML."
+        );
         return;
     }
 
@@ -1206,57 +1305,59 @@ function openPublishOverlay() {
         "hidden"
     );
 
-    if (communityModelName) {
+    if (exists(communityModelName)) {
         communityModelName.focus();
     }
 }
 
 function closePublishOverlay() {
 
-    if (!publishOverlay) {
-        return;
+    if (exists(publishOverlay)) {
+        publishOverlay.classList.add(
+            "hidden"
+        );
     }
+}
 
-    publishOverlay.classList.add(
-        "hidden"
+if (exists(publishModelButton)) {
+
+    publishModelButton.addEventListener(
+        "click",
+        openPublish
     );
 }
 
-on(
-    publishModelButton,
-    "click",
-    openPublishOverlay
-);
+if (exists(closePublish)) {
 
-on(
-    closePublish,
-    "click",
-    closePublishOverlay
-);
+    closePublish.addEventListener(
+        "click",
+        closePublishOverlay
+    );
+}
 
-on(
-    publishOverlay,
-    "click",
-    event => {
+if (exists(publishOverlay)) {
 
-        if (
-            event.target ===
-            publishOverlay
-        ) {
-            closePublishOverlay();
+    publishOverlay.addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target ===
+                publishOverlay
+            ) {
+                closePublishOverlay();
+            }
         }
-    }
-);
+    );
+}
 
-/*
-==================================================
- VALIDATE COMMUNITY JSON
-==================================================
-*/
+/* =========================================================
+   VALIDATE COMMUNITY JSON
+   ========================================================= */
 
 function validateCommunityJSON() {
 
-    if (!communityModelJSON) {
+    if (!exists(communityModelJSON)) {
         return null;
     }
 
@@ -1265,7 +1366,7 @@ function validateCommunityJSON() {
 
     if (!raw) {
 
-        setValidation(
+        setJSONValidation(
             "❌ Wklej JSON modelu.",
             false
         );
@@ -1282,8 +1383,8 @@ function validateCommunityJSON() {
 
     } catch (error) {
 
-        setValidation(
-            "❌ JSON jest niepoprawny.",
+        setJSONValidation(
+            "❌ JSON jest niepoprawny. Sprawdź cudzysłowy i znaki nowej linii.",
             false
         );
 
@@ -1296,11 +1397,11 @@ function validateCommunityJSON() {
     }
 
     if (
-        typeof model.id !== "string" ||
-        !model.id.trim()
+        !model.id ||
+        typeof model.id !== "string"
     ) {
 
-        setValidation(
+        setJSONValidation(
             '❌ Model musi posiadać pole "id".',
             false
         );
@@ -1309,11 +1410,11 @@ function validateCommunityJSON() {
     }
 
     if (
-        typeof model.name !== "string" ||
-        !model.name.trim()
+        !model.name ||
+        typeof model.name !== "string"
     ) {
 
-        setValidation(
+        setJSONValidation(
             '❌ Model musi posiadać pole "name".',
             false
         );
@@ -1322,10 +1423,12 @@ function validateCommunityJSON() {
     }
 
     if (
-        !Array.isArray(model.examples)
+        !Array.isArray(
+            model.examples
+        )
     ) {
 
-        setValidation(
+        setJSONValidation(
             '❌ Pole "examples" musi być tablicą.',
             false
         );
@@ -1347,7 +1450,7 @@ function validateCommunityJSON() {
             typeof example !== "object"
         ) {
 
-            setValidation(
+            setJSONValidation(
                 `❌ Błąd w examples[${i}].`,
                 false
             );
@@ -1356,19 +1459,20 @@ function validateCommunityJSON() {
         }
 
         const questions =
-            Array.isArray(example.questions)
+            Array.isArray(
+                example.questions
+            )
                 ? example.questions
-                : (
-                    typeof example.question === "string"
-                        ? [example.question]
-                        : []
-                );
+                : typeof example.question ===
+                  "string"
+                    ? [example.question]
+                    : [];
 
         if (
             questions.length === 0
         ) {
 
-            setValidation(
+            setJSONValidation(
                 `❌ examples[${i}] nie ma pytania.`,
                 false
             );
@@ -1377,10 +1481,11 @@ function validateCommunityJSON() {
         }
 
         if (
-            typeof example.answer !== "string"
+            typeof example.answer !==
+            "string"
         ) {
 
-            setValidation(
+            setJSONValidation(
                 `❌ examples[${i}] nie ma odpowiedzi.`,
                 false
             );
@@ -1396,17 +1501,22 @@ function validateCommunityJSON() {
         "community";
 
     model.author =
-        communityModelAuthor?.value.trim() ||
-        "Community";
+        exists(communityModelAuthor)
+            ? communityModelAuthor.value.trim() ||
+              "Community"
+            : "Community";
 
     model.description =
-        communityModelDescription?.value.trim() ||
-        model.description ||
-        "Community model for AI Club.";
+        exists(communityModelDescription)
+            ? communityModelDescription.value.trim() ||
+              model.description ||
+              "Community model for AI Club."
+            : model.description ||
+              "Community model for AI Club.";
 
     model.community = true;
 
-    setValidation(
+    setJSONValidation(
         `✅ JSON poprawny. ${model.examples.length} wpisów.`,
         true
     );
@@ -1414,13 +1524,17 @@ function validateCommunityJSON() {
     return model;
 }
 
-function setValidation(text, success) {
+function setJSONValidation(
+    text,
+    success
+) {
 
-    if (!jsonValidation) {
+    if (!exists(jsonValidation)) {
         return;
     }
 
-    jsonValidation.textContent = text;
+    jsonValidation.textContent =
+        text;
 
     jsonValidation.className =
         success
@@ -1428,66 +1542,76 @@ function setValidation(text, success) {
             : "json-validation error";
 }
 
-on(
-    communityModelJSON,
-    "input",
-    () => {
+if (exists(communityModelJSON)) {
 
-        if (
-            communityModelJSON.value.trim()
-        ) {
-            validateCommunityJSON();
+    communityModelJSON.addEventListener(
+        "input",
+        () => {
+
+            if (
+                communityModelJSON.value.trim()
+            ) {
+                validateCommunityJSON();
+            }
         }
-    }
-);
+    );
+}
 
-/*
-==================================================
- GITHUB COMMUNITY SUBMISSION
-==================================================
-*/
+/* =========================================================
+   COMMUNITY SUBMIT
+   ========================================================= */
 
-on(
-    submitCommunityModel,
-    "click",
-    () => {
+if (exists(submitCommunityModel)) {
 
-        const model =
-            validateCommunityJSON();
+    submitCommunityModel.addEventListener(
+        "click",
+        () => {
 
-        if (!model) {
-            return;
-        }
+            const model =
+                validateCommunityJSON();
 
-        const name =
-            communityModelName?.value.trim();
+            if (!model) {
+                return;
+            }
 
-        if (!name) {
+            const name =
+                exists(communityModelName)
+                    ? communityModelName.value.trim()
+                    : "";
 
-            alert(
-                "Podaj nazwę modelu."
-            );
+            if (!name) {
 
-            communityModelName?.focus();
+                alert(
+                    "Podaj nazwę modelu."
+                );
 
-            return;
-        }
+                if (exists(communityModelName)) {
+                    communityModelName.focus();
+                }
 
-        model.name = name;
+                return;
+            }
 
-        const author =
-            communityModelAuthor?.value.trim() ||
-            "Community";
+            const author =
+                exists(communityModelAuthor)
+                    ? communityModelAuthor.value.trim() ||
+                      "Community"
+                    : "Community";
 
-        const description =
-            communityModelDescription?.value.trim() ||
-            model.description ||
-            "";
+            const description =
+                exists(communityModelDescription)
+                    ? communityModelDescription.value.trim() ||
+                      model.description ||
+                      ""
+                    : model.description ||
+                      "";
 
-        const issueTitle =
-            `[Community Model] ${name}`;
+            model.name = name;
 
-        const issueBody =
+            const issueTitle =
+                `[Community Model] ${name}`;
+
+            const issueBody =
 `# 🌐 AI Club Community Model
 
 ## Informacje
@@ -1505,109 +1629,35 @@ ${description}
 ${JSON.stringify(model, null, 2)}
 \`\`\`
 
-## Moderacja
-
-- [ ] JSON poprawny
-- [ ] Model nie zawiera kodu JavaScript
-- [ ] Model nie zawiera danych prywatnych
-- [ ] Model nie zawiera spamu
-
 ---
 
-AI Club Community submission
+### Moderacja
+
+- [ ] JSON poprawny
+- [ ] Model nie zawiera złośliwego kodu
+- [ ] Model nie zawiera danych prywatnych
+- [ ] Model nie zawiera spamu
+- [ ] Model nadaje się do AI Club Community
 `;
 
-        const githubURL =
-            `https://github.com/${encodeURIComponent(GITHUB_OWNER)}/${encodeURIComponent(GITHUB_REPO)}/issues/new` +
-            `?title=${encodeURIComponent(issueTitle)}` +
-            `&body=${encodeURIComponent(issueBody)}` +
-            `&labels=community-model`;
+            const githubURL =
+                `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/issues/new` +
+                `?title=${encodeURIComponent(issueTitle)}` +
+                `&body=${encodeURIComponent(issueBody)}` +
+                `&labels=community-model`;
 
-        window.open(
-            githubURL,
-            "_blank",
-            "noopener,noreferrer"
-        );
-    }
-);
-
-/*
-==================================================
- CHAT CONTROLS
-==================================================
-*/
-
-on(
-    sendButton,
-    "click",
-    sendMessage
-);
-
-on(
-    messageInput,
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Enter" &&
-            !event.shiftKey
-        ) {
-
-            event.preventDefault();
-
-            sendMessage();
+            window.open(
+                githubURL,
+                "_blank",
+                "noopener,noreferrer"
+            );
         }
-    }
-);
-
-function closeChatOverlay() {
-
-    if (overlay) {
-        overlay.classList.add("hidden");
-    }
-
-    selectedModel = null;
+    );
 }
 
-on(
-    closeChat,
-    "click",
-    closeChatOverlay
-);
-
-on(
-    overlay,
-    "click",
-    event => {
-
-        if (
-            event.target === overlay
-        ) {
-            closeChatOverlay();
-        }
-    }
-);
-
-on(
-    document,
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Escape"
-        ) {
-
-            closeChatOverlay();
-            closePublishOverlay();
-        }
-    }
-);
-
-/*
-==================================================
- UTILS
-==================================================
-*/
+/* =========================================================
+   SLEEP
+   ========================================================= */
 
 function sleep(ms) {
 
@@ -1616,6 +1666,10 @@ function sleep(ms) {
             setTimeout(resolve, ms)
     );
 }
+
+/* =========================================================
+   ESCAPE HTML
+   ========================================================= */
 
 function escapeHTML(value) {
 
@@ -1627,30 +1681,18 @@ function escapeHTML(value) {
         .replaceAll("'", "&#039;");
 }
 
-/*
-==================================================
- START
-==================================================
-*/
+/* =========================================================
+   START
+   ========================================================= */
 
-async function startAIClub() {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-    console.log(
-        "🐱 AI Club uruchamianie..."
-    );
+        console.log(
+            "🐱 AI Club uruchomiony."
+        );
 
-    await loadModels();
-
-    /*
-     * Community ładuje się dopiero
-     * po oficjalnych modelach.
-     */
-
-    await loadCommunityModels();
-
-    console.log(
-        "✅ AI Club gotowy."
-    );
-}
-
-startAIClub();
+        loadModels();
+    }
+);
