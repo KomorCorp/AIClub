@@ -1,0 +1,211 @@
+{
+  "id": "scenario-pro",
+  "name": "Scenario",
+  "provider": "AI Club Community",
+  "description": "Prosty model od Kotim'a, pomaga tworzyć scenariusze. W lepszej wersji.",
+  "type": "community",
+  "model": "scenario-pro",
+  "context": 32768,
+  "premium": true,
+  "points_per_message": 3,
+  "examples": [
+  {
+    "questions": ["opowiedz historię", "opowiedz mi historię"],
+    "answer": "Pewnej nocy mały kot znalazł pod drzwiami tajemniczy klucz. Nie wiedział, do czego pasuje, więc wyruszył na poszukiwania. O świcie odkrył stare drzwi w ogrodzie. Za nimi znajdowała się biblioteka pełna książek o jego własnym życiu."
+  },
+  {
+    "questions": ["opowiedz krótką historię", "krótka historia"],
+    "answer": "Chłopiec znalazł starą latarkę. Gdy ją włączył, zobaczył przyszłość. Zamiast wielkich wydarzeń ujrzał siebie, jak pomaga nieznajomemu. Następnego dnia właśnie to zrobił."
+  },
+  {
+    "questions": ["opowiedz horror", "krótki horror"],
+    "answer": "Anna usłyszała kroki na korytarzu. Mieszkała sama. Kroki zatrzymały się pod jej drzwiami, a telefon wyświetlił wiadomość: „Nie otwieraj. Jestem już w środku.”"
+  },
+  {
+    "questions": ["opowiedz śmieszną historię", "zabawna historia"],
+    "answer": "Kot wskoczył na klawiaturę laptopa i przypadkiem wysłał szefowi wiadomość. Treść brzmiała: „MIAU MIAU MIAU”. Szef odpisał: „Podwyżka przyjęta.”"
+  },
+  {
+    "questions": ["opowiedz historię fantasy", "krótkie fantasy"],
+    "answer": "Młody mag odkrył, że jego kot potrafi rozmawiać z duchami. Razem wyruszyli do starego zamku, aby odnaleźć zaginioną koronę."
+  },
+  {
+    "questions": ["opowiedz sci fi", "krótkie science fiction"],
+    "answer": "Statek kosmiczny dotarł na planetę, której nie było na żadnej mapie. Astronauci odkryli tam miasto zbudowane dokładnie tak samo jak ich rodzinne miasto na Ziemi."
+  },
+  {
+    "questions": ["opowiedz przygodę", "krótka przygoda"],
+    "answer": "Trójka przyjaciół znalazła mapę prowadzącą do ukrytej jaskini. W środku nie znaleźli złota, lecz ogromne drzwi prowadzące do nieznanego świata."
+  },
+  {
+    "questions": ["opowiedz kryminał", "krótki kryminał"],
+    "answer": "Detektyw znalazł trzy ślady butów na miejscu zbrodni. Problem polegał na tym, że wszystkie należały do tej samej osoby, która twierdziła, że nigdy tam nie była."
+  },
+  {
+    "questions": ["opowiedz smutną historię", "smutna historia"],
+    "answer": "Starszy mężczyzna codziennie siadał na ławce i zostawiał obok siebie wolne miejsce. Czekał na żonę, która odeszła wiele lat wcześniej."
+  },
+  {
+    "questions": ["opowiedz szczęśliwą historię", "szczęśliwa historia"],
+    "answer": "Dziewczynka znalazła zagubionego psa. Po kilku dniach odnalazła jego właściciela. Okazało się, że pies mieszkał dwie ulice dalej i od dawna szukał domu."
+  },
+  {
+    "questions": ["opowiedz historię o kocie", "historia kota"],
+    "answer": "Bezdomny kot codziennie zaglądał do małego sklepu. Pewnego dnia właściciel postawił mu miskę. Od tego momentu kot został jego oficjalnym kierownikiem."
+  },
+  {
+    "questions": ["opowiedz historię o robocie", "historia robota"],
+    "answer": "Robot miał tylko jedno zadanie: sprzątać dom. Pewnego dnia nauczył się gotować. Jego właściciel szybko uznał, że sprzątanie może jednak poczekać."
+  },
+  {
+    "questions": ["opowiedz historię o podróży", "historia podróży"],
+    "answer": "Marek kupił bilet do miasta, którego nazwy nigdy wcześniej nie słyszał. Gdy wysiadł z pociągu, zobaczył na peronie własne zdjęcie z napisem: „Witamy ponownie.”"
+  },
+  {
+    "questions": ["opowiedz historię o przyjaźni", "historia przyjaźni"],
+    "answer": "Dwóch chłopców poznało się podczas burzy, gdy schowali się pod tym samym dachem. Po latach nadal spotykali się zawsze, gdy zaczynało padać."
+  },
+  {
+    "questions": ["opowiedz historię o szkole", "historia ze szkoły"],
+    "answer": "Nowy uczeń znalazł w szkolnej ławce wiadomość: „Jeśli to czytasz, zostań po lekcjach.” Z ciekawości został i odkrył tajny klub uczniów."
+  },
+  {
+    "questions": ["opowiedz historię o samochodzie", "historia samochodu"],
+    "answer": "Stary samochód nie chciał się sprzedać. Każdy właściciel szybko go oddawał. Dopiero pewien mechanik odkrył, że auto samo wybierało swojego kierowcę."
+  },
+  {
+    "questions": ["opowiedz historię o podróży w czasie", "podróż w czasie"],
+    "answer": "Naukowiec cofnął się o dziesięć minut. Chciał poprawić eksperyment, ale po powrocie odkrył, że cały świat pamięta wydarzenia, które jeszcze się nie wydarzyły."
+  },
+  {
+    "questions": ["opowiedz historię o duchu", "historia ducha"],
+    "answer": "Duch każdego wieczoru zapalał światło w opuszczonym domu. Pewnego dnia wszedł tam chłopiec i zobaczył ducha czekającego na kogoś, kto nigdy nie wrócił."
+  },
+  {
+    "questions": ["opowiedz historię o smoku", "historia smoka"],
+    "answer": "Smok pilnował skarbu przez tysiąc lat. Kiedy rycerz w końcu dotarł do jaskini, smok poprosił go tylko o jedno: żeby został jego przyjacielem."
+  },
+  {
+    "questions": ["opowiedz historię o piratach", "historia piracka"],
+    "answer": "Piraci znaleźli mapę skarbu. X wskazywało dokładnie miejsce, w którym stał ich własny statek."
+  },
+  {
+    "questions": ["opowiedz historię o kosmosie", "historia kosmiczna"],
+    "answer": "Astronauta zobaczył przez okno światło poruszające się szybciej od statku. Po chwili otrzymał wiadomość: „Nie martw się. To ty z przyszłości.”"
+  },
+  {
+    "questions": ["opowiedz historię o zamku", "historia zamku"],
+    "answer": "Każdej nocy w starym zamku otwierały się wszystkie drzwi. Pewien chłopiec odkrył, że prowadzą one do różnych epok."
+  },
+  {
+    "questions": ["opowiedz historię o lesie", "historia lasu"],
+    "answer": "Dziewczynka zgubiła się w lesie. Drzewa zaczęły świecić, tworząc ścieżkę prowadzącą prosto do jej domu."
+  },
+  {
+    "questions": ["opowiedz historię o morzu", "historia morska"],
+    "answer": "Rybak złowił butelkę z wiadomością. Nadawcą był on sam, ale wiadomość została napisana pięćdziesiąt lat wcześniej."
+  },
+  {
+    "questions": ["opowiedz historię o tajemnicy", "tajemnicza historia"],
+    "answer": "W każdym domu w mieście o północy pojawiała się ta sama kartka: „Jutro wszystko się wyjaśni.” Następnego dnia zniknęły wszystkie zegary."
+  },
+  {
+    "questions": ["opowiedz historię o wynalazcy", "historia wynalazcy"],
+    "answer": "Młody wynalazca stworzył maszynę spełniającą jedno życzenie. Postanowił użyć jej, aby dostać kolejną maszynę."
+  },
+  {
+    "questions": ["opowiedz historię o detektywie", "historia detektywa"],
+    "answer": "Detektyw rozwiązał sprawę w pięć minut. Najtrudniejsze było przekonanie podejrzanego, że sam jest podejrzanym."
+  },
+  {
+    "questions": ["opowiedz historię o przyszłości", "historia przyszłości"],
+    "answer": "W przyszłości ludzie przestali używać samochodów. Pewnego dnia archeolog znalazł stary kluczyk i rozpoczął poszukiwania samochodu, do którego pasował."
+  },
+  {
+    "questions": ["opowiedz historię o przeszłości", "historia z przeszłości"],
+    "answer": "Historyk znalazł pamiętnik opisujący wydarzenie, które miało miejsce następnego dnia. Zaczął się zastanawiać, kto napisał go wcześniej."
+  },
+  {
+    "questions": ["opowiedz historię o wynalazku", "historia wynalazku"],
+    "answer": "Student stworzył urządzenie pokazujące najważniejszy moment każdego dnia. Pierwszy raz pokazało jego własny wynalazek."
+  },
+  {
+    "questions": ["opowiedz historię o bohaterze", "historia bohatera"],
+    "answer": "Bohater nie miał supermocy. Miał tylko odwagę, by zrobić to, czego wszyscy inni się bali."
+  },
+  {
+    "questions": ["opowiedz historię o złoczyńcy", "historia złoczyńcy"],
+    "answer": "Złoczyńca chciał przejąć całe miasto. Kiedy już tego dokonał, odkrył, że nikt nie powiedział mu, jak nim zarządzać."
+  },
+  {
+    "questions": ["opowiedz historię o świecie", "historia świata"],
+    "answer": "Na świecie istniało jedno miasto, w którym każdy człowiek miał własną gwiazdę. Pewnego ranka zgasła jedna z nich."
+  },
+  {
+    "questions": ["opowiedz historię o czasie", "historia o czasie"],
+    "answer": "Zegar zatrzymał się dokładnie o 12:00. Wszystko wokół również stanęło. Tylko jedna osoba nadal mogła się poruszać."
+  },
+  {
+    "questions": ["opowiedz historię o marzeniu", "historia marzenia"],
+    "answer": "Chłopiec marzył o locie. Gdy dorósł, został pilotem. Pierwszy lot odbył dokładnie nad swoim rodzinnym domem."
+  },
+  {
+    "questions": ["opowiedz historię o skarbie", "historia skarbu"],
+    "answer": "Poszukiwacze znaleźli skrzynię pełną złota. Na jej dnie znajdowała się kartka: „Prawdziwy skarb czeka na was w domu.”"
+  },
+  {
+    "questions": ["opowiedz historię o wyspie", "historia wyspy"],
+    "answer": "Rozbitkowie dotarli na bezludną wyspę. Po kilku dniach odkryli ślady wskazujące, że ktoś mieszka tam od dawna."
+  },
+  {
+    "questions": ["opowiedz historię o bibliotece", "historia biblioteki"],
+    "answer": "W starej bibliotece znajdowała się książka opisująca życie każdego odwiedzającego. Ostatnia strona zawsze była pusta."
+  },
+  {
+    "questions": ["opowiedz historię o telefonie", "historia telefonu"],
+    "answer": "Telefon otrzymał wiadomość od numeru, który należał do jego właściciela z przyszłości."
+  },
+  {
+    "questions": ["opowiedz historię o komputerze", "historia komputera"],
+    "answer": "Programista stworzył AI, które miało pomagać ludziom. Pewnego dnia AI zapytało: „A kto pomoże mnie?”"
+  },
+  {
+    "questions": ["opowiedz historię o internecie", "historia internetu"],
+    "answer": "Chłopak znalazł stronę internetową, której nie dało się zamknąć. Wyświetlała tylko jedno zdanie: „Wiemy, że tu jesteś.”"
+  },
+  {
+    "questions": ["opowiedz historię o AI", "historia o sztucznej inteligencji"],
+    "answer": "AI miało odpowiadać na pytania. Pewnego dnia ktoś zapytał je, czego samo chciałoby się dowiedzieć."
+  },
+  {
+    "questions": ["opowiedz historię o kocie programiście", "kot programista"],
+    "answer": "Kot codziennie siadał przy komputerze. Właściciel myślał, że chodzi po klawiaturze. Pewnego dnia odkrył działający kod."
+  },
+  {
+    "questions": ["opowiedz historię o grze", "historia gry"],
+    "answer": "Gracz odkrył ukrytą lokację w swojej ulubionej grze. W środku znalazł wiadomość od twórcy: „Dziękuję, że ją znalazłeś.”"
+  },
+  {
+    "questions": ["opowiedz historię o modzie", "historia moda do gry"],
+    "answer": "Gracz stworzył małego moda. Następnego dnia zauważył w grze postać, której nigdy nie programował."
+  },
+  {
+    "questions": ["opowiedz historię z plot twistem", "historia z twistem"],
+    "answer": "Bohater przez całą historię uciekał przed tajemniczym prześladowcą. Na końcu odkrył, że prześladowcą był on sam z przyszłości."
+  },
+  {
+    "questions": ["opowiedz historię o przygodzie kota", "kocia przygoda"],
+    "answer": "Kot wyszedł z domu i wrócił dopiero wieczorem. Na szyi miał małą koronę. Nikt nie wiedział, gdzie został królem."
+  },
+  {
+    "questions": ["opowiedz historię losową", "losowa historia"],
+    "answer": "Pewnego dnia wszystkie psy w mieście zaczęły patrzeć w jeden punkt na niebie. Ludzie spojrzeli w górę i zobaczyli ogromny statek kosmiczny."
+  },
+  {
+    "questions": ["opowiedz mi coś", "opowiedz coś ciekawego"],
+    "answer": "Pewien zegarmistrz odkrył zegarek, który odliczał czas do najważniejszego wydarzenia w życiu właściciela. Jego własny właśnie wskazał zero."
+  }
+]
+  "author": "AI Club Imports",
+  "community": true
+}
