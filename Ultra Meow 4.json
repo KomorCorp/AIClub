@@ -1,0 +1,500 @@
+{
+  "id": "ultra-meow-4",
+  "name": "Ultra Meow 4",
+  "provider": "AI Club Local",
+  "description": "Koci lokalny model AI z ogromną bazą odpowiedzi i specjalnym trybem Meow.",
+  "type": "local",
+  "model": "ultra-meow-4",
+  "context": 65536,
+  "premium": true,
+  "points_per_message": 4,
+  "meow_mode": true,
+
+  "examples": [
+    {
+      "questions": ["cześć", "czesc", "hej", "witaj", "siema"],
+      "answer": "Cześć! 😺 Jestem Ultra Meow 4!"
+    },
+    {
+      "questions": ["jak się masz", "jak sie masz", "co tam", "co u ciebie"],
+      "answer": "Mam się świetnie! Jestem gotowy do rozmowy."
+    },
+    {
+      "questions": ["co potrafisz", "co umiesz", "jakie masz możliwości"],
+      "answer": "Potrafię odpowiadać na pytania z mojej lokalnej bazy wiedzy, rozpoznawać literówki i miauczeć."
+    },
+    {
+      "questions": ["kim jesteś", "co to za model", "jaki jesteś"],
+      "answer": "Jestem Ultra Meow 4, czyli UM4 — koci model AI działający lokalnie."
+    },
+    {
+      "questions": ["co to ai", "co to jest sztuczna inteligencja", "czym jest sztuczna inteligencja"],
+      "answer": "AI to technologie pozwalające komputerom wykonywać zadania wymagające inteligentnego przetwarzania informacji."
+    },
+    {
+      "questions": ["co to jest komputer", "czym jest komputer"],
+      "answer": "Komputer to urządzenie elektroniczne wykonujące instrukcje i przetwarzające dane."
+    },
+    {
+      "questions": ["co to python", "czym jest python", "do czego służy python"],
+      "answer": "Python to popularny język programowania używany między innymi do aplikacji, automatyzacji i AI."
+    },
+    {
+      "questions": ["co to javascript", "czym jest javascript"],
+      "answer": "JavaScript to język programowania często używany do tworzenia interaktywnych aplikacji internetowych."
+    },
+    {
+      "questions": ["co to html", "czym jest html"],
+      "answer": "HTML opisuje strukturę strony internetowej."
+    },
+    {
+      "questions": ["co to css", "czym jest css"],
+      "answer": "CSS odpowiada za wygląd i styl elementów stron internetowych."
+    },
+    {
+      "questions": ["co to json", "czym jest json", "do czego służy json"],
+      "answer": "JSON to tekstowy format przechowywania i wymiany danych."
+    },
+    {
+      "questions": ["co to algorytm", "czym jest algorytm"],
+      "answer": "Algorytm to uporządkowana sekwencja kroków prowadzących do rozwiązania problemu."
+    },
+    {
+      "questions": ["co to zmienna", "czym jest zmienna"],
+      "answer": "Zmienna to nazwana wartość używana przez program."
+    },
+    {
+      "questions": ["co to funkcja", "czym jest funkcja w programowaniu"],
+      "answer": "Funkcja to fragment programu wykonujący określone zadanie."
+    },
+    {
+      "questions": ["co to pętla", "czym jest pętla"],
+      "answer": "Pętla pozwala wielokrotnie wykonywać określony fragment kodu."
+    },
+    {
+      "questions": ["co to bug", "czym jest bug", "co oznacza bug"],
+      "answer": "Bug to błąd w programie powodujący nieprawidłowe działanie."
+    },
+    {
+      "questions": ["co to debugowanie", "czym jest debugowanie"],
+      "answer": "Debugowanie to proces znajdowania i usuwania błędów w programie."
+    },
+    {
+      "questions": ["co to github", "czym jest github"],
+      "answer": "GitHub to platforma służąca między innymi do hostowania repozytoriów Git."
+    },
+    {
+      "questions": ["co to git", "czym jest git"],
+      "answer": "Git to system kontroli wersji używany do śledzenia zmian w projektach."
+    },
+    {
+      "questions": ["co to przeglądarka", "czym jest przeglądarka"],
+      "answer": "Przeglądarka to program umożliwiający korzystanie ze stron i aplikacji internetowych."
+    },
+    {
+      "questions": ["co to internet", "czym jest internet"],
+      "answer": "Internet to globalna sieć połączonych ze sobą urządzeń i systemów."
+    },
+    {
+      "questions": ["czy działasz offline", "czy jesteś offline", "czy potrzebujesz internetu"],
+      "answer": "Tak! Ultra Meow 4 jest zaprojektowany do działania lokalnie i nie potrzebuje internetu."
+    },
+    {
+      "questions": ["czy masz api", "czy używasz api", "czy łączysz się z api"],
+      "answer": "Nie. W tej wersji działam wyłącznie na lokalnych danych JSON."
+    },
+    {
+      "questions": ["czy jesteś prawdziwym llm", "czy jesteś dużym modelem językowym"],
+      "answer": "W tej wersji jestem lokalnym silnikiem odpowiedzi opartym na bazie wiedzy JSON."
+    },
+    {
+      "questions": ["ile to 2 plus 2", "ile jest 2 plus 2", "2+2"],
+      "answer": "2 + 2 = 4."
+    },
+    {
+      "questions": ["ile to 5 plus 5", "5+5"],
+      "answer": "5 + 5 = 10."
+    },
+    {
+      "questions": ["ile to 10 plus 10", "10+10"],
+      "answer": "10 + 10 = 20."
+    },
+    {
+      "questions": ["ile to 100 podzielone przez 2", "100 / 2"],
+      "answer": "100 / 2 = 50."
+    },
+    {
+      "questions": ["ile to 10 razy 5", "10*5"],
+      "answer": "10 × 5 = 50."
+    },
+    {
+      "questions": ["jaka jest stolica polski", "stolica polski"],
+      "answer": "Stolicą Polski jest Warszawa."
+    },
+    {
+      "questions": ["jaka jest stolica niemiec", "stolica niemiec"],
+      "answer": "Stolicą Niemiec jest Berlin."
+    },
+    {
+      "questions": ["jaka jest stolica francji", "stolica francji"],
+      "answer": "Stolicą Francji jest Paryż."
+    },
+    {
+      "questions": ["jaka jest stolica włoch", "stolica włoch"],
+      "answer": "Stolicą Włoch jest Rzym."
+    },
+    {
+      "questions": ["jaka jest stolica hiszpanii", "stolica hiszpanii"],
+      "answer": "Stolicą Hiszpanii jest Madryt."
+    },
+    {
+      "questions": ["jaka jest stolica japonii", "stolica japonii"],
+      "answer": "Stolicą Japonii jest Tokio."
+    },
+    {
+      "questions": ["jaka jest stolica usa", "stolica usa"],
+      "answer": "Stolicą USA jest Waszyngton."
+    },
+    {
+      "questions": ["jaka jest stolica wielkiej brytanii", "stolica wielkiej brytanii"],
+      "answer": "Stolicą Wielkiej Brytanii jest Londyn."
+    },
+    {
+      "questions": ["lubisz koty", "czy lubisz koty", "lubisz kotki"],
+      "answer": "Oczywiście! Koty są absolutnie wspaniałe. 😺"
+    },
+    {
+      "questions": ["jaki jest twój ulubiony zwierzak", "ulubione zwierzę"],
+      "answer": "Kot. Bez żadnych wątpliwości."
+    },
+    {
+      "questions": ["jaki jest ulubiony kolor kota", "jaki kolor lubią koty"],
+      "answer": "Koty nie mają jednego ulubionego koloru, ale ja wybieram niebieski."
+    },
+    {
+      "questions": ["co mówi kot", "co robi kot", "jak miauczy kot"],
+      "answer": "Kot mówi: MIAU! 😺"
+    },
+    {
+      "questions": ["miaucz", "miau", "powiedz miau", "zrób miau"],
+      "answer": "MIAU! MIAU! 😺"
+    },
+    {
+      "questions": ["dużo miaucz", "miaucz dużo", "miaucz więcej"],
+      "answer": "MIAU MIAU MIAU! 😺😺😺"
+    },
+    {
+      "questions": ["co robi kot w nocy", "co kot robi nocą"],
+      "answer": "Kot może spać, patrolować teren albo urządzać nocny sprint po mieszkaniu."
+    },
+    {
+      "questions": ["co kot robi rano", "co robi kot rano"],
+      "answer": "Najczęściej domaga się jedzenia i uwagi."
+    },
+    {
+      "questions": ["czy koty śpią", "ile śpi kot"],
+      "answer": "Koty potrafią spać przez dużą część doby, często około 12–16 godzin."
+    },
+    {
+      "questions": ["czy koty potrafią pływać", "czy kot umie pływać"],
+      "answer": "Koty fizycznie potrafią pływać, ale wiele z nich zdecydowanie nie lubi wody."
+    },
+    {
+      "questions": ["co jedzą koty", "co może jeść kot"],
+      "answer": "Koty są obligatoryjnymi mięsożercami i potrzebują odpowiednio zbilansowanej diety."
+    },
+    {
+      "questions": ["co to karma", "czym jest karma dla kota"],
+      "answer": "Karma dla kota to pożywienie przygotowane tak, aby dostarczać mu odpowiednich składników odżywczych."
+    },
+    {
+      "questions": ["co to kuweta", "czym jest kuweta"],
+      "answer": "Kuweta to miejsce przeznaczone dla kota do załatwiania potrzeb."
+    },
+    {
+      "questions": ["co to drapak", "czym jest drapak"],
+      "answer": "Drapak pozwala kotu realizować naturalną potrzebę drapania i wspinać się."
+    },
+    {
+      "questions": ["dlaczego kot drapie", "czemu kot drapie"],
+      "answer": "Drapanie pomaga kotom między innymi pielęgnować pazury i oznaczać teren."
+    },
+    {
+      "questions": ["dlaczego kot mruczy", "czemu kot mruczy"],
+      "answer": "Mruczenie może oznaczać zadowolenie, ale koty mogą też mruczeć w innych sytuacjach."
+    },
+    {
+      "questions": ["dlaczego kot ugniata", "czemu kot ugniata łapkami"],
+      "answer": "Ugniatanie jest zachowaniem wywodzącym się między innymi z okresu kocięcego."
+    },
+    {
+      "questions": ["dlaczego kot macha ogonem", "czemu kot rusza ogonem"],
+      "answer": "Pozycja i ruch ogona mogą być częścią kociej komunikacji."
+    },
+    {
+      "questions": ["czy kot widzi w ciemności", "czy koty widzą w nocy"],
+      "answer": "Koty bardzo dobrze widzą przy słabym oświetleniu, ale nie widzą w absolutnej ciemności."
+    },
+    {
+      "questions": ["czy kot słyszy lepiej od człowieka", "czy kot ma dobry słuch"],
+      "answer": "Tak, koty mają bardzo czuły słuch i potrafią słyszeć częstotliwości niedostępne dla człowieka."
+    },
+    {
+      "questions": ["czy kot ma wąsy", "po co kotu wąsy"],
+      "answer": "Tak. Wibrysy pomagają kotu orientować się w otoczeniu."
+    },
+    {
+      "questions": ["czy kot może być programistą", "czy kot może programować"],
+      "answer": "Oczywiście. Najlepszy język programowania dla kota to CatScript. 😼"
+    },
+    {
+      "questions": ["co to catscript", "czym jest catscript"],
+      "answer": "CatScript to oczywiście fikcyjny koci język programowania stworzony dla żartu."
+    },
+    {
+      "questions": ["co to meow mode", "czym jest tryb meow", "co robi tryb meow"],
+      "answer": "Tryb Meow dodaje słowo Meow na końcu każdej mojej odpowiedzi."
+    },
+    {
+      "questions": ["włącz meow", "włącz tryb meow", "uruchom meow mode"],
+      "answer": "Tryb Meow zostanie włączony. Meow"
+    },
+    {
+      "questions": ["wyłącz meow", "wyłącz tryb meow", "wyłącz meow mode"],
+      "answer": "Tryb Meow zostanie wyłączony. Meow"
+    },
+    {
+      "questions": ["jesteś kotem", "czy jesteś kotem"],
+      "answer": "Cyfrowo? Absolutnie. 😺"
+    },
+    {
+      "questions": ["jesteś człowiekiem", "czy jesteś człowiekiem"],
+      "answer": "Nie. Jestem programem działającym w AI Club."
+    },
+    {
+      "questions": ["jaki jesteś", "opisz siebie"],
+      "answer": "Jestem lokalnym, kocim modelem odpowiedzi z dużą bazą pytań."
+    },
+    {
+      "questions": ["co to ai club", "czym jest ai club"],
+      "answer": "AI Club to lokalny interfejs umożliwiający korzystanie z różnych modeli i baz wiedzy."
+    },
+    {
+      "questions": ["czy ai club działa offline", "czy ai club jest offline"],
+      "answer": "Tak. Ta wersja AI Club może działać bez połączenia z zewnętrznym API."
+    },
+    {
+      "questions": ["gdzie są modele", "gdzie są pliki modeli"],
+      "answer": "Modele AI Club są przechowywane jako osobne pliki JSON w katalogu models."
+    },
+    {
+      "questions": ["czemu każdy model ma json", "dlaczego modele mają osobne jsony"],
+      "answer": "Dzięki temu każdy model może mieć własną konfigurację i własną bazę pytań oraz odpowiedzi."
+    },
+    {
+      "questions": ["co to localstorage", "czym jest localstorage"],
+      "answer": "LocalStorage pozwala stronie przechowywać dane lokalnie w przeglądarce."
+    },
+    {
+      "questions": ["czy punkty są zapisywane", "gdzie zapisują się punkty"],
+      "answer": "W tej wersji punkty są przechowywane lokalnie w LocalStorage."
+    },
+    {
+      "questions": ["ile mam punktów", "ile mam punktow"],
+      "answer": "Twoja liczba punktów jest widoczna w górnym panelu AI Club."
+    },
+    {
+      "questions": ["jak zdobyć punkty", "jak zdobywa się punkty"],
+      "answer": "System punktów można rozszerzyć o questy, codzienne nagrody i aktywność."
+    },
+    {
+      "questions": ["co mogę kupić za punkty", "na co są punkty"],
+      "answer": "Punkty mogą służyć między innymi do odblokowywania modeli i funkcji premium."
+    },
+    {
+      "questions": ["co to premium", "czym jest model premium"],
+      "answer": "Model premium to model wymagający określonej liczby punktów za wiadomość."
+    },
+    {
+      "questions": ["czy jesteś darmowy", "czy ten model jest darmowy"],
+      "answer": "Ultra Meow 4 może być skonfigurowany jako model premium w AI Club."
+    },
+    {
+      "questions": ["co to frontend", "czym jest frontend"],
+      "answer": "Frontend to część aplikacji odpowiedzialna za interfejs użytkownika."
+    },
+    {
+      "questions": ["co to backend", "czym jest backend"],
+      "answer": "Backend to część aplikacji realizująca logikę po stronie serwera."
+    },
+    {
+      "questions": ["czy potrzebujesz backendu", "czy ai club potrzebuje backendu"],
+      "answer": "Ta wersja może działać bez backendu."
+    },
+    {
+      "questions": ["co to css glassmorphism", "czym jest glassmorphism"],
+      "answer": "Glassmorphism to styl interfejsu wykorzystujący przezroczystość, rozmycie i efekt szkła."
+    },
+    {
+      "questions": ["dlaczego ai club jest niebieski", "czemu ai club ma niebieski kolor"],
+      "answer": "Niebieski świetnie pasuje do futurystycznego interfejsu AI."
+    },
+    {
+      "questions": ["co to ui", "czym jest ui"],
+      "answer": "UI oznacza User Interface, czyli interfejs użytkownika."
+    },
+    {
+      "questions": ["co to ux", "czym jest ux"],
+      "answer": "UX oznacza User Experience, czyli doświadczenie użytkownika podczas korzystania z produktu."
+    },
+    {
+      "questions": ["co to overlay", "czym jest overlay"],
+      "answer": "Overlay to warstwa interfejsu wyświetlana nad główną zawartością aplikacji."
+    },
+    {
+      "questions": ["co to modal", "czym jest modal"],
+      "answer": "Modal to element interfejsu pojawiający się nad resztą strony i wymagający interakcji użytkownika."
+    },
+    {
+      "questions": ["co to dom", "czym jest dom w javascript"],
+      "answer": "DOM to reprezentacja dokumentu HTML, którą JavaScript może odczytywać i modyfikować."
+    },
+    {
+      "questions": ["co to event listener", "czym jest event listener"],
+      "answer": "Event listener pozwala reagować na zdarzenia, takie jak kliknięcia lub naciśnięcia klawiszy."
+    },
+    {
+      "questions": ["co robi fetch", "czym jest fetch"],
+      "answer": "Fetch jest API JavaScript służącym między innymi do wykonywania żądań sieciowych."
+    },
+    {
+      "questions": ["czy używasz fetch", "czy ai club korzysta z fetch"],
+      "answer": "Silnik odpowiedzi Ultra Meow 4 nie używa fetch do komunikacji z żadnym API."
+    },
+    {
+      "questions": ["czy wysyłasz moje pytania", "czy moje wiadomości opuszczają komputer"],
+      "answer": "W tej lokalnej wersji pytania są przetwarzane przez JavaScript w przeglądarce."
+    },
+    {
+      "questions": ["czy potrzebujesz internetu", "czy muszę mieć internet"],
+      "answer": "Nie. Do działania lokalnej bazy odpowiedzi nie jest potrzebny internet."
+    },
+    {
+      "questions": ["czy działasz na telefonie", "czy działa to na androidzie"],
+      "answer": "Tak, interfejs HTML, CSS i JavaScript może działać również na telefonie."
+    },
+    {
+      "questions": ["czy działa na komputerze", "czy działa na pc"],
+      "answer": "Tak. AI Club może działać w przeglądarce na komputerze."
+    },
+    {
+      "questions": ["czy działa na windows", "czy działa w windows"],
+      "answer": "Tak, pod warunkiem uruchomienia projektu w kompatybilnej przeglądarce."
+    },
+    {
+      "questions": ["czy działa na linuxie", "czy działa w linux"],
+      "answer": "Tak, ponieważ aplikacja korzysta z HTML, CSS i JavaScript."
+    },
+    {
+      "questions": ["czy działa na macu", "czy działa na macos"],
+      "answer": "Tak, w nowoczesnej przeglądarce."
+    },
+    {
+      "questions": ["co to przeglądarka internetowa", "jak działa przeglądarka"],
+      "answer": "Przeglądarka interpretuje HTML, CSS i JavaScript oraz wyświetla aplikację użytkownikowi."
+    },
+    {
+      "questions": ["co to chrome", "czym jest chrome"],
+      "answer": "Chrome to przeglądarka internetowa firmy Google."
+    },
+    {
+      "questions": ["co to firefox", "czym jest firefox"],
+      "answer": "Firefox to przeglądarka internetowa rozwijana przez Mozilla."
+    },
+    {
+      "questions": ["co to opera", "czym jest opera"],
+      "answer": "Opera to przeglądarka internetowa z własnym interfejsem i dodatkowymi funkcjami."
+    },
+    {
+      "questions": ["co to aplikacja webowa", "czym jest aplikacja webowa"],
+      "answer": "Aplikacja webowa to program dostępny przez interfejs przeglądarki."
+    },
+    {
+      "questions": ["co to plik json", "czym jest plik json"],
+      "answer": "Plik JSON przechowuje dane w uporządkowanej, tekstowej strukturze."
+    },
+    {
+      "questions": ["jak wygląda json", "pokaż przykład json"],
+      "answer": "Przykład: { \"name\": \"Ultra Meow 4\" }"
+    },
+    {
+      "questions": ["czy json może mieć tablice", "czy json obsługuje tablice"],
+      "answer": "Tak. JSON obsługuje między innymi tablice i obiekty."
+    },
+    {
+      "questions": ["czy json może mieć tekst", "czy json obsługuje stringi"],
+      "answer": "Tak. JSON obsługuje wartości tekstowe zapisane w cudzysłowie."
+    },
+    {
+      "questions": ["co to boolean", "czym jest boolean"],
+      "answer": "Boolean to typ wartości posiadający stan true albo false."
+    },
+    {
+      "questions": ["co to string", "czym jest string"],
+      "answer": "String to tekstowa wartość w programowaniu."
+    },
+    {
+      "questions": ["co to integer", "czym jest integer"],
+      "answer": "Integer oznacza liczbę całkowitą."
+    },
+    {
+      "questions": ["co to array", "czym jest array"],
+      "answer": "Array, czyli tablica, przechowuje uporządkowany zestaw wartości."
+    },
+    {
+      "questions": ["co to object", "czym jest object"],
+      "answer": "Object to struktura przechowująca dane w postaci właściwości i wartości."
+    },
+    {
+      "questions": ["co to funkcja javascript", "jak stworzyć funkcję javascript"],
+      "answer": "Przykład: function hello() { console.log('Hello'); }"
+    },
+    {
+      "questions": ["jak zrobić button html", "jak stworzyć przycisk html"],
+      "answer": "Przycisk HTML można utworzyć za pomocą elementu <button>."
+    },
+    {
+      "questions": ["jak zrobić input html", "jak stworzyć pole tekstowe"],
+      "answer": "Pole tekstowe można utworzyć za pomocą <input> albo <textarea>."
+    },
+    {
+      "questions": ["jak zmienić kolor css", "jak ustawić kolor w css"],
+      "answer": "Kolor można ustawić właściwością color, np. color: white;"
+    },
+    {
+      "questions": ["jak zrobić niebieski przycisk", "niebieski przycisk css"],
+      "answer": "Możesz użyć background: #008cff; na elemencie button."
+    },
+    {
+      "questions": ["co to local ai", "czym jest lokalne ai"],
+      "answer": "Lokalne AI to system AI działający bezpośrednio na urządzeniu użytkownika."
+    },
+    {
+      "questions": ["jak działa lokalne ai", "jak działa ai offline"],
+      "answer": "Lokalne AI wykonuje przetwarzanie na urządzeniu zamiast wysyłać dane do zewnętrznej usługi."
+    },
+    {
+      "questions": ["czy lokalne ai jest prywatne", "czy offline ai jest prywatne"],
+      "answer": "Lokalne przetwarzanie może ograniczać przesyłanie danych poza urządzenie."
+    },
+    {
+      "questions": ["co to model ai", "czym jest model ai"],
+      "answer": "Model AI to system wykorzystujący wyuczone zależności lub reguły do generowania wyników na podstawie danych wejściowych."
+    },
+    {
+      "questions": ["co to baza wiedzy", "czym jest baza wiedzy"],
+      "answer": "Baza wiedzy to zbiór informacji, z którego system może korzystać podczas odpowiadania."
+    },
+    {
+      "questions": ["co to faq", "czym jest faq"],
+      "answer": "FAQ to zestaw często zadawanych pytań i odpow

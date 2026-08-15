@@ -1,0 +1,69 @@
+{
+  "id": "gpt-oss-20b",
+  "name": "GPT-OSS 20B",
+  "provider": "CloseAI",
+  "description": "Lokalny model AI do ogólnych zastosowań.",
+  "type": "local",
+  "model": "gpt-oss-20b",
+  "context": 32768,
+  "premium": false,
+  "points_per_message": 5,
+
+  "examples": [
+    {
+      "questions": [
+        "cześć",
+        "czesc",
+        "czesć",
+        "hej",
+        "witaj",
+        "siema"
+      ],
+      "answer": "Cześć! 👋 Jak mogę Ci pomóc?"
+    },
+    {
+      "questions": [
+        "jak się masz",
+        "jak sie masz",
+        "jak tam",
+        "co tam"
+      ],
+      "answer": "Mam się świetnie! 😺 Dzięki za pytanie."
+    },
+    {
+      "questions": [
+        "co to jest sztuczna inteligencja",
+        "czym jest sztuczna inteligencja",
+        "co to ai",
+        "czym jest ai"
+      ],
+      "answer": "Sztuczna inteligencja (AI) to dziedzina informatyki zajmująca się tworzeniem systemów zdolnych do wykonywania zadań wymagających wcześniej ludzkiej inteligencji."
+    },
+    {
+      "questions": [
+        "ile to 2 plus 2",
+        "ile jest 2 plus 2",
+        "ile to 2+2",
+        "2+2"
+      ],
+      "answer": "2 + 2 = 4. 🧮"
+    },
+    {
+      "questions": [
+        "co potrafisz",
+        "co umiesz",
+        "jakie masz możliwości"
+      ],
+      "answer": "Potrafię odpowiadać na pytania zapisane w mojej lokalnej bazie wiedzy oraz rozpoznawać podobne pytania i literówki."
+    },
+    {
+      "questions": [
+        "kto cię stworzył",
+        "kto cie stworzyl",
+        "kto stworzył ai club",
+        "kto zrobil ai club"
+      ],
+      "answer": "Jestem lokalnym modelem skonfigurowanym w AI Club."
+    }
+  ]
+}

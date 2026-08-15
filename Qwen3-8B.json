@@ -1,0 +1,55 @@
+{
+  "id": "qwen3-8b",
+  "name": "Qwen3 8B",
+  "provider": "Qwert",
+  "description": "Lekki lokalny model do rozmów, programowania i analizy.",
+  "type": "local",
+  "model": "qwen3-8b",
+  "context": 32768,
+  "premium": false,
+  "points_per_message": 3,
+
+  "examples": [
+    {
+      "questions": [
+        "cześć",
+        "czesc",
+        "hej",
+        "siema"
+      ],
+      "answer": "Hej! 👋 Jestem Qwen3 8B działającym lokalnie w AI Club."
+    },
+    {
+      "questions": [
+        "co potrafisz",
+        "co umiesz"
+      ],
+      "answer": "Mogę odpowiadać na pytania znajdujące się w mojej lokalnej bazie wiedzy."
+    },
+    {
+      "questions": [
+        "napisz pętlę for w pythonie",
+        "napisz petle for w pythonie",
+        "jak zrobić pętlę for w pythonie",
+        "jak zrobic petle for python"
+      ],
+      "answer": "Przykład:\n\nfor i in range(5):\n    print(i)"
+    },
+    {
+      "questions": [
+        "jaka jest stolica polski",
+        "stolica polski",
+        "jakie miasto jest stolicą polski"
+      ],
+      "answer": "Stolicą Polski jest Warszawa. 🇵🇱"
+    },
+    {
+      "questions": [
+        "co to jest python",
+        "czym jest python",
+        "do czego służy python"
+      ],
+      "answer": "Python to wysokopoziomowy język programowania używany m.in. do tworzenia aplikacji, automatyzacji, analizy danych i AI."
+    }
+  ]
+}

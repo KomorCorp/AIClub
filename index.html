@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Club Offline</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="topbar glass">
+
+    <div class="logo">
+        <div class="logo-icon">✦</div>
+
+        <div>
+            <strong>AI Club</strong>
+            <span>Offline AI</span>
+        </div>
+    </div>
+
+    <div class="premium-box">
+    <div>
+        <strong>⭐ AI Club Premium</strong>
+        <span id="premiumStatus">Zablokowane</span>
+    </div>
+
+    <button id="buyPremiumBtn">
+        Kup za 100 pkt
+    </button>
+    </div>
+
+    <div class="account">
+
+        <div class="points">
+            ⭐ <span id="points">100</span>
+        </div>
+
+      <div class="daily-box">
+        <div>
+           <strong>🎁 Daily Reward</strong>
+            <span id="dailyStatus">+200 pkt dziennie</span>
+        </div>
+
+        <button id="dailyBtn">
+            Odbierz 200 pkt
+        </button>
+       </div>
+
+        <div class="avatar">
+            U
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="badge">
+            ● 100% OFFLINE
+        </div>
+
+        <h1>
+            Your AI.<br>
+            <span>Your Club.</span>
+        </h1>
+
+        <p>
+            Lokalny hub AI działający bez API,
+            endpointów i połączenia z internetem.
+        </p>
+
+        <div class="hero-stats">
+
+            <div class="stat glass">
+                <strong id="heroModelCount">0</strong>
+                <span>modeli</span>
+            </div>
+
+            <div class="stat glass">
+                <strong>0</strong>
+                <span>API</span>
+            </div>
+
+            <div class="stat glass">
+                <strong>∞</strong>
+                <span>offline</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="models-section">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-label">
+                    AI MODELS
+                </span>
+
+                <h2>Wybierz model</h2>
+
+                <p>
+                    Każdy model posiada własny plik JSON.
+                </p>
+            </div>
+
+            <div class="model-count" id="modelCount">
+                0 modeli
+            </div>
+
+        </div>
+
+
+        <div class="models-grid" id="modelsGrid">
+
+            <div class="loading">
+
+                <div class="spinner"></div>
+
+                <span>
+                    Ładowanie modeli...
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- CHAT -->
+
+<div
+    id="chatOverlay"
+    class="overlay hidden"
+>
+
+    <div class="chat-window glass">
+
+        <div class="chat-header">
+
+            <div class="chat-model">
+
+                <div
+                    id="chatModelIcon"
+                    class="chat-icon"
+                >
+                    ✦
+                </div>
+
+                <div>
+
+                    <strong id="chatModelName">
+                        Model
+                    </strong>
+
+                    <span id="chatModelProvider">
+                        AI Club
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="closeChat"
+                class="close-btn"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            id="messages"
+            class="messages"
+        ></div>
+
+
+        <div
+            id="examples"
+            class="examples"
+        ></div>
+
+
+        <div class="chat-input">
+
+            <textarea
+                id="messageInput"
+                rows="1"
+                placeholder="Napisz wiadomość..."
+                autocomplete="off"
+            ></textarea>
+
+            <button
+                id="sendButton"
+                title="Wyślij"
+            >
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

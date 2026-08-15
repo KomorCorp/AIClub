@@ -1,0 +1,54 @@
+{
+  "id": "gemma-3-12b",
+  "name": "Gemma 3 12B",
+  "provider": "Gemba",
+  "description": "Lokalny model ogólnego zastosowania.",
+  "type": "local",
+  "model": "gemma-3-12b",
+  "context": 32768,
+  "premium": false,
+  "points_per_message": 4,
+
+  "examples": [
+    {
+      "questions": [
+        "cześć",
+        "czesc",
+        "hej",
+        "witaj"
+      ],
+      "answer": "Cześć! 👋 Miło Cię widzieć."
+    },
+    {
+      "questions": [
+        "jak się masz",
+        "jak sie masz",
+        "co u ciebie",
+        "co u ciebie słychać"
+      ],
+      "answer": "U mnie wszystko działa lokalnie i bez internetu. 😎"
+    },
+    {
+      "questions": [
+        "co to jest komputer",
+        "czym jest komputer"
+      ],
+      "answer": "Komputer to urządzenie elektroniczne, które przetwarza dane zgodnie z wykonywanymi instrukcjami programu."
+    },
+    {
+      "questions": [
+        "co to jest javascript",
+        "czym jest javascript",
+        "do czego służy javascript"
+      ],
+      "answer": "JavaScript to język programowania szeroko używany do tworzenia interaktywnych stron internetowych i aplikacji."
+    },
+    {
+      "questions": [
+        "co to jest html",
+        "czym jest html"
+      ],
+      "answer": "HTML to język znaczników używany do definiowania struktury dokumentów internetowych."
+    }
+  ]
+}
