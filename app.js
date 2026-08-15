@@ -1674,3 +1674,4 @@ function escapeHTML(
 */
 
 loadModels();
+loadCommunityModels();
