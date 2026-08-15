@@ -338,6 +338,188 @@ function updatePointsUI() {
 updatePointsUI()
 
 
+
+/*
+==================================================
+ ŁADOWANIE COMMUNITY MODELS
+==================================================
+*/
+
+async function loadCommunityModels() {
+
+    try {
+
+        const response =
+            await fetch(
+                COMMUNITY_INDEX + "?v=" + Date.now()
+            );
+
+        if (!response.ok) {
+
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+
+        }
+
+        const registry =
+            await response.json();
+
+        if (
+            !registry.models ||
+            !Array.isArray(
+                registry.models
+            )
+        ) {
+
+            throw new Error(
+                "Niepoprawny community/index.json"
+            );
+
+        }
+
+        const loaded = [];
+
+
+        for (
+            const entry
+            of registry.models
+        ) {
+
+            try {
+
+                if (!entry.file) {
+                    continue;
+                }
+
+
+                const response =
+                    await fetch(
+                        "community/" +
+                        encodeURIComponent(
+                            entry.file
+                        ) +
+                        "?v=" +
+                        Date.now()
+                    );
+
+
+                if (!response.ok) {
+
+                    console.warn(
+                        "Nie znaleziono community modelu:",
+                        entry.file
+                    );
+
+                    continue;
+
+                }
+
+
+                const model =
+                    await response.json();
+
+
+                if (
+                    !model.id ||
+                    !model.name
+                ) {
+
+                    console.warn(
+                        "Niepoprawny model:",
+                        entry.file
+                    );
+
+                    continue;
+
+                }
+
+
+                if (
+                    !Array.isArray(
+                        model.examples
+                    )
+                ) {
+
+                    model.examples = [];
+
+                }
+
+
+                /*
+                 * Informacja dla UI,
+                 * że jest to model Community.
+                 */
+
+                model.community = true;
+
+                model.author =
+                    model.author ||
+                    entry.author ||
+                    "Community";
+
+
+                model.version =
+                    model.version ||
+                    entry.version ||
+                    "1.0";
+
+
+                loaded.push(
+                    model
+                );
+
+
+            } catch (error) {
+
+                console.error(
+                    `Błąd modelu ${entry.file}:`,
+                    error
+                );
+
+            }
+
+        }
+
+
+        communityModels =
+            loaded;
+
+
+        /*
+         * NIE usuwamy modeli Official.
+         */
+
+        models = [
+            ...models.filter(
+                model =>
+                    !model.community
+            ),
+            ...communityModels
+        ];
+
+
+        renderModels();
+
+
+        console.log(
+            `Community Models: ${communityModels.length}`
+        );
+
+
+    } catch (error) {
+
+        console.warn(
+            "Community Models niedostępne:",
+            error
+        );
+
+    }
+
+}
+
+
+
 /*
 ==================================================
  ŁADOWANIE MODELI
