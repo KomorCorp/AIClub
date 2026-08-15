@@ -134,9 +134,6 @@ const chatModelIcon =
 
 const PREMIUM_PRICE = 100;
 
-let points = Number(
-    localStorage.getItem("aiClubPoints") || 0
-);
 
 let premium = localStorage.getItem("aiClubPremium") === "true";
 
