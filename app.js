@@ -1390,88 +1390,68 @@ function renderExamples(model) {
 
 async function sendMessage() {
 
-if (!selectedModel) {
-   return;
-}
+    if (!selectedModel) return;
+    if (!exists(messageInput)) return;
 
-if (!exists(messageInput)) {
-   return;
-}
+    const text = messageInput.value.trim();
 
-const text =
-   messageInput.value.trim();
+    if (!text) return;
 
-if (!text) {
-   return;
-}
-
-const answer =
-findLocalAnswer(
-   text,
-   selectedModel
-);
-
-await sleep(250);
-
-const finalAnswer =
-   answer ||
-   getUnknownAnswer(text);
-
-const usage =
-   calculateTokenCost(
-      text,
-      finalAnswer
-   );
-
-if (points < usage.points) {
-
-   addMessage(
-      "system",
-      `Brakuje punktów. Potrzebujesz ${usage.points} ⭐.`
-   );
-
-return;
-}
-
-points -= usage.points;
-
-savePoints();
-
-addMessage(
-    "ai",
-    finalAnswer
-);
-
-    addMessage(
-        "user",
-        text
-    );
+    // Pokaż wiadomość użytkownika
+    addMessage("user", text);
 
     messageInput.value = "";
 
-    points -= cost;
+    // Znajdź odpowiedź
+    const answer =
+        findLocalAnswer(
+            text,
+            selectedModel
+        );
+
+    await sleep(250);
+
+    const finalAnswer =
+        answer ||
+        getUnknownAnswer(text);
+
+    // Oblicz tokeny i koszt
+    const usage =
+        calculateTokenCost(
+            text,
+            finalAnswer
+        );
+
+    console.log(
+        `[AI Club] Tokeny: ${usage.inputTokens} input + ${usage.outputTokens} output = ${usage.totalTokens}`
+    );
+
+    console.log(
+        `[AI Club] Koszt: ${usage.points} pkt`
+    );
+
+    // Sprawdź punkty
+    if (points < usage.points) {
+
+        addMessage(
+            "system",
+            `Brakuje punktów. Potrzebujesz ${usage.points} pkt, a masz ${points} pkt.`
+        );
+
+        return;
+    }
+
+    // Pobierz punkty
+    points -= usage.points;
 
     updatePointsUI();
 
-    
-    await sleep(250);
-
-    if (answer) {
-
-        addMessage(
-            "ai",
-            answer
-        );
-
-    } else {
-
-        addMessage(
-            "ai",
-            getUnknownAnswer(text)
-        );
-    }
+    // Odpowiedź AI
+    addMessage(
+        "ai",
+        finalAnswer
+    );
 }
-
 /* =========================================================
    FIND ANSWER
    ========================================================= */
