@@ -1,3 +1,14 @@
 {
-  "models": []
+  "models": [
+    {
+      "file": "SscenarioPro-12Meow.json",
+      "author": "AI Club Imports",
+      "version": "1.0"
+    },
+    {
+      "file": "Scenario-9meow.json",
+      "author": "AI Club Imports",
+      "version": "1.0"
+    }
+  ]
 }
