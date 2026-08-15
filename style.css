@@ -1577,4 +1577,237 @@ main {
         rgba(255,255,255,.12);
 }
 
+
+
+/* =========================================
+   COMMUNITY MODELS
+========================================= */
+
+.community-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.community-button {
+    border: 1px solid rgba(80, 180, 255, 0.35);
+    background: rgba(20, 130, 255, 0.14);
+    color: #fff;
+
+    padding: 12px 18px;
+    border-radius: 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 8px 30px rgba(0, 110, 255, 0.12),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.community-button:hover {
+    transform: translateY(-2px);
+
+    background: rgba(20, 145, 255, 0.25);
+
+    border-color: rgba(80, 190, 255, 0.65);
+
+    box-shadow:
+        0 12px 35px rgba(0, 120, 255, 0.25),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+.community-button:active {
+    transform: translateY(0);
+}
+
+.community-button.primary {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 140, 255, 0.85),
+            rgba(0, 90, 220, 0.75)
+        );
+
+    border-color: rgba(120, 210, 255, 0.7);
+
+    box-shadow:
+        0 10px 35px rgba(0, 120, 255, 0.3);
+}
+
+.community-button.primary:hover {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 155, 255, 0.95),
+            rgba(0, 105, 235, 0.9)
+        );
+}
+
+
+/* =========================================
+   COMMUNITY MODEL CARD
+========================================= */
+
+.community-model-card {
+    position: relative;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.09),
+            rgba(255,255,255,0.035)
+        );
+
+    border: 1px solid rgba(100, 190, 255, 0.2);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.community-model-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(70, 180, 255, 0.5);
+
+    box-shadow:
+        0 20px 50px rgba(0, 110, 255, 0.2),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+
+/* =========================================
+   PUBLISH MODEL
+========================================= */
+
+.publish-model-panel {
+    margin-top: 20px;
+    padding: 22px;
+
+    border-radius: 20px;
+
+    background: rgba(10, 30, 60, 0.45);
+
+    border: 1px solid rgba(80, 170, 255, 0.25);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.publish-model-panel input,
+.publish-model-panel textarea,
+.publish-model-panel select {
+    width: 100%;
+
+    margin-top: 8px;
+    margin-bottom: 14px;
+
+    padding: 12px 14px;
+
+    border: 1px solid rgba(100, 190, 255, 0.2);
+    border-radius: 12px;
+
+    outline: none;
+
+    background: rgba(0, 20, 50, 0.45);
+    color: white;
+
+    font: inherit;
+
+    backdrop-filter: blur(10px);
+}
+
+.publish-model-panel input:focus,
+.publish-model-panel textarea:focus,
+.publish-model-panel select:focus {
+    border-color: rgba(50, 170, 255, 0.7);
+
+    box-shadow:
+        0 0 0 3px rgba(0, 130, 255, 0.12);
+}
+
+.publish-model-panel textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.publish-model-panel label {
+    display: block;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   COMMUNITY BADGE
+========================================= */
+
+.community-badge {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    background: rgba(0, 140, 255, 0.15);
+
+    border: 1px solid rgba(70, 180, 255, 0.3);
+
+    color: #7dccff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .community-actions {
+        flex-direction: column;
+    }
+
+    .community-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
 }
