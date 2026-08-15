@@ -1453,12 +1453,7 @@ addMessage(
 
     updatePointsUI();
 
-    const answer =
-        findLocalAnswer(
-            text,
-            selectedModel
-        );
-
+    
     await sleep(250);
 
     if (answer) {
