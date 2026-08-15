@@ -1,12 +1,12 @@
 {
   "id": "scenario-pro",
-  "name": "Scenario",
+  "name": "Scenario Pro",
   "provider": "AI Club Community",
   "description": "Prosty model od Kotim'a, pomaga tworzyć scenariusze. W lepszej wersji.",
   "type": "community",
   "model": "scenario-pro",
   "context": 32768,
-  "premium": true,
+  "premium": false,
   "points_per_message": 3,
   "examples": [
   {
