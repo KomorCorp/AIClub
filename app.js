@@ -4,7 +4,10 @@
    AI CLUB - OFFLINE ENGINE
    ========================================================= */
 
-const modelFiles = [
+const CONFIG_FILE = "config.json";
+const COMMUNITY_INDEX = "community/index.json";
+
+const FALLBACK_MODEL_FILES = [
     "GPT-OSS-20B.json",
     "Qwen3-8B.json",
     "Gemma-3-12B.json",
@@ -12,8 +15,6 @@ const modelFiles = [
     "Ultra Meow 4.json",
     "Dog-1.0.json"
 ];
-
-const COMMUNITY_INDEX = "community/index.json";
 
 const GITHUB_OWNER = "KomorCorp";
 const GITHUB_REPO = "AIClub";
@@ -31,6 +32,7 @@ let points =
     Number(localStorage.getItem("aiClubPoints")) || 100;
 
 const PREMIUM_PRICE = 100;
+
 let premium =
     localStorage.getItem("aiClubPremium") === "true";
 
@@ -40,29 +42,60 @@ const DAILY_REWARD = 200;
    DOM
    ========================================================= */
 
-const modelsGrid = document.getElementById("modelsGrid");
-const modelCount = document.getElementById("modelCount");
-const heroModelCount = document.getElementById("heroModelCount");
-const pointsElement = document.getElementById("points");
+const modelsGrid =
+    document.getElementById("modelsGrid");
 
-const overlay = document.getElementById("chatOverlay");
-const closeChat = document.getElementById("closeChat");
-const messages = document.getElementById("messages");
-const examples = document.getElementById("examples");
-const messageInput = document.getElementById("messageInput");
-const sendButton = document.getElementById("sendButton");
+const modelCount =
+    document.getElementById("modelCount");
 
-const chatModelName = document.getElementById("chatModelName");
-const chatModelProvider = document.getElementById("chatModelProvider");
-const chatModelIcon = document.getElementById("chatModelIcon");
+const heroModelCount =
+    document.getElementById("heroModelCount");
 
-const buyPremiumBtn = document.getElementById("buyPremiumBtn");
-const premiumStatus = document.getElementById("premiumStatus");
+const pointsElement =
+    document.getElementById("points");
 
-const dailyBtn = document.getElementById("dailyBtn");
-const dailyStatus = document.getElementById("dailyStatus");
+const overlay =
+    document.getElementById("chatOverlay");
 
-/* Community */
+const closeChat =
+    document.getElementById("closeChat");
+
+const messages =
+    document.getElementById("messages");
+
+const examples =
+    document.getElementById("examples");
+
+const messageInput =
+    document.getElementById("messageInput");
+
+const sendButton =
+    document.getElementById("sendButton");
+
+const chatModelName =
+    document.getElementById("chatModelName");
+
+const chatModelProvider =
+    document.getElementById("chatModelProvider");
+
+const chatModelIcon =
+    document.getElementById("chatModelIcon");
+
+const buyPremiumBtn =
+    document.getElementById("buyPremiumBtn");
+
+const premiumStatus =
+    document.getElementById("premiumStatus");
+
+const dailyBtn =
+    document.getElementById("dailyBtn");
+
+const dailyStatus =
+    document.getElementById("dailyStatus");
+
+/* =========================================================
+   COMMUNITY DOM
+   ========================================================= */
 
 const publishOverlay =
     document.getElementById("publishOverlay");
@@ -92,11 +125,96 @@ const jsonValidation =
     document.getElementById("jsonValidation");
 
 /* =========================================================
-   POMOCNICZE DOM
+   HELPERS
    ========================================================= */
 
 function exists(element) {
     return element !== null && element !== undefined;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function escapeHTML(value) {
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+/* =========================================================
+   SAFE FETCH
+   ========================================================= */
+
+async function fetchJSON(url) {
+
+    console.log(
+        "[AI Club] Ładowanie:",
+        url
+    );
+
+    const response =
+        await fetch(
+            url + (
+                url.includes("?")
+                    ? "&"
+                    : "?"
+            ) + "v=" + Date.now(),
+            {
+                cache: "no-store"
+            }
+        );
+
+    if (!response.ok) {
+
+        throw new Error(
+            `HTTP ${response.status} dla ${url}`
+        );
+    }
+
+    const contentType =
+        response.headers.get("content-type") || "";
+
+    /*
+     * GitHub Pages / niektóre serwery mogą zwrócić
+     * HTML zamiast JSON przy błędnej ścieżce.
+     */
+
+    if (
+        !contentType.includes("json") &&
+        !contentType.includes("javascript") &&
+        !contentType.includes("text")
+    ) {
+
+        console.warn(
+            "[AI Club] Podejrzany Content-Type:",
+            contentType,
+            url
+        );
+    }
+
+    const text =
+        await response.text();
+
+    try {
+
+        return JSON.parse(text);
+
+    } catch (error) {
+
+        console.error(
+            "[AI Club] Odpowiedź nie jest JSON-em:",
+            url,
+            text.slice(0, 300)
+        );
+
+        throw new Error(
+            `Niepoprawny JSON: ${url}`
+        );
+    }
 }
 
 /* =========================================================
@@ -104,18 +222,21 @@ function exists(element) {
    ========================================================= */
 
 function savePoints() {
+
     localStorage.setItem(
         "aiClubPoints",
         String(points)
     );
 
     if (exists(pointsElement)) {
+
         pointsElement.textContent =
             points.toLocaleString("pl-PL");
     }
 }
 
 function updatePointsUI() {
+
     savePoints();
     updatePremiumUI();
 }
@@ -128,7 +249,10 @@ savePoints();
 
 function updatePremiumUI() {
 
-    if (!exists(premiumStatus) || !exists(buyPremiumBtn)) {
+    if (
+        !exists(premiumStatus) ||
+        !exists(buyPremiumBtn)
+    ) {
         return;
     }
 
@@ -219,14 +343,20 @@ function getToday() {
 
 function updateDailyUI() {
 
-    if (!exists(dailyBtn) || !exists(dailyStatus)) {
+    if (
+        !exists(dailyBtn) ||
+        !exists(dailyStatus)
+    ) {
         return;
     }
 
-    const today = getToday();
+    const today =
+        getToday();
 
     const lastClaim =
-        localStorage.getItem("aiClubDaily");
+        localStorage.getItem(
+            "aiClubDaily"
+        );
 
     if (lastClaim === today) {
 
@@ -256,7 +386,8 @@ if (exists(dailyBtn)) {
         "click",
         () => {
 
-            const today = getToday();
+            const today =
+                getToday();
 
             if (
                 localStorage.getItem(
@@ -286,15 +417,312 @@ if (exists(dailyBtn)) {
 updateDailyUI();
 
 /* =========================================================
+   CONFIG
+   ========================================================= */
+
+async function loadConfig() {
+
+    try {
+
+        const config =
+            await fetchJSON(
+                CONFIG_FILE
+            );
+
+        console.log(
+            "[AI Club] config.json:",
+            config
+        );
+
+        return config;
+
+    } catch (error) {
+
+        console.warn(
+            "[AI Club] Nie udało się załadować config.json.",
+            error
+        );
+
+        return null;
+    }
+}
+
+/* =========================================================
+   WYCIĄGANIE PLIKÓW MODELI Z CONFIG
+   ========================================================= */
+
+function getModelFilesFromConfig(config) {
+
+    if (!config) {
+        return [];
+    }
+
+    const result = [];
+
+    /*
+     * Format:
+     *
+     * {
+     *   "models": [
+     *      "GPT-OSS-20B.json",
+     *      "Qwen3-8B.json"
+     *   ]
+     * }
+     */
+
+    if (Array.isArray(config.models)) {
+
+        for (const item of config.models) {
+
+            if (typeof item === "string") {
+
+                result.push(item);
+
+            } else if (
+                item &&
+                typeof item === "object"
+            ) {
+
+                const file =
+                    item.file ||
+                    item.json ||
+                    item.path;
+
+                if (typeof file === "string") {
+                    result.push(file);
+                }
+            }
+        }
+    }
+
+    /*
+     * Format:
+     *
+     * {
+     *   "lm": [
+     *      ...
+     *   ]
+     * }
+     */
+
+    if (
+        result.length === 0 &&
+        Array.isArray(config.lm)
+    ) {
+
+        for (const item of config.lm) {
+
+            if (typeof item === "string") {
+
+                result.push(item);
+
+            } else if (
+                item &&
+                typeof item === "object"
+            ) {
+
+                const file =
+                    item.file ||
+                    item.json ||
+                    item.path;
+
+                if (typeof file === "string") {
+                    result.push(file);
+                }
+            }
+        }
+    }
+
+    /*
+     * Format:
+     *
+     * {
+     *   "models": {
+     *      "GPT": {
+     *          "file": "GPT.json"
+     *      }
+     *   }
+     * }
+     */
+
+    if (
+        result.length === 0 &&
+        config.models &&
+        typeof config.models === "object" &&
+        !Array.isArray(config.models)
+    ) {
+
+        for (
+            const [key, value]
+            of Object.entries(config.models)
+        ) {
+
+            if (typeof value === "string") {
+
+                result.push(value);
+
+            } else if (
+                value &&
+                typeof value === "object"
+            ) {
+
+                const file =
+                    value.file ||
+                    value.json ||
+                    value.path;
+
+                if (typeof file === "string") {
+
+                    result.push(file);
+
+                } else if (
+                    key.endsWith(".json")
+                ) {
+
+                    result.push(key);
+                }
+            }
+        }
+    }
+
+    return [
+        ...new Set(
+            result.filter(
+                file =>
+                    typeof file === "string" &&
+                    file.trim().length > 0
+            )
+        )
+    ];
+}
+
+/* =========================================================
+   NORMALIZACJA ŚCIEŻKI MODELU
+   ========================================================= */
+
+function normalizeModelPath(file) {
+
+    let path =
+        String(file).trim();
+
+    /*
+     * Pozwalamy configowi podać:
+     *
+     * GPT.json
+     * models/GPT.json
+     * ./models/GPT.json
+     */
+
+    path =
+        path.replace(/^\.\/+/, "");
+
+    if (
+        path.startsWith("models/")
+    ) {
+
+        path =
+            path.slice(
+                "models/".length
+            );
+    }
+
+    return (
+        "models/" +
+        path
+            .split("/")
+            .map(
+                part =>
+                    encodeURIComponent(part)
+            )
+            .join("/")
+    );
+}
+
+/* =========================================================
+   WALIDACJA MODELU
+   ========================================================= */
+
+function validateModel(model, file) {
+
+    if (
+        !model ||
+        typeof model !== "object"
+    ) {
+
+        throw new Error(
+            `${file}: JSON nie jest obiektem`
+        );
+    }
+
+    if (
+        !model.id ||
+        typeof model.id !== "string"
+    ) {
+
+        throw new Error(
+            `${file}: brak poprawnego "id"`
+        );
+    }
+
+    if (
+        !model.name ||
+        typeof model.name !== "string"
+    ) {
+
+        throw new Error(
+            `${file}: brak poprawnego "name"`
+        );
+    }
+
+    if (
+        !Array.isArray(
+            model.examples
+        )
+    ) {
+
+        model.examples = [];
+    }
+
+    if (
+        typeof model.provider !== "string"
+    ) {
+
+        model.provider =
+            "AI Club Local";
+    }
+
+    if (
+        typeof model.description !== "string"
+    ) {
+
+        model.description =
+            "Lokalny model AI.";
+    }
+
+    if (
+        typeof model.context !== "number"
+    ) {
+
+        model.context = 0;
+    }
+
+    model.community = false;
+
+    return model;
+}
+
+/* =========================================================
    ŁADOWANIE OFFICIAL MODELS
    ========================================================= */
 
 async function loadModels() {
 
     if (!exists(modelsGrid)) {
+
         console.error(
             "AI Club: brak #modelsGrid w HTML."
         );
+
         return;
     }
 
@@ -305,65 +733,141 @@ async function loadModels() {
         </div>
     `;
 
+    let config =
+        await loadConfig();
+
+    let modelFiles =
+        getModelFilesFromConfig(
+            config
+        );
+
+    /*
+     * Jeżeli config nie zawiera listy modeli,
+     * używamy fallbacku.
+     */
+
+    if (modelFiles.length === 0) {
+
+        console.warn(
+            "[AI Club] config.json nie zawiera listy modeli. Używam fallback."
+        );
+
+        modelFiles =
+            FALLBACK_MODEL_FILES;
+    }
+
+    console.log(
+        "[AI Club] Modele do załadowania:",
+        modelFiles
+    );
+
     const loaded = [];
 
-    for (const file of modelFiles) {
+    for (
+        const file
+        of modelFiles
+    ) {
 
         try {
 
-            const response =
-                await fetch(
-                    "models/" +
-                    encodeURIComponent(file) +
-                    "?v=" +
-                    Date.now(),
-                    {
-                        cache: "no-store"
-                    }
-                );
+            const url =
+                normalizeModelPath(file);
 
-            if (!response.ok) {
-
-                console.warn(
-                    `Nie znaleziono modelu: ${file}`
-                );
-
-                continue;
-            }
+            console.log(
+                "[AI Club] Próba:",
+                url
+            );
 
             const model =
-                await response.json();
+                await fetchJSON(url);
+
+            validateModel(
+                model,
+                file
+            );
+
+            /*
+             * Jeżeli config posiada metadane,
+             * zachowujemy je tylko wtedy,
+             * gdy JSON modelu ich nie posiada.
+             */
 
             if (
-                !model ||
-                typeof model !== "object" ||
-                !model.id ||
-                !model.name
+                config &&
+                Array.isArray(config.models)
             ) {
 
-                console.warn(
-                    `Niepoprawny JSON modelu: ${file}`
-                );
+                const configEntry =
+                    config.models.find(
+                        item => {
 
-                continue;
+                            if (
+                                typeof item ===
+                                "string"
+                            ) {
+                                return (
+                                    item === file
+                                );
+                            }
+
+                            if (
+                                item &&
+                                typeof item ===
+                                "object"
+                            ) {
+
+                                return (
+                                    item.file === file ||
+                                    item.json === file ||
+                                    item.path === file
+                                );
+                            }
+
+                            return false;
+                        }
+                    );
+
+                if (
+                    configEntry &&
+                    typeof configEntry === "object"
+                ) {
+
+                    if (
+                        !model.name &&
+                        configEntry.name
+                    ) {
+                        model.name =
+                            configEntry.name;
+                    }
+
+                    if (
+                        configEntry.provider &&
+                        !model.provider
+                    ) {
+                        model.provider =
+                            configEntry.provider;
+                    }
+
+                    if (
+                        configEntry.description &&
+                        !model.description
+                    ) {
+                        model.description =
+                            configEntry.description;
+                    }
+                }
             }
-
-            if (
-                !Array.isArray(
-                    model.examples
-                )
-            ) {
-                model.examples = [];
-            }
-
-            model.community = false;
 
             loaded.push(model);
+
+            console.log(
+                `✅ Załadowano: ${model.name} (${file})`
+            );
 
         } catch (error) {
 
             console.error(
-                `Błąd ${file}:`,
+                `❌ Nie udało się załadować ${file}:`,
                 error
             );
         }
@@ -371,14 +875,17 @@ async function loadModels() {
 
     models = loaded;
 
+    console.log(
+        `[AI Club] Official: ${models.length}/${modelFiles.length}`
+    );
+
     renderModels();
 
     /*
-     * Community uruchamiamy osobno.
-     * Awaria Community nie rozwali Official.
+     * Community nie może zepsuć Official.
      */
 
-    loadCommunityModels();
+    await loadCommunityModels();
 }
 
 /* =========================================================
@@ -389,29 +896,16 @@ async function loadCommunityModels() {
 
     try {
 
-        const response =
-            await fetch(
-                COMMUNITY_INDEX +
-                "?v=" +
-                Date.now(),
-                {
-                    cache: "no-store"
-                }
-            );
-
-        if (!response.ok) {
-
-            throw new Error(
-                `HTTP ${response.status}`
-            );
-        }
-
         const registry =
-            await response.json();
+            await fetchJSON(
+                COMMUNITY_INDEX
+            );
 
         if (
             !registry ||
-            !Array.isArray(registry.models)
+            !Array.isArray(
+                registry.models
+            )
         ) {
 
             throw new Error(
@@ -422,55 +916,33 @@ async function loadCommunityModels() {
         const loaded = [];
 
         for (
-            const entry of registry.models
+            const entry
+            of registry.models
         ) {
 
             try {
 
                 if (
                     !entry ||
-                    typeof entry.file !== "string"
+                    typeof entry.file !==
+                    "string"
                 ) {
                     continue;
                 }
 
-                /*
-                 * Ważne:
-                 * encodeURIComponent koduje spacje jako %20,
-                 * co działa z GitHub Pages.
-                 */
-
                 const url =
                     "community/" +
                     entry.file
+                        .replace(/^\/+/, "")
                         .split("/")
                         .map(
                             part =>
                                 encodeURIComponent(part)
                         )
-                        .join("/") +
-                    "?v=" +
-                    Date.now();
-
-                const response =
-                    await fetch(
-                        url,
-                        {
-                            cache: "no-store"
-                        }
-                    );
-
-                if (!response.ok) {
-
-                    console.warn(
-                        `Community model niedostępny: ${entry.file}`
-                    );
-
-                    continue;
-                }
+                        .join("/");
 
                 const model =
-                    await response.json();
+                    await fetchJSON(url);
 
                 if (
                     !model ||
@@ -491,6 +963,7 @@ async function loadCommunityModels() {
                         model.examples
                     )
                 ) {
+
                     model.examples = [];
                 }
 
@@ -506,23 +979,23 @@ async function loadCommunityModels() {
                     entry.version ||
                     "1.0";
 
+                model.provider =
+                    model.provider ||
+                    "AI Club Community";
+
                 loaded.push(model);
 
             } catch (error) {
 
                 console.error(
-                    `Błąd community modelu ${entry.file}:`,
+                    `❌ Community ${entry.file}:`,
                     error
                 );
             }
         }
 
-        communityModels = loaded;
-
-        /*
-         * Usuwamy poprzednie Community,
-         * żeby nie pojawiały się dwa razy.
-         */
+        communityModels =
+            loaded;
 
         models = [
             ...models.filter(
@@ -535,18 +1008,13 @@ async function loadCommunityModels() {
         renderModels();
 
         console.log(
-            `AI Club: załadowano ${communityModels.length} Community Models.`
+            `[AI Club] Community: ${communityModels.length}`
         );
 
     } catch (error) {
 
-        /*
-         * Community jest opcjonalne.
-         * Official nadal działa.
-         */
-
         console.warn(
-            "Community Models niedostępne:",
+            "[AI Club] Community niedostępne:",
             error
         );
     }
@@ -565,11 +1033,13 @@ function renderModels() {
     modelsGrid.innerHTML = "";
 
     if (exists(modelCount)) {
+
         modelCount.textContent =
             `${models.length} modeli`;
     }
 
     if (exists(heroModelCount)) {
+
         heroModelCount.textContent =
             models.length;
     }
@@ -585,7 +1055,10 @@ function renderModels() {
         return;
     }
 
-    for (const model of models) {
+    for (
+        const model
+        of models
+    ) {
 
         const card =
             document.createElement(
@@ -626,7 +1099,9 @@ function renderModels() {
             </div>
 
             <h3>
-                ${escapeHTML(model.name)}
+                ${escapeHTML(
+                    model.name
+                )}
             </h3>
 
             <div class="provider">
@@ -653,7 +1128,9 @@ function renderModels() {
                     LOCAL ·
                     ${Number(
                         model.context || 0
-                    ).toLocaleString("pl-PL")}
+                    ).toLocaleString(
+                        "pl-PL"
+                    )}
                     tokens
                 </div>
 
@@ -673,37 +1150,32 @@ function renderModels() {
         modelsGrid.appendChild(card);
     }
 
-    /*
-     * Event delegation.
-     * Dzięki temu przyciski Community
-     * również zawsze działają.
-     */
+    modelsGrid.onclick =
+        event => {
 
-    modelsGrid.onclick = event => {
+            const button =
+                event.target.closest(
+                    ".use-button"
+                );
 
-        const button =
-            event.target.closest(
-                ".use-button"
-            );
+            if (!button) {
+                return;
+            }
 
-        if (!button) {
-            return;
-        }
+            const id =
+                button.dataset.modelId;
 
-        const id =
-            button.dataset.modelId;
+            const model =
+                models.find(
+                    item =>
+                        String(item.id) ===
+                        String(id)
+                );
 
-        const model =
-            models.find(
-                item =>
-                    String(item.id) ===
-                    String(id)
-            );
-
-        if (model) {
-            openChat(model);
-        }
-    };
+            if (model) {
+                openChat(model);
+            }
+        };
 }
 
 /* =========================================================
@@ -712,9 +1184,11 @@ function renderModels() {
 
 function openChat(model) {
 
-    selectedModel = model;
+    selectedModel =
+        model;
 
     if (exists(chatModelName)) {
+
         chatModelName.textContent =
             model.name;
     }
@@ -730,6 +1204,7 @@ function openChat(model) {
     }
 
     if (exists(messages)) {
+
         messages.innerHTML = "";
 
         addMessage(
@@ -741,10 +1216,14 @@ function openChat(model) {
     renderExamples(model);
 
     if (exists(overlay)) {
-        overlay.classList.remove("hidden");
+
+        overlay.classList.remove(
+            "hidden"
+        );
     }
 
     if (exists(messageInput)) {
+
         messageInput.value = "";
         messageInput.focus();
     }
@@ -763,7 +1242,9 @@ function renderExamples(model) {
     examples.innerHTML = "";
 
     if (
-        !Array.isArray(model.examples)
+        !Array.isArray(
+            model.examples
+        )
     ) {
         return;
     }
@@ -780,12 +1261,15 @@ function renderExamples(model) {
                 example.questions
             )
         ) {
+
             question =
                 example.questions[0] || "";
+
         } else if (
             typeof example.question ===
             "string"
         ) {
+
             question =
                 example.question;
         }
@@ -799,7 +1283,8 @@ function renderExamples(model) {
                 "button"
             );
 
-        button.type = "button";
+        button.type =
+            "button";
 
         button.className =
             "example-question";
@@ -822,7 +1307,9 @@ function renderExamples(model) {
             }
         );
 
-        examples.appendChild(button);
+        examples.appendChild(
+            button
+        );
     }
 }
 
@@ -847,13 +1334,6 @@ async function sendMessage() {
         return;
     }
 
-    addMessage(
-        "user",
-        text
-    );
-
-    messageInput.value = "";
-
     const cost =
         Number(
             selectedModel.points_per_message
@@ -868,6 +1348,13 @@ async function sendMessage() {
 
         return;
     }
+
+    addMessage(
+        "user",
+        text
+    );
+
+    messageInput.value = "";
 
     points -= cost;
 
@@ -908,7 +1395,9 @@ function findLocalAnswer(
 
     if (
         !model ||
-        !Array.isArray(model.examples)
+        !Array.isArray(
+            model.examples
+        )
     ) {
         return null;
     }
@@ -926,7 +1415,8 @@ function findLocalAnswer(
 
         if (
             !example ||
-            typeof example !== "object"
+            typeof example !==
+            "object"
         ) {
             continue;
         }
@@ -965,7 +1455,9 @@ function findLocalAnswer(
             }
 
             const normalizedQuestion =
-                normalizeText(question);
+                normalizeText(
+                    question
+                );
 
             if (
                 normalizedInput ===
@@ -994,7 +1486,9 @@ function findLocalAnswer(
         }
     }
 
-    if (bestScore >= 0.72) {
+    if (
+        bestScore >= 0.72
+    ) {
         return bestAnswer;
     }
 
@@ -1064,6 +1558,7 @@ function getSimilarity(a, b) {
             smaller / larger >=
             0.65
         ) {
+
             return 0.90;
         }
     }
@@ -1098,6 +1593,7 @@ function levenshtein(a, b) {
         i <= b.length;
         i++
     ) {
+
         matrix[i] = [i];
     }
 
@@ -1106,6 +1602,7 @@ function levenshtein(a, b) {
         j <= a.length;
         j++
     ) {
+
         matrix[0][j] = j;
     }
 
@@ -1181,7 +1678,9 @@ function addMessage(type, text) {
     }
 
     const element =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     element.className =
         `message ${type}-message`;
@@ -1189,7 +1688,9 @@ function addMessage(type, text) {
     element.textContent =
         text;
 
-    messages.appendChild(element);
+    messages.appendChild(
+        element
+    );
 
     messages.scrollTop =
         messages.scrollHeight;
@@ -1221,6 +1722,7 @@ if (exists(messageInput)) {
 }
 
 if (exists(sendButton)) {
+
     sendButton.addEventListener(
         "click",
         sendMessage
@@ -1230,13 +1732,17 @@ if (exists(sendButton)) {
 function closeChatOverlay() {
 
     if (exists(overlay)) {
-        overlay.classList.add("hidden");
+
+        overlay.classList.add(
+            "hidden"
+        );
     }
 
     selectedModel = null;
 }
 
 if (exists(closeChat)) {
+
     closeChat.addEventListener(
         "click",
         closeChatOverlay
@@ -1250,8 +1756,10 @@ if (exists(overlay)) {
         event => {
 
             if (
-                event.target === overlay
+                event.target ===
+                overlay
             ) {
+
                 closeChatOverlay();
             }
         }
@@ -1267,14 +1775,17 @@ document.addEventListener(
     event => {
 
         if (
-            event.key !== "Escape"
+            event.key !==
+            "Escape"
         ) {
             return;
         }
 
         if (
             exists(publishOverlay) &&
-            !publishOverlay.classList.contains("hidden")
+            !publishOverlay.classList.contains(
+                "hidden"
+            )
         ) {
 
             publishOverlay.classList.add(
@@ -1295,9 +1806,11 @@ document.addEventListener(
 function openPublish() {
 
     if (!exists(publishOverlay)) {
+
         console.error(
             "Brak #publishOverlay w HTML."
         );
+
         return;
     }
 
@@ -1313,6 +1826,7 @@ function openPublish() {
 function closePublishOverlay() {
 
     if (exists(publishOverlay)) {
+
         publishOverlay.classList.add(
             "hidden"
         );
@@ -1345,6 +1859,7 @@ if (exists(publishOverlay)) {
                 event.target ===
                 publishOverlay
             ) {
+
                 closePublishOverlay();
             }
         }
@@ -1384,7 +1899,7 @@ function validateCommunityJSON() {
     } catch (error) {
 
         setJSONValidation(
-            "❌ JSON jest niepoprawny. Sprawdź cudzysłowy i znaki nowej linii.",
+            "❌ JSON jest niepoprawny.",
             false
         );
 
@@ -1398,7 +1913,8 @@ function validateCommunityJSON() {
 
     if (
         !model.id ||
-        typeof model.id !== "string"
+        typeof model.id !==
+        "string"
     ) {
 
         setJSONValidation(
@@ -1411,7 +1927,8 @@ function validateCommunityJSON() {
 
     if (
         !model.name ||
-        typeof model.name !== "string"
+        typeof model.name !==
+        "string"
     ) {
 
         setJSONValidation(
@@ -1447,7 +1964,8 @@ function validateCommunityJSON() {
 
         if (
             !example ||
-            typeof example !== "object"
+            typeof example !==
+            "object"
         ) {
 
             setJSONValidation(
@@ -1551,6 +2069,7 @@ if (exists(communityModelJSON)) {
             if (
                 communityModelJSON.value.trim()
             ) {
+
                 validateCommunityJSON();
             }
         }
@@ -1606,7 +2125,8 @@ if (exists(submitCommunityModel)) {
                     : model.description ||
                       "";
 
-            model.name = name;
+            model.name =
+                name;
 
             const issueTitle =
                 `[Community Model] ${name}`;
@@ -1626,7 +2146,11 @@ ${description}
 ## JSON
 
 \`\`\`json
-${JSON.stringify(model, null, 2)}
+${JSON.stringify(
+    model,
+    null,
+    2
+)}
 \`\`\`
 
 ---
@@ -1656,43 +2180,75 @@ ${JSON.stringify(model, null, 2)}
 }
 
 /* =========================================================
-   SLEEP
-   ========================================================= */
-
-function sleep(ms) {
-
-    return new Promise(
-        resolve =>
-            setTimeout(resolve, ms)
-    );
-}
-
-/* =========================================================
-   ESCAPE HTML
-   ========================================================= */
-
-function escapeHTML(value) {
-
-    return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-}
-
-/* =========================================================
    START
    ========================================================= */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
+async function startAIClub() {
 
-        console.log(
-            "🐱 AI Club uruchomiony."
+    console.log(
+        "🐱 AI Club uruchomiony."
+    );
+
+    console.log(
+        "[AI Club] URL strony:",
+        location.href
+    );
+
+    console.log(
+        "[AI Club] Base URL:",
+        document.baseURI
+    );
+
+    /*
+     * Ważne ostrzeżenie dla file://
+     */
+
+    if (
+        location.protocol ===
+        "file:"
+    ) {
+
+        console.warn(
+            "⚠️ AI Club działa z file://. Fetch JSON może być blokowany przez przeglądarkę."
         );
 
-        loadModels();
+        if (exists(modelsGrid)) {
+
+            modelsGrid.innerHTML = `
+                <div class="loading">
+                    <span>
+                        ⚠️ Uruchom AI Club przez localhost lub serwer WWW.
+                    </span>
+                </div>
+            `;
+        }
+
+        return;
     }
-);
+
+    await loadModels();
+}
+
+/*
+ * Ten zapis działa zarówno wtedy,
+ * gdy skrypt jest w <head>,
+ * jak i gdy jest na końcu <body>.
+ */
+
+if (
+    document.readyState ===
+    "loading"
+) {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        startAIClub,
+        {
+            once: true
+        }
+    );
+
+} else {
+
+    startAIClub();
+}
