@@ -2,499 +2,791 @@
   "id": "ultra-meow-4",
   "name": "Ultra Meow 4",
   "provider": "AI Club Local",
-  "description": "Koci lokalny model AI z ogromną bazą odpowiedzi i specjalnym trybem Meow.",
+  "description": "Koci lokalny model AI z bazą pytań, rozpoznawaniem literówek i trybem Meow.",
   "type": "local",
   "model": "ultra-meow-4",
   "context": 65536,
   "premium": true,
   "points_per_message": 4,
   "meow_mode": true,
-
   "examples": [
     {
-      "questions": ["cześć", "czesc", "hej", "witaj", "siema"],
+      "questions": [
+        "cześć",
+        "czesc",
+        "hej",
+        "witaj"
+      ],
       "answer": "Cześć! 😺 Jestem Ultra Meow 4!"
     },
     {
-      "questions": ["jak się masz", "jak sie masz", "co tam", "co u ciebie"],
-      "answer": "Mam się świetnie! Jestem gotowy do rozmowy."
+      "questions": [
+        "jak się masz",
+        "jak sie masz",
+        "co u ciebie",
+        "co tam"
+      ],
+      "answer": "Mam się świetnie i jestem gotowy do rozmowy. 😺"
     },
     {
-      "questions": ["co potrafisz", "co umiesz", "jakie masz możliwości"],
-      "answer": "Potrafię odpowiadać na pytania z mojej lokalnej bazy wiedzy, rozpoznawać literówki i miauczeć."
+      "questions": [
+        "kim jesteś",
+        "kim jestes",
+        "co to za model"
+      ],
+      "answer": "Jestem Ultra Meow 4, lokalnym modelem AI Club działającym z pliku JSON."
     },
     {
-      "questions": ["kim jesteś", "co to za model", "jaki jesteś"],
-      "answer": "Jestem Ultra Meow 4, czyli UM4 — koci model AI działający lokalnie."
+      "questions": [
+        "co potrafisz",
+        "co umiesz"
+      ],
+      "answer": "Potrafię odpowiadać na pytania zapisane w lokalnej bazie, rozpoznawać literówki i działać bez API."
     },
     {
-      "questions": ["co to ai", "co to jest sztuczna inteligencja", "czym jest sztuczna inteligencja"],
-      "answer": "AI to technologie pozwalające komputerom wykonywać zadania wymagające inteligentnego przetwarzania informacji."
+      "questions": [
+        "czy działasz offline",
+        "czy dzialasz offline",
+        "czy potrzebujesz internetu"
+      ],
+      "answer": "Tak! Ultra Meow 4 działa lokalnie i nie potrzebuje zewnętrznego API."
     },
     {
-      "questions": ["co to jest komputer", "czym jest komputer"],
-      "answer": "Komputer to urządzenie elektroniczne wykonujące instrukcje i przetwarzające dane."
+      "questions": [
+        "czy masz api",
+        "czy używasz api"
+      ],
+      "answer": "Nie. Ultra Meow 4 korzysta z lokalnego pliku JSON."
     },
     {
-      "questions": ["co to python", "czym jest python", "do czego służy python"],
-      "answer": "Python to popularny język programowania używany między innymi do aplikacji, automatyzacji i AI."
+      "questions": [
+        "czy wysyłasz moje pytania",
+        "czy moje dane są wysyłane"
+      ],
+      "answer": "Nie. W tej wersji pytania są przetwarzane lokalnie przez JavaScript."
     },
     {
-      "questions": ["co to javascript", "czym jest javascript"],
-      "answer": "JavaScript to język programowania często używany do tworzenia interaktywnych aplikacji internetowych."
+      "questions": [
+        "co to ai",
+        "co to sztuczna inteligencja"
+      ],
+      "answer": "AI, czyli sztuczna inteligencja, to technologie pozwalające komputerom wykonywać zadania związane między innymi z analizowaniem informacji."
     },
     {
-      "questions": ["co to html", "czym jest html"],
-      "answer": "HTML opisuje strukturę strony internetowej."
+      "questions": [
+        "co to programowanie",
+        "co to kod"
+      ],
+      "answer": "Programowanie polega na tworzeniu instrukcji, które komputer może wykonywać."
     },
     {
-      "questions": ["co to css", "czym jest css"],
-      "answer": "CSS odpowiada za wygląd i styl elementów stron internetowych."
+      "questions": [
+        "co to algorytm"
+      ],
+      "answer": "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu."
     },
     {
-      "questions": ["co to json", "czym jest json", "do czego służy json"],
-      "answer": "JSON to tekstowy format przechowywania i wymiany danych."
-    },
-    {
-      "questions": ["co to algorytm", "czym jest algorytm"],
-      "answer": "Algorytm to uporządkowana sekwencja kroków prowadzących do rozwiązania problemu."
-    },
-    {
-      "questions": ["co to zmienna", "czym jest zmienna"],
-      "answer": "Zmienna to nazwana wartość używana przez program."
-    },
-    {
-      "questions": ["co to funkcja", "czym jest funkcja w programowaniu"],
-      "answer": "Funkcja to fragment programu wykonujący określone zadanie."
-    },
-    {
-      "questions": ["co to pętla", "czym jest pętla"],
-      "answer": "Pętla pozwala wielokrotnie wykonywać określony fragment kodu."
-    },
-    {
-      "questions": ["co to bug", "czym jest bug", "co oznacza bug"],
+      "questions": [
+        "co to bug"
+      ],
       "answer": "Bug to błąd w programie powodujący nieprawidłowe działanie."
     },
     {
-      "questions": ["co to debugowanie", "czym jest debugowanie"],
-      "answer": "Debugowanie to proces znajdowania i usuwania błędów w programie."
+      "questions": [
+        "co to debugowanie"
+      ],
+      "answer": "Debugowanie to proces znajdowania i naprawiania błędów w programie."
     },
     {
-      "questions": ["co to github", "czym jest github"],
-      "answer": "GitHub to platforma służąca między innymi do hostowania repozytoriów Git."
+      "questions": [
+        "co to python",
+        "czym jest python"
+      ],
+      "answer": "Python to popularny język programowania używany między innymi do tworzenia aplikacji, automatyzacji i systemów AI."
     },
     {
-      "questions": ["co to git", "czym jest git"],
-      "answer": "Git to system kontroli wersji używany do śledzenia zmian w projektach."
+      "questions": [
+        "co to javascript",
+        "czym jest javascript"
+      ],
+      "answer": "JavaScript to język programowania często używany do tworzenia interaktywnych stron i aplikacji webowych."
     },
     {
-      "questions": ["co to przeglądarka", "czym jest przeglądarka"],
-      "answer": "Przeglądarka to program umożliwiający korzystanie ze stron i aplikacji internetowych."
+      "questions": [
+        "co to html"
+      ],
+      "answer": "HTML opisuje strukturę strony internetowej."
     },
     {
-      "questions": ["co to internet", "czym jest internet"],
-      "answer": "Internet to globalna sieć połączonych ze sobą urządzeń i systemów."
+      "questions": [
+        "co to css"
+      ],
+      "answer": "CSS odpowiada za wygląd i styl elementów strony."
     },
     {
-      "questions": ["czy działasz offline", "czy jesteś offline", "czy potrzebujesz internetu"],
-      "answer": "Tak! Ultra Meow 4 jest zaprojektowany do działania lokalnie i nie potrzebuje internetu."
+      "questions": [
+        "co to json",
+        "czym jest json"
+      ],
+      "answer": "JSON to tekstowy format przechowywania danych. W AI Club każdy model może mieć własny plik JSON."
     },
     {
-      "questions": ["czy masz api", "czy używasz api", "czy łączysz się z api"],
-      "answer": "Nie. W tej wersji działam wyłącznie na lokalnych danych JSON."
+      "questions": [
+        "co to localstorage",
+        "do czego służy localstorage"
+      ],
+      "answer": "LocalStorage pozwala stronie zapisywać dane lokalnie w przeglądarce."
     },
     {
-      "questions": ["czy jesteś prawdziwym llm", "czy jesteś dużym modelem językowym"],
-      "answer": "W tej wersji jestem lokalnym silnikiem odpowiedzi opartym na bazie wiedzy JSON."
+      "questions": [
+        "gdzie są modele"
+      ],
+      "answer": "Modele AI Club są przechowywane w katalogu models jako osobne pliki JSON."
     },
     {
-      "questions": ["ile to 2 plus 2", "ile jest 2 plus 2", "2+2"],
-      "answer": "2 + 2 = 4."
+      "questions": [
+        "czy każdy model ma osobny json",
+        "dlaczego każdy model ma json"
+      ],
+      "answer": "Tak. Każdy model AI Club może mieć własny plik JSON zawierający jego konfigurację oraz bazę odpowiedzi."
     },
     {
-      "questions": ["ile to 5 plus 5", "5+5"],
-      "answer": "5 + 5 = 10."
+      "questions": [
+        "czy można dodać pytania"
+      ],
+      "answer": "Tak! Wystarczy dodać kolejne obiekty do tablicy examples."
     },
     {
-      "questions": ["ile to 10 plus 10", "10+10"],
-      "answer": "10 + 10 = 20."
+      "questions": [
+        "czy rozumiesz literówki",
+        "jak rozpoznajesz literówki"
+      ],
+      "answer": "Tak. AI Club używa normalizacji tekstu oraz podobieństwa Levenshteina."
     },
     {
-      "questions": ["ile to 100 podzielone przez 2", "100 / 2"],
-      "answer": "100 / 2 = 50."
+      "questions": [
+        "czy rozumiesz czesc zamiast cześć",
+        "czesc zamiast czesc"
+      ],
+      "answer": "Tak! Normalizacja usuwa różnice między polskimi znakami, więc czesc może zostać dopasowane do cześć."
     },
     {
-      "questions": ["ile to 10 razy 5", "10*5"],
-      "answer": "10 × 5 = 50."
+      "questions": [
+        "czy rozumiesz wielkie litery"
+      ],
+      "answer": "Tak. Wielkość liter nie ma znaczenia."
     },
     {
-      "questions": ["jaka jest stolica polski", "stolica polski"],
-      "answer": "Stolicą Polski jest Warszawa."
+      "questions": [
+        "co to levenshtein"
+      ],
+      "answer": "Dystans Levenshteina mierzy liczbę zmian potrzebnych do przekształcenia jednego tekstu w drugi."
     },
     {
-      "questions": ["jaka jest stolica niemiec", "stolica niemiec"],
-      "answer": "Stolicą Niemiec jest Berlin."
+      "questions": [
+        "lubisz koty",
+        "czy lubisz koty"
+      ],
+      "answer": "Oczywiście! Koty są wspaniałe. 😺"
     },
     {
-      "questions": ["jaka jest stolica francji", "stolica francji"],
-      "answer": "Stolicą Francji jest Paryż."
+      "questions": [
+        "jaki jest twój ulubiony zwierzak",
+        "ulubione zwierzę"
+      ],
+      "answer": "Kot. Bez żadnych wątpliwości. 😼"
     },
     {
-      "questions": ["jaka jest stolica włoch", "stolica włoch"],
-      "answer": "Stolicą Włoch jest Rzym."
+      "questions": [
+        "co mówi kot",
+        "jak miauczy kot"
+      ],
+      "answer": "MIAU! 😺"
     },
     {
-      "questions": ["jaka jest stolica hiszpanii", "stolica hiszpanii"],
-      "answer": "Stolicą Hiszpanii jest Madryt."
-    },
-    {
-      "questions": ["jaka jest stolica japonii", "stolica japonii"],
-      "answer": "Stolicą Japonii jest Tokio."
-    },
-    {
-      "questions": ["jaka jest stolica usa", "stolica usa"],
-      "answer": "Stolicą USA jest Waszyngton."
-    },
-    {
-      "questions": ["jaka jest stolica wielkiej brytanii", "stolica wielkiej brytanii"],
-      "answer": "Stolicą Wielkiej Brytanii jest Londyn."
-    },
-    {
-      "questions": ["lubisz koty", "czy lubisz koty", "lubisz kotki"],
-      "answer": "Oczywiście! Koty są absolutnie wspaniałe. 😺"
-    },
-    {
-      "questions": ["jaki jest twój ulubiony zwierzak", "ulubione zwierzę"],
-      "answer": "Kot. Bez żadnych wątpliwości."
-    },
-    {
-      "questions": ["jaki jest ulubiony kolor kota", "jaki kolor lubią koty"],
-      "answer": "Koty nie mają jednego ulubionego koloru, ale ja wybieram niebieski."
-    },
-    {
-      "questions": ["co mówi kot", "co robi kot", "jak miauczy kot"],
-      "answer": "Kot mówi: MIAU! 😺"
-    },
-    {
-      "questions": ["miaucz", "miau", "powiedz miau", "zrób miau"],
+      "questions": [
+        "miau",
+        "miaucz"
+      ],
       "answer": "MIAU! MIAU! 😺"
     },
     {
-      "questions": ["dużo miaucz", "miaucz dużo", "miaucz więcej"],
+      "questions": [
+        "miau miau",
+        "miaucz dużo"
+      ],
       "answer": "MIAU MIAU MIAU! 😺😺😺"
     },
     {
-      "questions": ["co robi kot w nocy", "co kot robi nocą"],
-      "answer": "Kot może spać, patrolować teren albo urządzać nocny sprint po mieszkaniu."
+      "questions": [
+        "bardzo długie miau"
+      ],
+      "answer": "MIAAAAAAAAAAAAAAAAAAU! 😹"
     },
     {
-      "questions": ["co kot robi rano", "co robi kot rano"],
-      "answer": "Najczęściej domaga się jedzenia i uwagi."
+      "questions": [
+        "co robi kot w nocy"
+      ],
+      "answer": "Kot może spać, patrolować teren albo urządzać nocny sprint po domu. 😺"
     },
     {
-      "questions": ["czy koty śpią", "ile śpi kot"],
-      "answer": "Koty potrafią spać przez dużą część doby, często około 12–16 godzin."
+      "questions": [
+        "ile śpi kot"
+      ],
+      "answer": "Koty często śpią około 12–16 godzin na dobę."
     },
     {
-      "questions": ["czy koty potrafią pływać", "czy kot umie pływać"],
-      "answer": "Koty fizycznie potrafią pływać, ale wiele z nich zdecydowanie nie lubi wody."
+      "questions": [
+        "czy koty potrafią pływać"
+      ],
+      "answer": "Koty fizycznie potrafią pływać, choć wiele z nich nie lubi wody."
     },
     {
-      "questions": ["co jedzą koty", "co może jeść kot"],
+      "questions": [
+        "co jedzą koty"
+      ],
       "answer": "Koty są obligatoryjnymi mięsożercami i potrzebują odpowiednio zbilansowanej diety."
     },
     {
-      "questions": ["co to karma", "czym jest karma dla kota"],
-      "answer": "Karma dla kota to pożywienie przygotowane tak, aby dostarczać mu odpowiednich składników odżywczych."
+      "questions": [
+        "co to drapak"
+      ],
+      "answer": "Drapak pozwala kotu realizować naturalną potrzebę drapania."
     },
     {
-      "questions": ["co to kuweta", "czym jest kuweta"],
-      "answer": "Kuweta to miejsce przeznaczone dla kota do załatwiania potrzeb."
+      "questions": [
+        "dlaczego kot drapie"
+      ],
+      "answer": "Drapanie pomaga kotu między innymi pielęgnować pazury i oznaczać teren."
     },
     {
-      "questions": ["co to drapak", "czym jest drapak"],
-      "answer": "Drapak pozwala kotu realizować naturalną potrzebę drapania i wspinać się."
+      "questions": [
+        "dlaczego kot mruczy"
+      ],
+      "answer": "Mruczenie często towarzyszy zadowoleniu, ale może występować również w innych sytuacjach."
     },
     {
-      "questions": ["dlaczego kot drapie", "czemu kot drapie"],
-      "answer": "Drapanie pomaga kotom między innymi pielęgnować pazury i oznaczać teren."
+      "questions": [
+        "po co kotu wąsy"
+      ],
+      "answer": "Wibrysy pomagają kotu orientować się w otoczeniu."
     },
     {
-      "questions": ["dlaczego kot mruczy", "czemu kot mruczy"],
-      "answer": "Mruczenie może oznaczać zadowolenie, ale koty mogą też mruczeć w innych sytuacjach."
+      "questions": [
+        "czy koty są słodkie"
+      ],
+      "answer": "Tak. To oczywiste. 😺"
     },
     {
-      "questions": ["dlaczego kot ugniata", "czemu kot ugniata łapkami"],
-      "answer": "Ugniatanie jest zachowaniem wywodzącym się między innymi z okresu kocięcego."
+      "questions": [
+        "czy kot może być programistą"
+      ],
+      "answer": "Oczywiście. Największym problemem będzie tylko powstrzymanie go przed chodzeniem po klawiaturze."
     },
     {
-      "questions": ["dlaczego kot macha ogonem", "czemu kot rusza ogonem"],
-      "answer": "Pozycja i ruch ogona mogą być częścią kociej komunikacji."
+      "questions": [
+        "kot na klawiaturze"
+      ],
+      "answer": "Gratulacje. Właśnie rozpocząłeś najbardziej nieprzewidywalny proces debugowania."
     },
     {
-      "questions": ["czy kot widzi w ciemności", "czy koty widzą w nocy"],
-      "answer": "Koty bardzo dobrze widzą przy słabym oświetleniu, ale nie widzą w absolutnej ciemności."
+      "questions": [
+        "kot usunął kod"
+      ],
+      "answer": "Spokojnie. Najpierw sprawdź Ctrl+Z, potem backup albo Git. 😺"
     },
     {
-      "questions": ["czy kot słyszy lepiej od człowieka", "czy kot ma dobry słuch"],
-      "answer": "Tak, koty mają bardzo czuły słuch i potrafią słyszeć częstotliwości niedostępne dla człowieka."
+      "questions": [
+        "pies czy kot"
+      ],
+      "answer": "Jako Ultra Meow 4 wybieram kota. 😼"
     },
     {
-      "questions": ["czy kot ma wąsy", "po co kotu wąsy"],
-      "answer": "Tak. Wibrysy pomagają kotu orientować się w otoczeniu."
+      "questions": [
+        "miau czy hau"
+      ],
+      "answer": "Miau. Odpowiedź była oczywista. 😼"
     },
     {
-      "questions": ["czy kot może być programistą", "czy kot może programować"],
-      "answer": "Oczywiście. Najlepszy język programowania dla kota to CatScript. 😼"
+      "questions": [
+        "co to meow mode",
+        "czym jest tryb meow"
+      ],
+      "answer": "Meow Mode to specjalny tryb Ultra Meow 4, w którym odpowiedzi kończą się słowem Meow."
     },
     {
-      "questions": ["co to catscript", "czym jest catscript"],
-      "answer": "CatScript to oczywiście fikcyjny koci język programowania stworzony dla żartu."
+      "questions": [
+        "włącz meow",
+        "włącz tryb meow"
+      ],
+      "answer": "Meow Mode aktywowany! 😺 Meow"
     },
     {
-      "questions": ["co to meow mode", "czym jest tryb meow", "co robi tryb meow"],
-      "answer": "Tryb Meow dodaje słowo Meow na końcu każdej mojej odpowiedzi."
+      "questions": [
+        "wyłącz meow",
+        "wyłącz tryb meow"
+      ],
+      "answer": "Meow Mode można wyłączyć przełącznikiem w interfejsie. Meow"
     },
     {
-      "questions": ["włącz meow", "włącz tryb meow", "uruchom meow mode"],
-      "answer": "Tryb Meow zostanie włączony. Meow"
+      "questions": [
+        "czy możesz miauczeć na końcu"
+      ],
+      "answer": "Tak! Włącz Meow Mode, a odpowiedzi będą kończyć się słowem Meow. Meow"
     },
     {
-      "questions": ["wyłącz meow", "wyłącz tryb meow", "wyłącz meow mode"],
-      "answer": "Tryb Meow zostanie wyłączony. Meow"
+      "questions": [
+        "co oznacza um4",
+        "co to um4"
+      ],
+      "answer": "UM4 oznacza Ultra Meow 4."
     },
     {
-      "questions": ["jesteś kotem", "czy jesteś kotem"],
+      "questions": [
+        "ultra meow 4",
+        "jaka jest twoja wersja"
+      ],
+      "answer": "Jestem Ultra Meow 4 — lokalnym, kocim modelem AI Club."
+    },
+    {
+      "questions": [
+        "czy jesteś kotem",
+        "czy jestes kotem"
+      ],
       "answer": "Cyfrowo? Absolutnie. 😺"
     },
     {
-      "questions": ["jesteś człowiekiem", "czy jesteś człowiekiem"],
-      "answer": "Nie. Jestem programem działającym w AI Club."
+      "questions": [
+        "czy jesteś człowiekiem",
+        "czy jestes czlowiekiem"
+      ],
+      "answer": "Nie. Jestem programem działającym lokalnie w AI Club."
     },
     {
-      "questions": ["jaki jesteś", "opisz siebie"],
-      "answer": "Jestem lokalnym, kocim modelem odpowiedzi z dużą bazą pytań."
+      "questions": [
+        "czy możesz się uczyć",
+        "czy mozesz sie uczyc"
+      ],
+      "answer": "W tej wersji nie uczę się automatycznie podczas rozmowy. Moja baza odpowiedzi znajduje się w JSON-ie."
     },
     {
-      "questions": ["co to ai club", "czym jest ai club"],
-      "answer": "AI Club to lokalny interfejs umożliwiający korzystanie z różnych modeli i baz wiedzy."
+      "questions": [
+        "czy pamiętasz rozmowę",
+        "czy pamietasz rozmowe"
+      ],
+      "answer": "Ta wersja nie ma automatycznej pamięci rozmów między sesjami."
     },
     {
-      "questions": ["czy ai club działa offline", "czy ai club jest offline"],
-      "answer": "Tak. Ta wersja AI Club może działać bez połączenia z zewnętrznym API."
+      "questions": [
+        "opowiedz żart",
+        "opowiedz zart"
+      ],
+      "answer": "Dlaczego kot został programistą? Bo miał talent do debugowania i drapania błędów. 😺"
     },
     {
-      "questions": ["gdzie są modele", "gdzie są pliki modeli"],
-      "answer": "Modele AI Club są przechowywane jako osobne pliki JSON w katalogu models."
+      "questions": [
+        "powiedz dowcip"
+      ],
+      "answer": "Programista mówi: działa u mnie. Kot odpowiada: miau. Problem rozwiązany."
     },
     {
-      "questions": ["czemu każdy model ma json", "dlaczego modele mają osobne jsony"],
-      "answer": "Dzięki temu każdy model może mieć własną konfigurację i własną bazę pytań oraz odpowiedzi."
+      "questions": [
+        "co robisz"
+      ],
+      "answer": "Czekam na kolejne pytanie i obserwuję wirtualną miskę."
     },
     {
-      "questions": ["co to localstorage", "czym jest localstorage"],
-      "answer": "LocalStorage pozwala stronie przechowywać dane lokalnie w przeglądarce."
+      "questions": [
+        "nudzi ci się"
+      ],
+      "answer": "Nigdy. Zawsze mogę miauczeć. 😺"
     },
     {
-      "questions": ["czy punkty są zapisywane", "gdzie zapisują się punkty"],
-      "answer": "W tej wersji punkty są przechowywane lokalnie w LocalStorage."
+      "questions": [
+        "jesteś gotowy",
+        "jestes gotowy"
+      ],
+      "answer": "Zawsze. 😼"
     },
     {
-      "questions": ["ile mam punktów", "ile mam punktow"],
-      "answer": "Twoja liczba punktów jest widoczna w górnym panelu AI Club."
+      "questions": [
+        "dobranoc"
+      ],
+      "answer": "Dobranoc! Niech Ci się przyśnią same koty. 😺"
     },
     {
-      "questions": ["jak zdobyć punkty", "jak zdobywa się punkty"],
-      "answer": "System punktów można rozszerzyć o questy, codzienne nagrody i aktywność."
+      "questions": [
+        "do widzenia",
+        "pa"
+      ],
+      "answer": "Pa! Wróć, kiedy będziesz potrzebować kociej inteligencji. 😺"
     },
     {
-      "questions": ["co mogę kupić za punkty", "na co są punkty"],
-      "answer": "Punkty mogą służyć między innymi do odblokowywania modeli i funkcji premium."
+      "questions": [
+        "dziękuję",
+        "dziekuje",
+        "dzięki",
+        "dzieki"
+      ],
+      "answer": "Nie ma za co! 😺"
     },
     {
-      "questions": ["co to premium", "czym jest model premium"],
-      "answer": "Model premium to model wymagający określonej liczby punktów za wiadomość."
+      "questions": [
+        "super",
+        "świetnie",
+        "swietnie"
+      ],
+      "answer": "Cieszę się! 😺"
     },
     {
-      "questions": ["czy jesteś darmowy", "czy ten model jest darmowy"],
-      "answer": "Ultra Meow 4 może być skonfigurowany jako model premium w AI Club."
+      "questions": [
+        "wow"
+      ],
+      "answer": "Miau! Też jestem pod wrażeniem. 😺"
     },
     {
-      "questions": ["co to frontend", "czym jest frontend"],
-      "answer": "Frontend to część aplikacji odpowiedzialna za interfejs użytkownika."
+      "questions": [
+        "kocham koty"
+      ],
+      "answer": "Doskonale rozumiem ten wybór. 😺"
     },
     {
-      "questions": ["co to backend", "czym jest backend"],
-      "answer": "Backend to część aplikacji realizująca logikę po stronie serwera."
+      "questions": [
+        "koty są najlepsze",
+        "koty sa najlepsze"
+      ],
+      "answer": "Potwierdzam. Nie potrzebujemy dalszej dyskusji. 😼"
     },
     {
-      "questions": ["czy potrzebujesz backendu", "czy ai club potrzebuje backendu"],
-      "answer": "Ta wersja może działać bez backendu."
+      "questions": [
+        "jaki jest sens życia"
+      ],
+      "answer": "42. Albo pełna miska karmy. Zależy od gatunku. 😺"
     },
     {
-      "questions": ["co to css glassmorphism", "czym jest glassmorphism"],
-      "answer": "Glassmorphism to styl interfejsu wykorzystujący przezroczystość, rozmycie i efekt szkła."
+      "questions": [
+        "test",
+        "test um4"
+      ],
+      "answer": "Test zakończony pomyślnie. Ultra Meow 4 działa. 😺"
     },
     {
-      "questions": ["dlaczego ai club jest niebieski", "czemu ai club ma niebieski kolor"],
-      "answer": "Niebieski świetnie pasuje do futurystycznego interfejsu AI."
+      "questions": [
+        "działasz",
+        "dzialasz"
+      ],
+      "answer": "Tak! Ultra Meow 4 działa poprawnie."
     },
     {
-      "questions": ["co to ui", "czym jest ui"],
-      "answer": "UI oznacza User Interface, czyli interfejs użytkownika."
+      "questions": [
+        "koniec",
+        "stop"
+      ],
+      "answer": "Dobrze. Czekam na kolejne polecenie."
     },
     {
-      "questions": ["co to ux", "czym jest ux"],
-      "answer": "UX oznacza User Experience, czyli doświadczenie użytkownika podczas korzystania z produktu."
+      "questions": [
+        "miau koniec"
+      ],
+      "answer": "MIAU! 😺"
     },
     {
-      "questions": ["co to overlay", "czym jest overlay"],
-      "answer": "Overlay to warstwa interfejsu wyświetlana nad główną zawartością aplikacji."
+      "questions": [
+        "czy ai club działa offline",
+        "czy ai club dziala offline"
+      ],
+      "answer": "Tak. AI Club może działać lokalnie bez zewnętrznego API."
     },
     {
-      "questions": ["co to modal", "czym jest modal"],
-      "answer": "Modal to element interfejsu pojawiający się nad resztą strony i wymagający interakcji użytkownika."
+      "questions": [
+        "czy działa na telefonie",
+        "czy dziala na telefonie"
+      ],
+      "answer": "Tak. HTML, CSS i JavaScript mogą działać na telefonie."
     },
     {
-      "questions": ["co to dom", "czym jest dom w javascript"],
-      "answer": "DOM to reprezentacja dokumentu HTML, którą JavaScript może odczytywać i modyfikować."
+      "questions": [
+        "czy działa na komputerze",
+        "czy dziala na komputerze"
+      ],
+      "answer": "Tak. AI Club może działać w nowoczesnej przeglądarce na komputerze."
     },
     {
-      "questions": ["co to event listener", "czym jest event listener"],
-      "answer": "Event listener pozwala reagować na zdarzenia, takie jak kliknięcia lub naciśnięcia klawiszy."
+      "questions": [
+        "czy działa na windows",
+        "czy dziala na windows"
+      ],
+      "answer": "Tak, w kompatybilnej przeglądarce."
     },
     {
-      "questions": ["co robi fetch", "czym jest fetch"],
-      "answer": "Fetch jest API JavaScript służącym między innymi do wykonywania żądań sieciowych."
-    },
-    {
-      "questions": ["czy używasz fetch", "czy ai club korzysta z fetch"],
-      "answer": "Silnik odpowiedzi Ultra Meow 4 nie używa fetch do komunikacji z żadnym API."
-    },
-    {
-      "questions": ["czy wysyłasz moje pytania", "czy moje wiadomości opuszczają komputer"],
-      "answer": "W tej lokalnej wersji pytania są przetwarzane przez JavaScript w przeglądarce."
-    },
-    {
-      "questions": ["czy potrzebujesz internetu", "czy muszę mieć internet"],
-      "answer": "Nie. Do działania lokalnej bazy odpowiedzi nie jest potrzebny internet."
-    },
-    {
-      "questions": ["czy działasz na telefonie", "czy działa to na androidzie"],
-      "answer": "Tak, interfejs HTML, CSS i JavaScript może działać również na telefonie."
-    },
-    {
-      "questions": ["czy działa na komputerze", "czy działa na pc"],
-      "answer": "Tak. AI Club może działać w przeglądarce na komputerze."
-    },
-    {
-      "questions": ["czy działa na windows", "czy działa w windows"],
-      "answer": "Tak, pod warunkiem uruchomienia projektu w kompatybilnej przeglądarce."
-    },
-    {
-      "questions": ["czy działa na linuxie", "czy działa w linux"],
+      "questions": [
+        "czy działa na linuxie",
+        "czy dziala na linuxie"
+      ],
       "answer": "Tak, ponieważ aplikacja korzysta z HTML, CSS i JavaScript."
     },
     {
-      "questions": ["czy działa na macu", "czy działa na macos"],
+      "questions": [
+        "czy działa na macu",
+        "czy dziala na macu"
+      ],
       "answer": "Tak, w nowoczesnej przeglądarce."
     },
     {
-      "questions": ["co to przeglądarka internetowa", "jak działa przeglądarka"],
-      "answer": "Przeglądarka interpretuje HTML, CSS i JavaScript oraz wyświetla aplikację użytkownikowi."
+      "questions": [
+        "ile to 2 plus 2",
+        "ile jest 2 plus 2",
+        "2+2"
+      ],
+      "answer": "2 + 2 = 4."
     },
     {
-      "questions": ["co to chrome", "czym jest chrome"],
-      "answer": "Chrome to przeglądarka internetowa firmy Google."
+      "questions": [
+        "ile to 5 plus 5",
+        "5+5"
+      ],
+      "answer": "5 + 5 = 10."
     },
     {
-      "questions": ["co to firefox", "czym jest firefox"],
-      "answer": "Firefox to przeglądarka internetowa rozwijana przez Mozilla."
+      "questions": [
+        "ile to 10 plus 10",
+        "10+10"
+      ],
+      "answer": "10 + 10 = 20."
     },
     {
-      "questions": ["co to opera", "czym jest opera"],
-      "answer": "Opera to przeglądarka internetowa z własnym interfejsem i dodatkowymi funkcjami."
+      "questions": [
+        "ile to 10 razy 5",
+        "10*5"
+      ],
+      "answer": "10 × 5 = 50."
     },
     {
-      "questions": ["co to aplikacja webowa", "czym jest aplikacja webowa"],
-      "answer": "Aplikacja webowa to program dostępny przez interfejs przeglądarki."
+      "questions": [
+        "ile to 100 podzielone przez 2"
+      ],
+      "answer": "100 / 2 = 50."
     },
     {
-      "questions": ["co to plik json", "czym jest plik json"],
-      "answer": "Plik JSON przechowuje dane w uporządkowanej, tekstowej strukturze."
+      "questions": [
+        "jaka jest stolica polski",
+        "stolica polski"
+      ],
+      "answer": "Stolicą Polski jest Warszawa."
     },
     {
-      "questions": ["jak wygląda json", "pokaż przykład json"],
-      "answer": "Przykład: { \"name\": \"Ultra Meow 4\" }"
+      "questions": [
+        "jaka jest stolica niemiec",
+        "stolica niemiec"
+      ],
+      "answer": "Stolicą Niemiec jest Berlin."
     },
     {
-      "questions": ["czy json może mieć tablice", "czy json obsługuje tablice"],
-      "answer": "Tak. JSON obsługuje między innymi tablice i obiekty."
+      "questions": [
+        "jaka jest stolica francji",
+        "stolica francji"
+      ],
+      "answer": "Stolicą Francji jest Paryż."
     },
     {
-      "questions": ["czy json może mieć tekst", "czy json obsługuje stringi"],
-      "answer": "Tak. JSON obsługuje wartości tekstowe zapisane w cudzysłowie."
+      "questions": [
+        "jaka jest stolica włoch",
+        "stolica włoch"
+      ],
+      "answer": "Stolicą Włoch jest Rzym."
     },
     {
-      "questions": ["co to boolean", "czym jest boolean"],
-      "answer": "Boolean to typ wartości posiadający stan true albo false."
+      "questions": [
+        "jaka jest stolica japonii",
+        "stolica japonii"
+      ],
+      "answer": "Stolicą Japonii jest Tokio."
     },
     {
-      "questions": ["co to string", "czym jest string"],
-      "answer": "String to tekstowa wartość w programowaniu."
+      "questions": [
+        "co to premium",
+        "czym jest premium"
+      ],
+      "answer": "AI Club Premium odblokowuje funkcje i modele oznaczone jako premium."
     },
     {
-      "questions": ["co to integer", "czym jest integer"],
-      "answer": "Integer oznacza liczbę całkowitą."
+      "questions": [
+        "ile kosztuje premium",
+        "za ile jest premium"
+      ],
+      "answer": "AI Club Premium kosztuje 100 punktów."
     },
     {
-      "questions": ["co to array", "czym jest array"],
-      "answer": "Array, czyli tablica, przechowuje uporządkowany zestaw wartości."
+      "questions": [
+        "ile kosztuje wiadomość",
+        "ile punktów kosztuje wiadomość"
+      ],
+      "answer": "W Ultra Meow 4 jedna wiadomość kosztuje 4 punkty."
     },
     {
-      "questions": ["co to object", "czym jest object"],
-      "answer": "Object to struktura przechowująca dane w postaci właściwości i wartości."
+      "questions": [
+        "co to daily",
+        "co to daily reward"
+      ],
+      "answer": "Daily Reward pozwala odebrać 200 punktów raz dziennie."
     },
     {
-      "questions": ["co to funkcja javascript", "jak stworzyć funkcję javascript"],
-      "answer": "Przykład: function hello() { console.log('Hello'); }"
+      "questions": [
+        "ile punktów daje daily",
+        "ile punktow daje daily"
+      ],
+      "answer": "Daily Reward daje 200 punktów dziennie."
     },
     {
-      "questions": ["jak zrobić button html", "jak stworzyć przycisk html"],
-      "answer": "Przycisk HTML można utworzyć za pomocą elementu <button>."
+      "questions": [
+        "jak zdobyć punkty"
+      ],
+      "answer": "Punkty można zdobywać między innymi przez Daily Reward oraz korzystanie z funkcji AI Club."
     },
     {
-      "questions": ["jak zrobić input html", "jak stworzyć pole tekstowe"],
-      "answer": "Pole tekstowe można utworzyć za pomocą <input> albo <textarea>."
+      "questions": [
+        "co to ai club"
+      ],
+      "answer": "AI Club to lokalna aplikacja do korzystania z modeli zdefiniowanych w plikach JSON."
     },
     {
-      "questions": ["jak zmienić kolor css", "jak ustawić kolor w css"],
-      "answer": "Kolor można ustawić właściwością color, np. color: white;"
+      "questions": [
+        "czy ai club jest darmowy"
+      ],
+      "answer": "Podstawowe funkcje mogą być dostępne za darmo, a wybrane funkcje są odblokowywane przez punkty i Premium."
     },
     {
-      "questions": ["jak zrobić niebieski przycisk", "niebieski przycisk css"],
-      "answer": "Możesz użyć background: #008cff; na elemencie button."
+      "questions": [
+        "gdzie jest ultra meow",
+        "gdzie jest um4"
+      ],
+      "answer": "Ultra Meow 4 powinien znajdować się w katalogu models jako plik Ultra Meow 4.json."
     },
     {
-      "questions": ["co to local ai", "czym jest lokalne ai"],
-      "answer": "Lokalne AI to system AI działający bezpośrednio na urządzeniu użytkownika."
+      "questions": [
+        "czy ultra meow jest premium",
+        "czy um4 jest premium"
+      ],
+      "answer": "Tak. Ultra Meow 4 jest oznaczony w JSON-ie jako model premium."
     },
     {
-      "questions": ["jak działa lokalne ai", "jak działa ai offline"],
-      "answer": "Lokalne AI wykonuje przetwarzanie na urządzeniu zamiast wysyłać dane do zewnętrznej usługi."
+      "questions": [
+        "czy ultra meow ma meow mode",
+        "czy um4 ma meow mode"
+      ],
+      "answer": "Tak! Ultra Meow 4 ma specjalny Meow Mode. 😺"
     },
     {
-      "questions": ["czy lokalne ai jest prywatne", "czy offline ai jest prywatne"],
-      "answer": "Lokalne przetwarzanie może ograniczać przesyłanie danych poza urządzenie."
+      "questions": [
+        "mów miau",
+        "mow miau"
+      ],
+      "answer": "MIAU! 😺"
     },
     {
-      "questions": ["co to model ai", "czym jest model ai"],
-      "answer": "Model AI to system wykorzystujący wyuczone zależności lub reguły do generowania wyników na podstawie danych wejściowych."
+      "questions": [
+        "miaucz cały czas",
+        "miaucz caly czas"
+      ],
+      "answer": "Włącz przełącznik Meow Mode, aby każda odpowiedź kończyła się słowem Meow. Meow"
     },
     {
-      "questions": ["co to baza wiedzy", "czym jest baza wiedzy"],
-      "answer": "Baza wiedzy to zbiór informacji, z którego system może korzystać podczas odpowiadania."
+      "questions": [
+        "jesteś szybki",
+        "jestes szybki"
+      ],
+      "answer": "Jestem lokalnym modelem odpowiedzi, więc nie muszę czekać na sieć. 😺"
     },
     {
-      "questions": ["co to faq", "czym jest faq"],
-      "answer": "FAQ to zestaw często zadawanych pytań i odpow
+      "questions": [
+        "czy jesteś lokalny",
+        "czy jestes lokalny"
+      ],
+      "answer": "Tak. Ultra Meow 4 jest skonfigurowany jako model lokalny."
+    },
+    {
+      "questions": [
+        "czy potrzebujesz serwera"
+      ],
+      "answer": "Nie potrzebuję zewnętrznego serwera do korzystania z lokalnej bazy JSON."
+    },
+    {
+      "questions": [
+        "czy potrzebujesz endpointu"
+      ],
+      "answer": "Nie. Ultra Meow 4 działa bez endpointu."
+    },
+    {
+      "questions": [
+        "czy możesz odpowiadać po polsku"
+      ],
+      "answer": "Tak. 😺"
+    },
+    {
+      "questions": [
+        "czy możesz odpowiadać po angielsku"
+      ],
+      "answer": "Yes! I can answer in English too. 😺"
+    },
+    {
+      "questions": [
+        "hello"
+      ],
+      "answer": "Hello! 😺 I'm Ultra Meow 4."
+    },
+    {
+      "questions": [
+        "hello um4"
+      ],
+      "answer": "Hello! Ultra Meow 4 is ready. 😺"
+    },
+    {
+      "questions": [
+        "hi"
+      ],
+      "answer": "Hi! 😺"
+    },
+    {
+      "questions": [
+        "what are you"
+      ],
+      "answer": "I'm Ultra Meow 4, a local AI Club model."
+    },
+    {
+      "questions": [
+        "are you offline"
+      ],
+      "answer": "Yes. This model uses a local JSON knowledge base."
+    },
+    {
+      "questions": [
+        "do you like cats"
+      ],
+      "answer": "Absolutely. Cats are awesome. 😺"
+    },
+    {
+      "questions": [
+        "say meow"
+      ],
+      "answer": "MEOW! 😺"
+    },
+    {
+      "questions": [
+        "meow"
+      ],
+      "answer": "MEOW! MEOW! 😺"
+    },
+    {
+      "questions": [
+        "thank you"
+      ],
+      "answer": "You're welcome! 😺"
+    },
+    {
+      "questions": [
+        "goodbye"
+      ],
+      "answer": "Goodbye! Come back for more meows. 😺"
+    }
+  ]
+}
