@@ -649,6 +649,467 @@ async function loadModels() {
 
 /*
 ==================================================
+ COMMUNITY PUBLISH SYSTEM
+==================================================
+*/
+
+const publishOverlay =
+    document.getElementById(
+        "publishOverlay"
+    );
+
+const publishModelButton =
+    document.getElementById(
+        "publishModelButton"
+    );
+
+const closePublish =
+    document.getElementById(
+        "closePublish"
+    );
+
+const submitCommunityModel =
+    document.getElementById(
+        "submitCommunityModel"
+    );
+
+const communityModelName =
+    document.getElementById(
+        "communityModelName"
+    );
+
+const communityModelAuthor =
+    document.getElementById(
+        "communityModelAuthor"
+    );
+
+const communityModelDescription =
+    document.getElementById(
+        "communityModelDescription"
+    );
+
+const communityModelJSON =
+    document.getElementById(
+        "communityModelJSON"
+    );
+
+const jsonValidation =
+    document.getElementById(
+        "jsonValidation"
+    );
+
+
+/*
+==================================================
+ OTWIERANIE
+==================================================
+*/
+
+publishModelButton.addEventListener(
+    "click",
+    () => {
+
+        publishOverlay.classList.remove(
+            "hidden"
+        );
+
+        communityModelName.focus();
+
+    }
+);
+
+
+/*
+==================================================
+ ZAMYKANIE
+==================================================
+*/
+
+closePublish.addEventListener(
+    "click",
+    () => {
+
+        publishOverlay.classList.add(
+            "hidden"
+        );
+
+    }
+);
+
+
+publishOverlay.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target ===
+            publishOverlay
+        ) {
+
+            publishOverlay.classList.add(
+                "hidden"
+            );
+
+        }
+
+    }
+);
+
+
+/*
+==================================================
+ WALIDACJA JSON
+==================================================
+*/
+
+function validateCommunityJSON() {
+
+    const raw =
+        communityModelJSON.value.trim();
+
+
+    if (!raw) {
+
+        jsonValidation.textContent =
+            "❌ Wklej JSON modelu.";
+
+        jsonValidation.className =
+            "json-validation error";
+
+        return null;
+
+    }
+
+
+    let model;
+
+
+    try {
+
+        model =
+            JSON.parse(raw);
+
+    } catch (error) {
+
+        jsonValidation.textContent =
+            "❌ JSON jest niepoprawny.";
+
+        jsonValidation.className =
+            "json-validation error";
+
+        return null;
+
+    }
+
+
+    if (
+        !model.id ||
+        typeof model.id !== "string"
+    ) {
+
+        jsonValidation.textContent =
+            "❌ Model musi posiadać pole \"id\".";
+
+        jsonValidation.className =
+            "json-validation error";
+
+        return null;
+
+    }
+
+
+    if (
+        !model.name ||
+        typeof model.name !== "string"
+    ) {
+
+        jsonValidation.textContent =
+            "❌ Model musi posiadać pole \"name\".";
+
+        jsonValidation.className =
+            "json-validation error";
+
+        return null;
+
+    }
+
+
+    if (
+        !Array.isArray(
+            model.examples
+        )
+    ) {
+
+        jsonValidation.textContent =
+            "❌ Pole \"examples\" musi być tablicą.";
+
+        jsonValidation.className =
+            "json-validation error";
+
+        return null;
+
+    }
+
+
+    /*
+     * Sprawdzamy każde pytanie.
+     */
+
+    for (
+        let i = 0;
+        i < model.examples.length;
+        i++
+    ) {
+
+        const example =
+            model.examples[i];
+
+
+        if (
+            !example ||
+            typeof example !== "object"
+        ) {
+
+            jsonValidation.textContent =
+                `❌ Błąd w examples[${i}].`;
+
+            jsonValidation.className =
+                "json-validation error";
+
+            return null;
+
+        }
+
+
+        const questions =
+            Array.isArray(
+                example.questions
+            )
+                ? example.questions
+                : example.question
+                    ? [example.question]
+                    : [];
+
+
+        if (
+            questions.length === 0
+        ) {
+
+            jsonValidation.textContent =
+                `❌ examples[${i}] nie ma pytania.`;
+
+            jsonValidation.className =
+                "json-validation error";
+
+            return null;
+
+        }
+
+
+        if (
+            typeof example.answer !==
+            "string"
+        ) {
+
+            jsonValidation.textContent =
+                `❌ examples[${i}] nie ma odpowiedzi.`;
+
+            jsonValidation.className =
+                "json-validation error";
+
+            return null;
+
+        }
+
+    }
+
+
+    /*
+     * Nadpisujemy kilka pól,
+     * żeby Community miało spójny format.
+     */
+
+    model.provider =
+        "AI Club Community";
+
+    model.type =
+        "community";
+
+    model.author =
+        communityModelAuthor.value.trim() ||
+        "Community";
+
+    model.description =
+        communityModelDescription.value.trim() ||
+        model.description ||
+        "Community model for AI Club.";
+
+    model.community =
+        true;
+
+
+    jsonValidation.textContent =
+        `✅ JSON poprawny. ${model.examples.length} wpisów.`;
+
+    jsonValidation.className =
+        "json-validation success";
+
+
+    return model;
+
+}
+
+
+/*
+==================================================
+ LIVE VALIDATION
+==================================================
+*/
+
+communityModelJSON.addEventListener(
+    "input",
+    () => {
+
+        if (
+            communityModelJSON.value.trim()
+        ) {
+
+            validateCommunityJSON();
+
+        }
+
+    }
+);
+
+
+/*
+==================================================
+ GITHUB ISSUE
+==================================================
+*/
+
+submitCommunityModel.addEventListener(
+    "click",
+    () => {
+
+        const model =
+            validateCommunityJSON();
+
+
+        if (!model) {
+            return;
+        }
+
+
+        const name =
+            communityModelName.value.trim();
+
+
+        const author =
+            communityModelAuthor.value.trim() ||
+            "Community";
+
+
+        const description =
+            communityModelDescription.value.trim() ||
+            model.description ||
+            "";
+
+
+        if (!name) {
+
+            alert(
+                "Podaj nazwę modelu."
+            );
+
+            communityModelName.focus();
+
+            return;
+
+        }
+
+
+        /*
+         * Ustawiamy nazwę modelu
+         * z formularza.
+         */
+
+        model.name =
+            name;
+
+
+        /*
+         * Tworzymy czytelne zgłoszenie.
+         */
+
+        const issueTitle =
+            `[Community Model] ${name}`;
+
+
+        const issueBody =
+`# 🌐 AI Club Community Model
+
+## Informacje
+
+**Model:** ${name}
+
+**Autor:** ${author}
+
+**Opis:**
+${description}
+
+## Wersja
+
+Community submission
+
+## JSON
+
+\`\`\`json
+${JSON.stringify(
+    model,
+    null,
+    2
+)}
+\`\`\`
+
+---
+
+### Moderacja
+
+- [ ] JSON poprawny
+- [ ] Model nie zawiera złośliwego kodu
+- [ ] Model nie zawiera danych prywatnych
+- [ ] Model nie zawiera spamu
+- [ ] Model nadaje się do AI Club Community
+
+**AI Club Community submission**
+`;
+
+
+        const githubURL =
+            `https://github.com/${encodeURIComponent(
+                GITHUB_OWNER
+            )}/${encodeURIComponent(
+                GITHUB_REPO
+            )}/issues/new?title=${encodeURIComponent(
+                issueTitle
+            )}&body=${encodeURIComponent(
+                issueBody
+            )}`;
+
+
+        window.open(
+            githubURL,
+            "_blank",
+            "noopener,noreferrer"
+        );
+
+    }
+);
+
+
+/*
+==================================================
  RENDER MODELI
 ==================================================
 */
