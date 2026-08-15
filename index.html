@@ -247,6 +247,127 @@
     class="toast"
 ></div>
 
+<!--
+==================================================
+ COMMUNITY PUBLISH OVERLAY
+==================================================
+-->
+
+<div
+    id="publishOverlay"
+    class="publish-overlay hidden"
+>
+
+    <div class="publish-modal">
+
+        <button
+            id="closePublish"
+            class="publish-close"
+        >
+            ×
+        </button>
+
+
+        <div class="publish-icon">
+            🌐
+        </div>
+
+
+        <h2>
+            Opublikuj Community Model
+        </h2>
+
+
+        <p class="publish-description">
+            Zgłoś swój model do AI Club Community.
+            Zgłoszenie zostanie sprawdzone przed publikacją.
+        </p>
+
+
+        <label>
+            Nazwa modelu
+        </label>
+
+        <input
+            id="communityModelName"
+            type="text"
+            placeholder="np. CatGPT"
+            maxlength="60"
+        >
+
+
+        <label>
+            Autor
+        </label>
+
+        <input
+            id="communityModelAuthor"
+            type="text"
+            placeholder="np. MeowDev"
+            maxlength="40"
+        >
+
+
+        <label>
+            Opis
+        </label>
+
+        <textarea
+            id="communityModelDescription"
+            placeholder="Opisz swój model..."
+            maxlength="300"
+        ></textarea>
+
+
+        <label>
+            JSON modelu
+        </label>
+
+        <textarea
+            id="communityModelJSON"
+            class="json-input"
+            placeholder='{
+  "id": "my-model",
+  "name": "My Model",
+  "provider": "AI Club Community",
+  "description": "Mój model",
+  "type": "local",
+  "model": "my-model",
+  "context": 16384,
+  "premium": false,
+  "points_per_message": 1,
+  "meow_mode": false,
+  "examples": []
+}'
+        ></textarea>
+
+
+        <div
+            id="jsonValidation"
+            class="json-validation"
+        >
+        </div>
+
+
+        <div class="publish-warning">
+
+            ⚠️ Nie wysyłaj haseł, tokenów,
+            kluczy API ani danych prywatnych.
+
+        </div>
+
+
+        <button
+            id="submitCommunityModel"
+            class="submit-community"
+        >
+            🚀 Wyślij zgłoszenie
+        </button>
+
+    </div>
+
+</div>
+
 
 <script src="app.js"></script>
 
