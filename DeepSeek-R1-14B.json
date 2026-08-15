@@ -1,7 +1,7 @@
 {
   "id": "deepseek-r1-14b",
   "name": "DeepSeek R1 14B",
-  "provider": "AI Club Local",
+  "provider": "DeepSreek",
   "description": "Lokalny model skoncentrowany na rozumowaniu i programowaniu.",
   "type": "local",
   "model": "deepseek-r1-14b",
