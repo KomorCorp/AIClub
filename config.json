@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "file": "GPT-OSS-20B.json",
+      "enabled": true,
+      "type": "official"
+    },
+    {
+      "file": "Qwen3-8B.json",
+      "enabled": true,
+      "type": "official"
+    },
+    {
+      "file": "Gemma-3-12B.json",
+      "enabled": true,
+      "type": "official"
+    },
+    {
+      "file": "DeepSeek-R1-14B.json",
+      "enabled": true,
+      "type": "official"
+    },
+    {
+      "file": "Ultra Meow 4.json",
+      "enabled": true,
+      "type": "official"
+    },
+    {
+      "file": "Dog-1.0.json",
+      "enabled": true,
+      "type": "official"
+    }
+  ],
+  "community": {
+    "enabled": true,
+    "index": "community/index.json"
+  }
+}
