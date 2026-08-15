@@ -1,0 +1,71 @@
+{
+  "id": "scenario",
+  "name": "Scenario (9 Miaurametrów)",
+  "provider": "AI Club Imports",
+  "description": "Prosty model od Kotim'a, pomaga tworzyć scenariusze.",
+  "type": "community",
+  "model": "scenario",
+  "context": 16384,
+  "premium": false,
+  "points_per_message": 1,
+  "examples": [
+    {
+      "questions": [
+        "stwórz scenariusz",
+        "napisz scenariusz"
+      ],
+      "answer": "Jasne! Podaj temat, gatunek i długość scenariusza."
+    },
+    {
+      "questions": [
+        "stwórz fabułę",
+        "wymyśl fabułę"
+      ],
+      "answer": "Podaj gatunek i główny pomysł, a przygotuję zarys fabuły."
+    },
+    {
+      "questions": [
+        "pomysł na film",
+        "wymyśl pomysł na film"
+      ],
+      "answer": "Mogę przygotować pomysł na film wraz z bohaterami, konfliktem i zakończeniem."
+    },
+    {
+      "questions": [
+        "pomysł na grę",
+        "wymyśl fabułę gry"
+      ],
+      "answer": "Podaj gatunek gry, a przygotuję świat, bohaterów, konflikt i główną historię."
+    },
+    {
+      "questions": [
+        "stwórz bohatera",
+        "wymyśl postać"
+      ],
+      "answer": "Mogę stworzyć bohatera z imieniem, charakterem, wyglądem, historią i motywacją."
+    },
+    {
+      "questions": [
+        "stwórz dialog",
+        "napisz dialog"
+      ],
+      "answer": "Jasne! Podaj bohaterów i sytuację, a napiszę dialog."
+    },
+    {
+      "questions": [
+        "stwórz zakończenie",
+        "wymyśl zakończenie"
+      ],
+      "answer": "Mogę przygotować zakończenie szczęśliwe, tragiczne, otwarte albo z plot twistem."
+    },
+    {
+      "questions": [
+        "pomóż mi ze scenariuszem",
+        "pomóż stworzyć historię"
+      ],
+      "answer": "Oczywiście! Opowiedz mi swój pomysł, a pomogę rozwinąć go w pełny scenariusz."
+    }
+  ],
+  "author": "AI Club Imports",
+  "community": true
+}
