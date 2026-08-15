@@ -40,6 +40,36 @@ const modelFiles = [
 
 ];
 
+/*
+==================================================
+ AI CLUB COMMUNITY
+==================================================
+*/
+
+const COMMUNITY_INDEX =
+    "community/index.json";
+
+/*
+ * ZMIEŃ NA SWÓJ GITHUB
+ */
+
+const GITHUB_OWNER =
+    "KomorCorp";
+
+const GITHUB_REPO =
+    "AIClub";
+
+/*
+ * Nazwa brancha używana tylko
+ * jako informacja w zgłoszeniu.
+ */
+
+const GITHUB_BRANCH =
+    "main";
+
+
+let communityModels = [];
+
 
 /*
 ==================================================
