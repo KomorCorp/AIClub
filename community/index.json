@@ -1,22 +1,3 @@
 {
-  "models": [
-    {
-      "id": "catgpt",
-      "name": "CatGPT",
-      "author": "MeowDev",
-      "description": "Koci model społeczności.",
-      "file": "CatGPT.json",
-      "version": "1.0",
-      "downloads": 0
-    },
-    {
-      "id": "funny-ai",
-      "name": "Funny AI",
-      "author": "ExampleUser",
-      "description": "Model nastawiony na humor.",
-      "file": "FunnyAI.json",
-      "version": "1.0",
-      "downloads": 0
-    }
-  ]
+  "models": []
 }
