@@ -1,7 +1,7 @@
 {
   "id": "ultra-meow-4",
-  "name": "Ultra Meow 4",
-  "provider": "AI Club Local",
+  "name": "Ultra Meow 4 (UMeow 4)",
+  "provider": "UMeow",
   "description": "Koci lokalny model AI z bazą pytań, rozpoznawaniem literówek i trybem Meow.",
   "type": "local",
   "model": "ultra-meow-4",
