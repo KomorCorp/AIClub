@@ -35,7 +35,8 @@ const modelFiles = [
     "Gemma-3-12B.json",
 
     "DeepSeek-R1-14B.json",
-    "Ultra Meow 4.json"
+    "Ultra Meow 4.json",
+    "Dog-1.0.json"
 
 ];
 
