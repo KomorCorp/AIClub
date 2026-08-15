@@ -712,11 +712,39 @@ function renderModels() {
             </h3>
 
             <div class="provider">
-                ${escapeHTML(
-                    model.provider ||
-                    "AI Club Local"
+
+    ${escapeHTML(
+        model.provider ||
+        "AI Club Local"
+    )}
+
+    ${
+        model.community
+            ? `
+                <span class="community-badge">
+                    COMMUNITY
+                </span>
+              `
+            : `
+                <span class="official-badge">
+                    OFFICIAL
+                </span>
+              `
+    }
+
+</div>
+
+${
+    model.community
+        ? `
+            <div class="model-author">
+                👤 ${escapeHTML(
+                    model.author || "Community"
                 )}
             </div>
+          `
+        : ""
+}
 
             <p class="description">
                 ${escapeHTML(
