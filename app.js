@@ -25,8 +25,35 @@ let communityModels = [];
 let selectedModel = null;
 
 /* =========================================================
-   PUNKTY
+   PUNKTY I TOKENY
    ========================================================= */
+
+const TOKENS_PER_POINT = 40;
+
+function calculateTokenCost(input, output) {
+
+    const inputTokens =
+        countTokens(input);
+
+    const outputTokens =
+        countTokens(output);
+
+    const totalTokens =
+        inputTokens + outputTokens;
+
+    return {
+        inputTokens,
+        outputTokens,
+        totalTokens,
+        points: Math.max(
+            1,
+            Math.ceil(
+                totalTokens /
+                TOKENS_PER_POINT
+            )
+        )
+    };
+}
 
 let points =
     Number(localStorage.getItem("aiClubPoints")) || 100;
@@ -1020,6 +1047,50 @@ async function loadCommunityModels() {
     }
 }
 
+/*
+==================================================
+ TOKEN COUNTER
+==================================================
+*/
+
+function countTokens(text) {
+    if (!text) return 0;
+
+    text = String(text);
+
+    /*
+     * Przybliżenie tokenizacji:
+     * - słowa
+     * - liczby
+     * - znaki specjalne
+     * - emoji
+     */
+
+    const tokens = text.match(
+        /[\p{L}\p{N}]+|[^\s\p{L}\p{N}]/gu
+    );
+
+    if (!tokens) return 0;
+
+    let count = 0;
+
+    for (const token of tokens) {
+
+        /*
+         * Długie słowa mogą być dzielone
+         * na kilka tokenów.
+         */
+
+        if (token.length <= 4) {
+            count += 1;
+        } else {
+            count += Math.ceil(token.length / 4);
+        }
+    }
+
+    return count;
+}
+
 /* =========================================================
    RENDER MODELS
    ========================================================= */
@@ -1319,35 +1390,57 @@ function renderExamples(model) {
 
 async function sendMessage() {
 
-    if (!selectedModel) {
-        return;
-    }
+if (!selectedModel) {
+   return;
+}
 
-    if (!exists(messageInput)) {
-        return;
-    }
+if (!exists(messageInput)) {
+   return;
+}
 
-    const text =
-        messageInput.value.trim();
+const text =
+   messageInput.value.trim();
 
-    if (!text) {
-        return;
-    }
+if (!text) {
+   return;
+}
 
-    const cost =
-        Number(
-            selectedModel.points_per_message
-        ) || 1;
+const answer =
+findLocalAnswer(
+   text,
+   selectedModel
+);
 
-    if (points < cost) {
+await sleep(250);
 
-        addMessage(
-            "system",
-            `Brakuje punktów. Ta wiadomość kosztuje ${cost} ⭐.`
-        );
+const finalAnswer =
+   answer ||
+   getUnknownAnswer(text);
 
-        return;
-    }
+const usage =
+   calculateTokenCost(
+      text,
+      finalAnswer
+   );
+
+if (points < usage.points) {
+
+   addMessage(
+      "system",
+      `Brakuje punktów. Potrzebujesz ${usage.points} ⭐.`
+   );
+
+return;
+}
+
+points -= usage.points;
+
+savePoints();
+
+addMessage(
+    "ai",
+    finalAnswer
+);
 
     addMessage(
         "user",
