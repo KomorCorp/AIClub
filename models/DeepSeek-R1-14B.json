@@ -1,8 +1,8 @@
 {
   "id": "deepseek-r1-14b",
-  "name": "DeepSeek R1 14B",
+  "name": "DeepSreek R1 110 Meowrameters",
   "provider": "DeepSreek",
-  "description": "Lokalny model skoncentrowany na rozumowaniu i programowaniu.",
+  "description": "Lokalny model skoncentrowany na rozumowaniu, programowaniu, analizie problemów, debugowaniu i zadaniach technicznych.",
   "type": "local",
   "model": "deepseek-r1-14b",
   "context": 32768,
@@ -15,9 +15,35 @@
         "cześć",
         "czesc",
         "hej",
-        "siema"
+        "siema",
+        "witaj"
       ],
-      "answer": "Cześć! 🧠 Jestem DeepSeek R1 14B w lokalnym AI Club."
+      "answer": "Cześć! 🧠 Jestem DeepSreek R1 z aż 110 meowramertami (!!!) w lokalnym AI Club. Mogę pomagać w programowaniu, analizie problemów, debugowaniu, algorytmach i zadaniach technicznych."
+    },
+    {
+      "questions": [
+        "jak się masz",
+        "jak tam",
+        "co tam",
+        "jak leci"
+      ],
+      "answer": "Działam poprawnie i jestem gotowy do analizy problemu. 🧠"
+    },
+    {
+      "questions": [
+        "co potrafisz",
+        "co umiesz",
+        "w czym możesz pomóc"
+      ],
+      "answer": "Specjalizuję się w programowaniu, debugowaniu, algorytmach, analizie kodu, Pythonie, JavaScripcie, HTML, CSS, JSON, Git oraz logicznym rozwiązywaniu problemów."
+    },
+    {
+      "questions": [
+        "co to jest programowanie",
+        "czym jest programowanie",
+        "na czym polega programowanie"
+      ],
+      "answer": "Programowanie polega na tworzeniu instrukcji, które komputer może wykonać w celu rozwiązania konkretnego problemu lub realizacji określonego zadania."
     },
     {
       "questions": [
@@ -25,7 +51,15 @@
         "czym jest algorytm",
         "co oznacza algorytm"
       ],
-      "answer": "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania określonego problemu lub wykonania zadania."
+      "answer": "Algorytm to uporządkowany zestaw jednoznacznych kroków prowadzących do rozwiązania określonego problemu lub wykonania zadania."
+    },
+    {
+      "questions": [
+        "czym jest zmienna",
+        "co to jest zmienna",
+        "co oznacza zmienna w programowaniu"
+      ],
+      "answer": "Zmienna to nazwana referencja lub miejsce logicznie reprezentujące wartość używaną przez program. W zależności od języka może przechowywać między innymi liczby, tekst, obiekty lub kolekcje."
     },
     {
       "questions": [
@@ -33,7 +67,39 @@
         "czym jest zmienna w pythonie",
         "jak działa zmienna w pythonie"
       ],
-      "answer": "Zmienna w Pythonie jest nazwą wskazującą na obiekt przechowywany w pamięci. Przykład:\n\nx = 10\nname = \"Jakub\""
+      "answer": "W Pythonie zmienna jest nazwą wskazującą na obiekt. Przykład:\n\nx = 10\nname = \"Jakub\"\n\nWartość zmiennej można później zmienić, przypisując jej inny obiekt."
+    },
+    {
+      "questions": [
+        "co to jest python",
+        "czym jest python",
+        "do czego służy python"
+      ],
+      "answer": "Python to wysokopoziomowy, interpretowany język programowania znany z czytelnej składni. Jest używany między innymi do tworzenia aplikacji, automatyzacji, analizy danych, AI, backendu i gier."
+    },
+    {
+      "questions": [
+        "co to jest javascript",
+        "czym jest javascript",
+        "do czego służy javascript"
+      ],
+      "answer": "JavaScript to język programowania szeroko stosowany w aplikacjach internetowych. Może obsługiwać interakcje z użytkownikiem, manipulować DOM, komunikować się z serwerami i realizować logikę aplikacji."
+    },
+    {
+      "questions": [
+        "co to jest html",
+        "czym jest html",
+        "do czego służy html"
+      ],
+      "answer": "HTML jest językiem znaczników służącym do definiowania struktury dokumentów internetowych. Określa między innymi nagłówki, akapity, formularze, obrazy i przyciski."
+    },
+    {
+      "questions": [
+        "co to jest css",
+        "czym jest css",
+        "do czego służy css"
+      ],
+      "answer": "CSS służy do definiowania wyglądu dokumentów HTML. Można nim ustawiać kolory, rozmiary, odstępy, układ elementów, animacje i responsywność."
     },
     {
       "questions": [
@@ -41,14 +107,1543 @@
         "czym jest json",
         "do czego służy json"
       ],
-      "answer": "JSON to tekstowy format reprezentacji danych oparty na parach klucz-wartość, tablicach i obiektach. Jest często używany do konfiguracji i wymiany danych."
+      "answer": "JSON to tekstowy format reprezentacji danych oparty na obiektach, tablicach, parach klucz-wartość, liczbach, tekstach, wartościach logicznych i null. Jest często używany w konfiguracjach oraz komunikacji między aplikacjami."
     },
     {
       "questions": [
-        "co to jest programowanie",
-        "czym jest programowanie"
+        "jak wygląda json",
+        "pokaż przykład json",
+        "przykład json"
       ],
-      "answer": "Programowanie polega na tworzeniu instrukcji, które komputer może wykonać w celu rozwiązania konkretnego problemu lub realizacji określonego zadania."
+      "answer": "Prosty JSON może wyglądać tak:\n\n{\n  \"name\": \"AI Club\",\n  \"premium\": true,\n  \"points\": 100\n}"
+    },
+    {
+      "questions": [
+        "co to jest tablica",
+        "czym jest tablica",
+        "co to jest lista w programowaniu"
+      ],
+      "answer": "Tablica lub lista to struktura danych przechowująca wiele wartości w określonej kolejności. Przykład w Pythonie:\n\nnumbers = [10, 20, 30, 40]"
+    },
+    {
+      "questions": [
+        "co to jest obiekt",
+        "czym jest obiekt w programowaniu",
+        "co oznacza obiekt"
+      ],
+      "answer": "Obiekt to struktura reprezentująca dane oraz często powiązane z nimi operacje. W JavaScripcie przykładem jest:\n\nconst user = {\n  name: \"Jakub\",\n  points: 100\n};"
+    },
+    {
+      "questions": [
+        "co to jest funkcja",
+        "czym jest funkcja",
+        "do czego służy funkcja"
+      ],
+      "answer": "Funkcja to wydzielony fragment programu wykonujący określone zadanie. Może przyjmować argumenty i zwracać wynik."
+    },
+    {
+      "questions": [
+        "jak zrobić funkcję w pythonie",
+        "funkcja python",
+        "jak definiować funkcję w pythonie"
+      ],
+      "answer": "W Pythonie funkcję definiuje się za pomocą słowa kluczowego def:\n\ndef add(a, b):\n    return a + b\n\nresult = add(2, 3)"
+    },
+    {
+      "questions": [
+        "jak zrobić funkcję w javascript",
+        "funkcja javascript",
+        "jak definiować funkcję w js"
+      ],
+      "answer": "Przykład funkcji w JavaScripcie:\n\nfunction add(a, b) {\n  return a + b;\n}\n\nconst result = add(2, 3);"
+    },
+    {
+      "questions": [
+        "co to jest if",
+        "czym jest instrukcja if",
+        "do czego służy if"
+      ],
+      "answer": "Instrukcja if pozwala wykonać kod tylko wtedy, gdy określony warunek jest prawdziwy."
+    },
+    {
+      "questions": [
+        "if w pythonie",
+        "jak używać if w pythonie",
+        "przykład if python"
+      ],
+      "answer": "Przykład:\n\nage = 18\n\nif age >= 18:\n    print(\"Pełnoletni\")\nelse:\n    print(\"Niepełnoletni\")"
+    },
+    {
+      "questions": [
+        "co to jest pętla",
+        "czym jest pętla",
+        "do czego służą pętle"
+      ],
+      "answer": "Pętla pozwala wielokrotnie wykonywać określony fragment kodu. Typowe rodzaje to for i while."
+    },
+    {
+      "questions": [
+        "pętla for python",
+        "jak działa for w pythonie",
+        "przykład for python"
+      ],
+      "answer": "Przykład:\n\nfor i in range(5):\n    print(i)\n\nKod wykona się pięć razy dla wartości od 0 do 4."
+    },
+    {
+      "questions": [
+        "pętla while python",
+        "jak działa while w pythonie",
+        "przykład while python"
+      ],
+      "answer": "Przykład:\n\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n\nPętla wykonuje się dopóki warunek pozostaje prawdziwy."
+    },
+    {
+      "questions": [
+        "co to jest return",
+        "do czego służy return",
+        "return python"
+      ],
+      "answer": "return kończy wykonywanie funkcji i może przekazać wynik do miejsca, z którego funkcja została wywołana."
+    },
+    {
+      "questions": [
+        "co to jest import",
+        "do czego służy import w pythonie",
+        "import python"
+      ],
+      "answer": "import służy do wczytywania modułów lub określonych elementów z modułów. Przykład:\n\nimport math\n\nprint(math.sqrt(25))"
+    },
+    {
+      "questions": [
+        "co to jest moduł",
+        "czym jest moduł w pythonie",
+        "co to jest moduł programistyczny"
+      ],
+      "answer": "Moduł to plik lub jednostka zawierająca kod, który można wykorzystać w innych częściach programu. W Pythonie moduły są często importowane za pomocą import."
+    },
+    {
+      "questions": [
+        "co to jest biblioteka",
+        "czym jest biblioteka programistyczna",
+        "co oznacza biblioteka"
+      ],
+      "answer": "Biblioteka to zbiór gotowego kodu przeznaczonego do wykorzystania w programach. Dzięki bibliotekom programista nie musi implementować wszystkiego od zera."
+    },
+    {
+      "questions": [
+        "co to jest api",
+        "czym jest api",
+        "do czego służy api"
+      ],
+      "answer": "API, czyli Application Programming Interface, to zdefiniowany sposób komunikacji między programami, modułami lub usługami."
+    },
+    {
+      "questions": [
+        "co to jest endpoint",
+        "czym jest endpoint",
+        "co oznacza endpoint api"
+      ],
+      "answer": "Endpoint to konkretny adres lub punkt interfejsu API, przez który można wykonać określoną operację, np. pobrać dane użytkownika."
+    },
+    {
+      "questions": [
+        "co to jest http",
+        "czym jest http",
+        "jak działa http"
+      ],
+      "answer": "HTTP to protokół komunikacji używany między klientem a serwerem. Klient wysyła żądanie, a serwer zwraca odpowiedź."
+    },
+    {
+      "questions": [
+        "co oznacza status 404",
+        "czym jest błąd 404",
+        "http 404"
+      ],
+      "answer": "HTTP 404 oznacza, że serwer nie znalazł zasobu odpowiadającego żądanemu adresowi."
+    },
+    {
+      "questions": [
+        "co oznacza status 500",
+        "czym jest błąd 500",
+        "http 500"
+      ],
+      "answer": "HTTP 500 oznacza wewnętrzny błąd serwera. Zwykle wskazuje na problem po stronie aplikacji lub backendu."
+    },
+    {
+      "questions": [
+        "co to jest localhost",
+        "czym jest localhost",
+        "do czego służy localhost"
+      ],
+      "answer": "localhost oznacza bieżący komputer. Najczęściej jest używany podczas uruchamiania lokalnych serwerów i aplikacji developerskich."
+    },
+    {
+      "questions": [
+        "co to jest port",
+        "czym jest port sieciowy",
+        "do czego służy port"
+      ],
+      "answer": "Port to logiczny numer używany do rozróżniania usług sieciowych działających na jednym urządzeniu. Przykładowo serwer deweloperski może działać na porcie 8000."
+    },
+    {
+      "questions": [
+        "co to jest git",
+        "czym jest git",
+        "do czego służy git"
+      ],
+      "answer": "Git to rozproszony system kontroli wersji. Pozwala śledzić zmiany w kodzie, tworzyć gałęzie, przywracać wcześniejsze wersje i współpracować nad projektem."
+    },
+    {
+      "questions": [
+        "co to jest github",
+        "czym jest github",
+        "do czego służy github"
+      ],
+      "answer": "GitHub to platforma do hostowania repozytoriów Git oraz współpracy nad projektami. Oferuje między innymi pull requesty, issues, Actions i narzędzia do zarządzania kodem."
+    },
+    {
+      "questions": [
+        "jak zrobić commit",
+        "git commit",
+        "jak wykonać commit w git"
+      ],
+      "answer": "Podstawowy commit można wykonać tak:\n\ngit add .\ngit commit -m \"Opis zmian\"\n\ngit add przygotowuje zmiany do zatwierdzenia, a git commit zapisuje je w historii."
+    },
+    {
+      "questions": [
+        "jak wypchnąć zmiany na github",
+        "git push",
+        "jak zrobić push"
+      ],
+      "answer": "Po skonfigurowaniu repozytorium możesz użyć:\n\ngit push\n\nJeśli pracujesz na konkretnej gałęzi, możesz użyć na przykład:\n\ngit push origin main"
+    },
+    {
+      "questions": [
+        "co to jest branch",
+        "czym jest branch w git",
+        "co to jest gałąź git"
+      ],
+      "answer": "Branch, czyli gałąź, pozwala rozwijać osobną wersję zmian bez bezpośredniego modyfikowania głównej gałęzi projektu."
+    },
+    {
+      "questions": [
+        "co to jest merge",
+        "czym jest merge w git",
+        "jak działa merge"
+      ],
+      "answer": "Merge łączy zmiany z jednej gałęzi z inną. Jest często używany do połączenia ukończonej funkcji z główną gałęzią."
+    },
+    {
+      "questions": [
+        "co to jest konflikt git",
+        "czym jest konflikt merge",
+        "git conflict"
+      ],
+      "answer": "Konflikt Git występuje, gdy Git nie może automatycznie połączyć zmian, na przykład gdy dwie gałęzie zmodyfikowały ten sam fragment pliku w różny sposób. Konflikt trzeba rozwiązać ręcznie."
+    },
+    {
+      "questions": [
+        "co to jest debugowanie",
+        "czym jest debugowanie",
+        "na czym polega debugowanie"
+      ],
+      "answer": "Debugowanie to proces wykrywania, analizowania i usuwania błędów w programie. Obejmuje między innymi analizę komunikatów błędów, logów, wartości zmiennych i przepływu programu."
+    },
+    {
+      "questions": [
+        "co to jest bug",
+        "czym jest bug",
+        "co oznacza bug w programowaniu"
+      ],
+      "answer": "Bug to błąd lub nieprawidłowe zachowanie programu. Może wynikać między innymi z błędnej logiki, złych danych wejściowych, problemów z pamięcią lub nieprawidłowej obsługi wyjątków."
+    },
+    {
+      "questions": [
+        "co to jest exception",
+        "czym jest wyjątek",
+        "co oznacza exception"
+      ],
+      "answer": "Wyjątek to zdarzenie sygnalizujące sytuację, której program nie może lub nie powinien obsłużyć normalnym przepływem wykonania. W Pythonie można go obsługiwać między innymi za pomocą try i except."
+    },
+    {
+      "questions": [
+        "try except python",
+        "jak obsługiwać błędy w pythonie",
+        "obsługa wyjątków python"
+      ],
+      "answer": "Przykład:\n\ntry:\n    number = int(input(\"Podaj liczbę: \"))\nexcept ValueError:\n    print(\"Podana wartość nie jest liczbą.\")\n\nDzięki temu program może kontrolowanie zareagować na nieprawidłowe dane."
+    },
+    {
+      "questions": [
+        "co to jest traceback",
+        "czym jest traceback w pythonie",
+        "jak czytać traceback"
+      ],
+      "answer": "Traceback pokazuje ścieżkę wywołań prowadzącą do wystąpienia wyjątku. Zwykle warto zacząć od końcowej części komunikatu, ponieważ zawiera typ błędu i jego opis."
+    },
+    {
+      "questions": [
+        "co oznacza syntaxerror",
+        "błąd syntaxerror",
+        "python syntaxerror"
+      ],
+      "answer": "SyntaxError oznacza błąd składni. Python nie może poprawnie zinterpretować fragmentu kodu, na przykład z powodu brakującego dwukropka, nawiasu lub niepoprawnej konstrukcji."
+    },
+    {
+      "questions": [
+        "co oznacza nameerror",
+        "błąd nameerror",
+        "python nameerror"
+      ],
+      "answer": "NameError oznacza, że kod odwołuje się do nazwy, której Python nie zna w danym zakresie. Częstą przyczyną jest literówka w nazwie zmiennej lub użycie zmiennej przed jej zdefiniowaniem."
+    },
+    {
+      "questions": [
+        "co oznacza typeerror",
+        "błąd typeerror",
+        "python typeerror"
+      ],
+      "answer": "TypeError występuje, gdy operacja została wykonana na nieodpowiednim typie danych, na przykład próba dodania liczby do obiektu tekstowego."
+    },
+    {
+      "questions": [
+        "co oznacza keyerror",
+        "błąd keyerror",
+        "python keyerror"
+      ],
+      "answer": "KeyError pojawia się, gdy kod próbuje uzyskać dostęp do nieistniejącego klucza słownika za pomocą bezpośredniego indeksowania."
+    },
+    {
+      "questions": [
+        "co to jest levenshtein",
+        "czym jest odległość levenshteina",
+        "algorytm levenshteina"
+      ],
+      "answer": "Odległość Levenshteina określa minimalną liczbę operacji potrzebnych do przekształcenia jednego tekstu w drugi. Operacje obejmują dodanie, usunięcie lub zamianę znaku. Jest używana między innymi do wyszukiwania podobnych słów i tolerowania literówek."
+    },
+    {
+      "questions": [
+        "jak zrobić wyszukiwanie podobnych tekstów",
+        "jak rozpoznawać literówki",
+        "jak wykrywać literówki w programie"
+      ],
+      "answer": "Można użyć między innymi odległości Levenshteina, podobieństwa Jaccarda, porównania tokenów lub algorytmów fuzzy matching. W prostym systemie można normalizować tekst, a następnie porównywać go z bazą znanych fraz."
+    },
+    {
+      "questions": [
+        "co to jest normalizacja tekstu",
+        "jak normalizować tekst",
+        "normalizacja stringów"
+      ],
+      "answer": "Normalizacja tekstu polega na sprowadzeniu różnych reprezentacji tego samego tekstu do wspólnej postaci. Można między innymi użyć lowercasingu, usunięcia nadmiarowych spacji i normalizacji znaków diakrytycznych."
+    },
+    {
+      "questions": [
+        "jak ignorować wielkość liter",
+        "jak porównywać tekst bez wielkości liter",
+        "case insensitive python"
+      ],
+      "answer": "W Pythonie można użyć metody lower() lub, w bardziej poprawnym przypadku dla Unicode, casefold(). Przykład:\n\ntext1.casefold() == text2.casefold()"
+    },
+    {
+      "questions": [
+        "jak usunąć polskie znaki",
+        "jak ignorować polskie znaki",
+        "jak porównywać tekst bez diakrytyki"
+      ],
+      "answer": "Można zastosować normalizację Unicode z modułem unicodedata. Należy jednak uważać, ponieważ nie wszystkie polskie znaki są prostymi literami bazowymi z osobnym znakiem diakrytycznym."
+    },
+    {
+      "questions": [
+        "co to jest regex",
+        "czym jest regex",
+        "do czego służą wyrażenia regularne"
+      ],
+      "answer": "Regex, czyli wyrażenie regularne, to wzorzec opisujący ciąg znaków. Służy między innymi do wyszukiwania, walidowania i zastępowania fragmentów tekstu."
+    },
+    {
+      "questions": [
+        "regex python przykład",
+        "jak używać regex w pythonie",
+        "re python"
+      ],
+      "answer": "W Pythonie służy do tego moduł re. Przykład:\n\nimport re\n\nresult = re.findall(r\"\\d+\", \"Mam 25 punktów\")\n\nWynikiem będzie lista zawierająca znalezioną liczbę."
+    },
+    {
+      "questions": [
+        "co to jest big o",
+        "czym jest notacja big o",
+        "co oznacza o dużym"
+      ],
+      "answer": "Notacja Big O opisuje asymptotyczną złożoność algorytmu względem rozmiaru danych wejściowych. Przykłady to O(1), O(log n), O(n), O(n log n) oraz O(n²)."
+    },
+    {
+      "questions": [
+        "co oznacza o1",
+        "czym jest o(1)",
+        "złożoność o1"
+      ],
+      "answer": "O(1) oznacza stałą złożoność względem rozmiaru danych wejściowych. Operacja nie zwiększa swojej liczby kroków wraz ze wzrostem n, przynajmniej w analizowanym modelu."
+    },
+    {
+      "questions": [
+        "co oznacza on",
+        "czym jest o(n)",
+        "złożoność on"
+      ],
+      "answer": "O(n) oznacza liniową złożoność. Liczba wykonywanych operacji rośnie proporcjonalnie do rozmiaru danych wejściowych."
+    },
+    {
+      "questions": [
+        "co oznacza on2",
+        "czym jest o(n^2)",
+        "złożoność kwadratowa"
+      ],
+      "answer": "O(n²) oznacza złożoność kwadratową. Często pojawia się przy dwóch zagnieżdżonych pętlach przechodzących po tych samych danych."
+    },
+    {
+      "questions": [
+        "co to jest sortowanie",
+        "czym jest algorytm sortowania",
+        "jak działa sortowanie"
+      ],
+      "answer": "Sortowanie polega na uporządkowaniu elementów według określonego kryterium, na przykład rosnąco, malejąco, alfabetycznie lub według konkretnego pola obiektu."
+    },
+    {
+      "questions": [
+        "jak sortować listę w pythonie",
+        "sortowanie python",
+        "sort python"
+      ],
+      "answer": "Listę można sortować za pomocą sort() lub sorted().\n\nnumbers = [5, 2, 8, 1]\nnumbers.sort()\n\nPo wykonaniu kodu lista będzie uporządkowana rosnąco."
+    },
+    {
+      "questions": [
+        "co to jest rekurencja",
+        "czym jest rekurencja",
+        "jak działa rekurencja"
+      ],
+      "answer": "Rekurencja polega na tym, że funkcja wywołuje samą siebie. Musi posiadać warunek bazowy, który zatrzymuje kolejne wywołania."
+    },
+    {
+      "questions": [
+        "co to jest stos",
+        "czym jest stack",
+        "jak działa stos"
+      ],
+      "answer": "Stos to struktura danych działająca według zasady LIFO, czyli Last In, First Out. Element dodany jako ostatni jest usuwany jako pierwszy."
+    },
+    {
+      "questions": [
+        "co to jest kolejka",
+        "czym jest queue",
+        "jak działa kolejka"
+      ],
+      "answer": "Kolejka działa według zasady FIFO, czyli First In, First Out. Element dodany jako pierwszy jest obsługiwany jako pierwszy."
+    },
+    {
+      "questions": [
+        "co to jest hash",
+        "czym jest funkcja hashująca",
+        "co oznacza hash"
+      ],
+      "answer": "Hash to wynik funkcji skrótu obliczony na podstawie danych wejściowych. Funkcje hashujące są używane między innymi w strukturach danych, indeksowaniu i systemach bezpieczeństwa."
+    },
+    {
+      "questions": [
+        "co to jest baza danych",
+        "czym jest baza danych",
+        "do czego służy baza danych"
+      ],
+      "answer": "Baza danych to uporządkowany system przechowywania danych umożliwiający ich wyszukiwanie, modyfikowanie i organizowanie."
+    },
+    {
+      "questions": [
+        "co to jest sql",
+        "czym jest sql",
+        "do czego służy sql"
+      ],
+      "answer": "SQL to język używany do pracy z relacyjnymi bazami danych. Pozwala między innymi pobierać, dodawać, aktualizować i usuwać dane."
+    },
+    {
+      "questions": [
+        "co to jest select sql",
+        "jak pobrać dane sql",
+        "sql select"
+      ],
+      "answer": "SELECT służy do pobierania danych. Przykład:\n\nSELECT name, points FROM users;\n\nZapytanie pobiera kolumny name i points z tabeli users."
+    },
+    {
+      "questions": [
+        "co to jest gitignore",
+        "czym jest gitignore",
+        "do czego służy gitignore"
+      ],
+      "answer": "Plik .gitignore określa pliki i katalogi, których Git nie powinien śledzić. Często umieszcza się w nim środowiska wirtualne, cache, sekrety, pliki buildów i dane tymczasowe."
+    },
+    {
+      "questions": [
+        "co to jest npm",
+        "czym jest npm",
+        "do czego służy npm"
+      ],
+      "answer": "npm to menedżer pakietów dla ekosystemu Node.js. Pozwala instalować biblioteki JavaScript, zarządzać zależnościami i uruchamiać skrypty projektu."
+    },
+    {
+      "questions": [
+        "co to jest nodejs",
+        "czym jest node.js",
+        "do czego służy node"
+      ],
+      "answer": "Node.js jest środowiskiem uruchomieniowym pozwalającym wykonywać JavaScript poza przeglądarką. Jest często używany do backendów, narzędzi CLI i serwerów."
+    },
+    {
+      "questions": [
+        "co to jest dom",
+        "czym jest dom w javascript",
+        "javascript dom"
+      ],
+      "answer": "DOM, czyli Document Object Model, reprezentuje dokument HTML jako strukturę obiektów. JavaScript może używać DOM do odczytywania i zmieniania elementów strony."
+    },
+    {
+      "questions": [
+        "jak znaleźć element html javascript",
+        "queryselector javascript",
+        "jak znaleźć element po id"
+      ],
+      "answer": "Można użyć document.querySelector(). Przykład:\n\nconst button = document.querySelector(\"#myButton\");\n\nDla identyfikatora można też użyć document.getElementById(\"myButton\")."
+    },
+    {
+      "questions": [
+        "co to jest event listener",
+        "czym jest addEventListener",
+        "javascript event listener"
+      ],
+      "answer": "addEventListener pozwala zarejestrować funkcję reagującą na określone zdarzenie, np. kliknięcie:\n\nbutton.addEventListener(\"click\", () => {\n  console.log(\"Kliknięto\");\n});"
+    },
+    {
+      "questions": [
+        "co to jest async await",
+        "czym jest async await",
+        "jak działa async await javascript"
+      ],
+      "answer": "async i await służą do wygodniejszej obsługi operacji asynchronicznych w JavaScripcie. Funkcja oznaczona async zwraca Promise, a await pozwala poczekać na jego rozstrzygnięcie wewnątrz funkcji async."
+    },
+    {
+      "questions": [
+        "co to jest promise",
+        "czym jest promise javascript",
+        "jak działa promise"
+      ],
+      "answer": "Promise reprezentuje wynik operacji asynchronicznej, który może być jeszcze niedostępny. Promise może zostać spełniony albo odrzucony."
+    },
+    {
+      "questions": [
+        "co to jest fetch",
+        "czym jest fetch javascript",
+        "jak pobierać dane fetch"
+      ],
+      "answer": "fetch() służy do wykonywania żądań HTTP w JavaScripcie. Przykład:\n\nconst response = await fetch(\"data.json\");\nconst data = await response.json();"
+    },
+    {
+      "questions": [
+        "co to jest localstorage",
+        "czym jest localstorage",
+        "jak działa localstorage"
+      ],
+      "answer": "localStorage to mechanizm przeglądarki umożliwiający przechowywanie danych w postaci klucz-wartość. Dane pozostają dostępne po ponownym otwarciu strony, dopóki nie zostaną usunięte."
+    },
+    {
+      "questions": [
+        "jak zapisać dane w localstorage",
+        "localstorage setitem",
+        "javascript localstorage przykład"
+      ],
+      "answer": "Przykład:\n\nlocalStorage.setItem(\"points\", \"100\");\n\nconst points = localStorage.getItem(\"points\");"
+    },
+    {
+      "questions": [
+        "jak przechowywać json w localstorage",
+        "json localstorage",
+        "localstorage json"
+      ],
+      "answer": "JSON można zapisać jako tekst:\n\nlocalStorage.setItem(\"user\", JSON.stringify(user));\n\nA następnie odczytać:\n\nconst user = JSON.parse(localStorage.getItem(\"user\"));"
+    },
+    {
+      "questions": [
+        "co to jest cors",
+        "czym jest cors",
+        "dlaczego występuje cors"
+      ],
+      "answer": "CORS, czyli Cross-Origin Resource Sharing, to mechanizm bezpieczeństwa przeglądarek kontrolujący żądania między różnymi originami. Serwer musi odpowiednio zezwolić na dostęp z danego originu."
+    },
+    {
+      "questions": [
+        "co to jest origin",
+        "czym jest origin w przeglądarce",
+        "co oznacza same origin"
+      ],
+      "answer": "Origin składa się ze schematu, hosta i portu. Przykładowo http://localhost:8000 i http://localhost:3000 mają różne originy ze względu na różne porty."
+    },
+    {
+      "questions": [
+        "co to jest responsive design",
+        "czym jest responsywność",
+        "jak zrobić responsywną stronę"
+      ],
+      "answer": "Responsive design polega na projektowaniu interfejsu tak, aby poprawnie działał na różnych rozmiarach ekranów. W CSS wykorzystuje się między innymi media queries, elastyczne jednostki i układy Flexbox lub Grid."
+    },
+    {
+      "questions": [
+        "co to jest flexbox",
+        "czym jest flexbox",
+        "do czego służy flexbox"
+      ],
+      "answer": "Flexbox to system układu CSS przeznaczony głównie do rozmieszczania elementów w jednym wymiarze. Pozwala łatwo kontrolować kierunek, wyrównanie, odstępy i rozmiar elementów."
+    },
+    {
+      "questions": [
+        "co to jest css grid",
+        "czym jest grid css",
+        "do czego służy css grid"
+      ],
+      "answer": "CSS Grid to system układu pozwalający tworzyć dwuwymiarowe struktury z wierszami i kolumnami. Jest szczególnie przydatny przy tworzeniu bardziej złożonych layoutów."
+    },
+    {
+      "questions": [
+        "co to jest div",
+        "czym jest div",
+        "do czego służy div"
+      ],
+      "answer": "div to ogólny element blokowy HTML używany jako kontener do grupowania treści i budowania struktury strony."
+    },
+    {
+      "questions": [
+        "co to jest semantic html",
+        "czym jest semantyczny html",
+        "co oznacza semantyka html"
+      ],
+      "answer": "Semantyczny HTML wykorzystuje elementy opisujące znaczenie treści, takie jak header, nav, main, article, section, aside i footer, zamiast używania samych ogólnych kontenerów."
+    },
+    {
+      "questions": [
+        "co to jest xss",
+        "czym jest xss",
+        "jak działa xss"
+      ],
+      "answer": "XSS, czyli Cross-Site Scripting, to podatność polegająca na możliwości wykonania niepożądanego kodu JavaScript w kontekście strony. Ochrona obejmuje między innymi poprawne kodowanie danych wyjściowych, walidację oraz unikanie niebezpiecznego wstawiania HTML."
+    },
+    {
+      "questions": [
+        "co to jest sql injection",
+        "czym jest sql injection",
+        "jak chronić się przed sql injection"
+      ],
+      "answer": "SQL Injection to podatność wynikająca z niebezpiecznego składania zapytań SQL z danymi użytkownika. Podstawową ochroną są parametryzowane zapytania lub prepared statements."
+    },
+    {
+      "questions": [
+        "co to jest haszowanie hasła",
+        "jak przechowywać hasła",
+        "jak bezpiecznie przechowywać hasła"
+      ],
+      "answer": "Haseł nie powinno się przechowywać w postaci jawnej. Należy stosować specjalizowane funkcje przeznaczone do haseł, takie jak Argon2, bcrypt lub scrypt, wraz z odpowiednią obsługą soli i parametrów kosztu."
+    },
+    {
+      "questions": [
+        "co to jest szyfrowanie",
+        "czym jest szyfrowanie",
+        "czym różni się hash od szyfrowania"
+      ],
+      "answer": "Szyfrowanie jest odwracalne przy użyciu odpowiedniego klucza, natomiast kryptograficzny hash jest projektowany jako funkcja jednokierunkowa. Nie należy traktować haszowania i szyfrowania jako tego samego mechanizmu."
+    },
+    {
+      "questions": [
+        "co to jest oop",
+        "czym jest programowanie obiektowe",
+        "co oznacza oop"
+      ],
+      "answer": "OOP, czyli programowanie obiektowe, organizuje kod wokół obiektów zawierających dane i zachowania. Typowe pojęcia OOP to enkapsulacja, dziedziczenie, polimorfizm i abstrakcja."
+    },
+    {
+      "questions": [
+        "co to jest klasa",
+        "czym jest klasa",
+        "co oznacza class w programowaniu"
+      ],
+      "answer": "Klasa jest definicją struktury i zachowania obiektów danego typu. Na jej podstawie można tworzyć instancje."
+    },
+    {
+      "questions": [
+        "klasa python przykład",
+        "jak zrobić klasę w pythonie",
+        "python class"
+      ],
+      "answer": "Przykład:\n\nclass Cat:\n    def __init__(self, name):\n        self.name = name\n\n    def meow(self):\n        return \"Meow!\"\n\ncat = Cat(\"Milo\")"
+    },
+    {
+      "questions": [
+        "co to jest konstruktor",
+        "czym jest konstruktor klasy",
+        "python init"
+      ],
+      "answer": "Konstruktor lub metoda inicjalizująca przygotowuje nowo utworzony obiekt. W Pythonie typową metodą inicjalizującą jest __init__."
+    },
+    {
+      "questions": [
+        "co to jest dziedziczenie",
+        "czym jest inheritance",
+        "dziedziczenie oop"
+      ],
+      "answer": "Dziedziczenie pozwala klasie pochodnej przejąć lub rozszerzyć zachowanie klasy bazowej. Jest jednym z mechanizmów programowania obiektowego."
+    },
+    {
+      "questions": [
+        "co to jest polimorfizm",
+        "czym jest polimorfizm",
+        "polimorfizm oop"
+      ],
+      "answer": "Polimorfizm pozwala traktować różne typy obiektów przez wspólny interfejs, przy czym konkretne typy mogą implementować zachowanie w różny sposób."
+    },
+    {
+      "questions": [
+        "co to jest enkapsulacja",
+        "czym jest enkapsulacja",
+        "enkapsulacja oop"
+      ],
+      "answer": "Enkapsulacja polega na kontrolowaniu dostępu do wewnętrznego stanu obiektu i ukrywaniu szczegółów implementacyjnych za określonym interfejsem."
+    },
+    {
+      "questions": [
+        "co to jest abstrakcja",
+        "czym jest abstrakcja w programowaniu",
+        "abstrakcja oop"
+      ],
+      "answer": "Abstrakcja polega na przedstawieniu istotnych cech obiektu lub systemu przy jednoczesnym ukryciu niepotrzebnych szczegółów implementacyjnych."
+    },
+    {
+      "questions": [
+        "co to jest type hinting",
+        "czym są adnotacje typów w pythonie",
+        "python type hints"
+      ],
+      "answer": "Type hints pozwalają opisywać oczekiwane typy danych w kodzie Pythona. Przykład:\n\ndef add(a: int, b: int) -> int:\n    return a + b"
+    },
+    {
+      "questions": [
+        "co to jest list comprehension",
+        "czym jest list comprehension",
+        "python list comprehension"
+      ],
+      "answer": "List comprehension to skrócony sposób tworzenia list na podstawie iterowalnych danych. Przykład:\n\nsquares = [x * x for x in range(10)]"
+    },
+    {
+      "questions": [
+        "co to jest lambda",
+        "czym jest lambda w pythonie",
+        "python lambda"
+      ],
+      "answer": "Lambda to anonimowa funkcja wyrażeniowa. Przykład:\n\nsquare = lambda x: x * x\n\nMoże być przydatna przy prostych operacjach przekazywanych jako argumenty."
+    },
+    {
+      "questions": [
+        "co to jest tuple",
+        "czym jest tuple python",
+        "python tuple"
+      ],
+      "answer": "Tuple, czyli krotka, to uporządkowana kolekcja elementów. W przeciwieństwie do listy jest niemutowalna."
+    },
+    {
+      "questions": [
+        "co to jest set",
+        "czym jest set python",
+        "python set"
+      ],
+      "answer": "Set to zbiór przechowujący unikalne elementy. Jest przydatny między innymi do usuwania duplikatów i wykonywania operacji zbiorowych."
+    },
+    {
+      "questions": [
+        "co to jest słownik python",
+        "czym jest dictionary",
+        "python dict"
+      ],
+      "answer": "Słownik w Pythonie przechowuje dane w postaci klucz-wartość. Przykład:\n\nuser = {\n    \"name\": \"Jakub\",\n    \"points\": 100\n}"
+    },
+    {
+      "questions": [
+        "jak sprawdzić czy klucz istnieje w pythonie",
+        "dict key exists python",
+        "sprawdzanie klucza słownika"
+      ],
+      "answer": "Można użyć operatora in:\n\nif \"name\" in user:\n    print(user[\"name\"])\n\nMożna też użyć metody get(), jeśli brak klucza ma zwrócić wartość domyślną."
+    },
+    {
+      "questions": [
+        "jak otworzyć plik python",
+        "czytanie pliku python",
+        "python open"
+      ],
+      "answer": "Do pracy z plikami służy między innymi open(). Zalecany wzorzec:\n\nwith open(\"data.txt\", \"r\", encoding=\"utf-8\") as file:\n    content = file.read()\n\nwith automatycznie zamknie plik."
+    },
+    {
+      "questions": [
+        "jak zapisać plik python",
+        "zapis do pliku python",
+        "python write file"
+      ],
+      "answer": "Przykład:\n\nwith open(\"data.txt\", \"w\", encoding=\"utf-8\") as file:\n    file.write(\"Hello\")\n\nTryb w nadpisuje istniejącą zawartość."
+    },
+    {
+      "questions": [
+        "jak odczytać json python",
+        "python json load",
+        "czytanie json python"
+      ],
+      "answer": "Można użyć modułu json:\n\nimport json\n\nwith open(\"config.json\", \"r\", encoding=\"utf-8\") as file:\n    data = json.load(file)"
+    },
+    {
+      "questions": [
+        "jak zapisać json python",
+        "python json dump",
+        "zapis json python"
+      ],
+      "answer": "Przykład:\n\nimport json\n\nwith open(\"config.json\", \"w\", encoding=\"utf-8\") as file:\n    json.dump(data, file, ensure_ascii=False, indent=2)"
+    },
+    {
+      "questions": [
+        "dlaczego json nie działa",
+        "błąd json",
+        "jak naprawić json"
+      ],
+      "answer": "Najczęstsze problemy z JSON to brakujące przecinki, dodatkowe przecinki, niezamknięte nawiasy, niepoprawne cudzysłowy, komentarze oraz nieprawidłowe wartości. JSON wymaga podwójnych cudzysłowów dla nazw kluczy i tekstów."
+    },
+    {
+      "questions": [
+        "czy json pozwala na komentarze",
+        "komentarze w json",
+        "czy można komentować json"
+      ],
+      "answer": "Standardowy JSON nie obsługuje komentarzy. Jeśli potrzebujesz komentarzy, możesz użyć osobnego pola tekstowego, JSON5 lub innego formatu konfiguracji, jeśli Twój parser go obsługuje."
+    },
+    {
+      "questions": [
+        "co to jest yaml",
+        "czym różni się yaml od json",
+        "yaml vs json"
+      ],
+      "answer": "JSON jest bardziej rygorystyczny składniowo i łatwy do jednoznacznego parsowania. YAML jest zwykle bardziej czytelny dla ludzi i pozwala na wygodniejszą reprezentację konfiguracji, ale ma bardziej złożoną składnię."
+    },
+    {
+      "questions": [
+        "co to jest csv",
+        "czym jest csv",
+        "do czego służy csv"
+      ],
+      "answer": "CSV to prosty format tabelarycznych danych tekstowych, w którym wartości są rozdzielane separatorami, często przecinkami lub średnikami."
+    },
+    {
+      "questions": [
+        "co to jest środowisko wirtualne python",
+        "python venv",
+        "czym jest virtual environment"
+      ],
+      "answer": "Wirtualne środowisko Pythona izoluje zależności projektu od globalnej instalacji Pythona. Można je utworzyć poleceniem:\n\npython -m venv .venv"
+    },
+    {
+      "questions": [
+        "jak zainstalować bibliotekę python",
+        "pip install",
+        "instalowanie pakietu python"
+      ],
+      "answer": "Najczęściej używa się pip:\n\npython -m pip install nazwa_pakietu\n\nWarto instalować zależności wewnątrz środowiska wirtualnego."
+    },
+    {
+      "questions": [
+        "co to jest requirements.txt",
+        "czym jest requirements txt",
+        "do czego służy requirements.txt"
+      ],
+      "answer": "requirements.txt zawiera listę zależności Pythona potrzebnych do uruchomienia projektu. Można je zainstalować za pomocą:\n\npython -m pip install -r requirements.txt"
+    },
+    {
+      "questions": [
+        "co to jest pygame",
+        "czym jest pygame",
+        "do czego służy pygame"
+      ],
+      "answer": "Pygame to biblioteka Pythona używana między innymi do tworzenia gier 2D. Zapewnia obsługę okna, grafiki, dźwięku, klawiatury, myszy i głównej pętli gry."
+    },
+    {
+      "questions": [
+        "co to jest game loop",
+        "czym jest pętla gry",
+        "jak działa game loop"
+      ],
+      "answer": "Game loop to główna pętla gry. Zwykle pobiera zdarzenia, aktualizuje stan świata, wykonuje logikę oraz renderuje kolejną klatkę."
+    },
+    {
+      "questions": [
+        "jak zrobić game loop pygame",
+        "pętla gry pygame",
+        "pygame main loop"
+      ],
+      "answer": "Typowy schemat wygląda tak:\n\nrunning = True\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n\n    update()\n    draw()\n    pygame.display.flip()\n\nPo zakończeniu pętli należy poprawnie zamknąć Pygame."
+    },
+    {
+      "questions": [
+        "co to jest fps",
+        "czym jest fps w grze",
+        "co oznacza fps"
+      ],
+      "answer": "FPS oznacza liczbę klatek renderowanych w ciągu sekundy. Wysokie i stabilne FPS zwykle zapewnia płynniejsze wyświetlanie gry."
+    },
+    {
+      "questions": [
+        "co to jest delta time",
+        "czym jest delta time",
+        "po co używać delta time"
+      ],
+      "answer": "Delta time to czas, który upłynął od poprzedniej aktualizacji. Pozwala wykonywać ruch i animacje niezależnie od liczby FPS, np. position += speed * dt."
+    },
+    {
+      "questions": [
+        "co to jest collider",
+        "czym jest kolizja w grze",
+        "jak działa collision detection"
+      ],
+      "answer": "Collision detection to wykrywanie przecięcia lub kontaktu obiektów. W prostych grach 2D można używać prostokątów, okręgów lub bardziej złożonych kształtów."
+    },
+    {
+      "questions": [
+        "co to jest state machine",
+        "czym jest maszyna stanów",
+        "jak działa state machine"
+      ],
+      "answer": "State machine organizuje zachowanie programu poprzez zdefiniowane stany i przejścia między nimi. W grze przykładowymi stanami mogą być MENU, PLAYING, PAUSED i GAME_OVER."
+    },
+    {
+      "questions": [
+        "co to jest cache",
+        "czym jest pamięć podręczna",
+        "do czego służy cache"
+      ],
+      "answer": "Cache przechowuje wcześniej przygotowane dane, aby można było uzyskać do nich szybszy dostęp. Może zmniejszyć liczbę kosztownych operacji, ale wymaga poprawnego unieważniania nieaktualnych danych."
+    },
+    {
+      "questions": [
+        "co to jest memory leak",
+        "czym jest wyciek pamięci",
+        "co oznacza memory leak"
+      ],
+      "answer": "Memory leak występuje, gdy program nie zwalnia pamięci, która nie jest już potrzebna. W długotrwałym procesie może to prowadzić do wzrostu zużycia RAM i pogorszenia wydajności."
+    },
+    {
+      "questions": [
+        "jak zoptymalizować program",
+        "jak poprawić wydajność programu",
+        "optymalizacja kodu"
+      ],
+      "answer": "Najpierw należy zmierzyć problem, zamiast optymalizować losowe fragmenty. Pomocne są profilery, pomiary czasu i analiza złożoności. Następnie można poprawić algorytm, ograniczyć zbędne operacje, zmniejszyć liczbę alokacji lub zastosować odpowiednią strukturę danych."
+    },
+    {
+      "questions": [
+        "co to jest profiler",
+        "czym jest profilowanie programu",
+        "do czego służy profiler"
+      ],
+      "answer": "Profiler mierzy zachowanie programu podczas wykonywania, np. czas spędzany w funkcjach, liczbę wywołań lub zużycie zasobów. Pomaga znaleźć rzeczywiste wąskie gardła."
+    },
+    {
+      "questions": [
+        "co to jest refaktoryzacja",
+        "czym jest refactoring",
+        "co oznacza refaktoryzacja kodu"
+      ],
+      "answer": "Refaktoryzacja to zmiana wewnętrznej struktury kodu bez zmiany jego obserwowalnego działania. Celem jest poprawa czytelności, utrzymywalności, testowalności lub struktury."
+    },
+    {
+      "questions": [
+        "co to jest clean code",
+        "czym jest czysty kod",
+        "jak pisać clean code"
+      ],
+      "answer": "Clean Code oznacza kod czytelny, przewidywalny i łatwy w utrzymaniu. Pomagają w tym sensowne nazwy, małe odpowiedzialności funkcji, ograniczanie duplikacji i jasny przepływ logiki."
+    },
+    {
+      "questions": [
+        "co to jest dry",
+        "czym jest zasada dry",
+        "co oznacza don't repeat yourself"
+      ],
+      "answer": "DRY oznacza Don't Repeat Yourself. Zasada zachęca do unikania niepotrzebnego powielania tej samej logiki w wielu miejscach."
+    },
+    {
+      "questions": [
+        "co to jest kiss w programowaniu",
+        "czym jest zasada kiss",
+        "zasada kiss"
+      ],
+      "answer": "KISS oznacza Keep It Simple, Stupid. W praktyce zachęca do wybierania prostych rozwiązań zamiast niepotrzebnego komplikowania architektury."
+    },
+    {
+      "questions": [
+        "co to jest solid",
+        "czym są zasady solid",
+        "solid programowanie"
+      ],
+      "answer": "SOLID to zestaw pięciu zasad projektowania obiektowego: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation oraz Dependency Inversion."
+    },
+    {
+      "questions": [
+        "jak znaleźć błąd w kodzie",
+        "jak debugować kod",
+        "co robić gdy kod nie działa"
+      ],
+      "answer": "Najpierw odczytaj dokładny komunikat błędu i jego lokalizację. Następnie odtwórz problem w minimalnym przypadku, sprawdź wartości zmiennych, prześledź przepływ programu i izoluj fragment powodujący problem. Nie warto zgadywać bez analizy danych."
+    },
+    {
+      "questions": [
+        "dlaczego dostaję unexpected token",
+        "unexpected token javascript",
+        "błąd unexpected token"
+      ],
+      "answer": "Unexpected token oznacza zwykle, że parser napotkał znak lub konstrukcję, której nie oczekiwał w danym miejscu. Należy sprawdzić wcześniejszy fragment kodu, ponieważ brakujący nawias, przecinek lub cudzysłów może powodować błąd dopiero w kolejnej linii."
+    },
+    {
+      "questions": [
+        "identifier already declared",
+        "identifier has already been declared",
+        "javascript identifier already declared"
+      ],
+      "answer": "Błąd 'Identifier has already been declared' oznacza, że w tym samym zakresie próbowano ponownie zadeklarować zmienną za pomocą let, const lub innego mechanizmu deklaracji. Należy znaleźć duplikat deklaracji albo zmienić zakres lub nazwę."
+    },
+    {
+      "questions": [
+        "co oznacza failed to fetch",
+        "javascript failed to fetch",
+        "błąd failed to fetch"
+      ],
+      "answer": "Failed to fetch oznacza, że przeglądarka nie otrzymała prawidłowej odpowiedzi z żądania fetch. Przyczyną może być niedostępny serwer, błędny URL, CORS, problem sieciowy, HTTPS lub blokada przeglądarki."
+    },
+    {
+      "questions": [
+        "co to jest undefined javascript",
+        "czym jest undefined",
+        "javascript undefined"
+      ],
+      "answer": "undefined oznacza, że wartość nie została przypisana lub właściwość nie istnieje. Jest to inna wartość niż null, który zwykle oznacza świadomie ustawiony brak wartości."
+    },
+    {
+      "questions": [
+        "co to jest null",
+        "czym jest null javascript",
+        "javascript null"
+      ],
+      "answer": "null jest wartością reprezentującą świadomy brak obiektu lub wartości. W JavaScripcie null różni się od undefined, mimo że oba mogą oznaczać brak użytecznej wartości."
+    },
+    {
+      "questions": [
+        "co to jest boolean",
+        "czym jest boolean",
+        "typ boolean"
+      ],
+      "answer": "Boolean to typ logiczny mający dwie wartości: true i false. Jest używany przede wszystkim do reprezentowania warunków i stanów logicznych."
+    },
+    {
+      "questions": [
+        "co to jest string",
+        "czym jest string",
+        "typ string"
+      ],
+      "answer": "String to typ reprezentujący tekst. Przykład w JavaScripcie:\n\nconst name = \"Jakub\";"
+    },
+    {
+      "questions": [
+        "co to jest integer",
+        "czym jest int",
+        "typ int"
+      ],
+      "answer": "Integer, czyli liczba całkowita, reprezentuje wartości bez części ułamkowej, takie jak -10, 0 lub 42."
+    },
+    {
+      "questions": [
+        "co to jest float",
+        "czym jest liczba zmiennoprzecinkowa",
+        "typ float"
+      ],
+      "answer": "Float to typ reprezentujący liczby zmiennoprzecinkowe, np. 3.14. Należy pamiętać, że reprezentacja binarna może powodować niewielkie błędy precyzji."
+    },
+    {
+      "questions": [
+        "dlaczego 0.1 plus 0.2 nie daje dokładnie 0.3",
+        "problem 0.1 0.2",
+        "floating point problem"
+      ],
+      "answer": "Liczby zmiennoprzecinkowe są zwykle przechowywane w reprezentacji binarnej, w której wiele wartości dziesiętnych nie ma dokładnej reprezentacji. Dlatego wynik może być bardzo bliski 0.3, ale nie identyczny bit po bicie."
+    },
+    {
+      "questions": [
+        "co to jest binary search",
+        "czym jest wyszukiwanie binarne",
+        "wyszukiwanie binarne"
+      ],
+      "answer": "Wyszukiwanie binarne działa na uporządkowanych danych. W każdym kroku odrzuca około połowę pozostałego zakresu, dlatego jego złożoność wynosi O(log n)."
+    },
+    {
+      "questions": [
+        "co to jest binary tree",
+        "czym jest drzewo binarne",
+        "drzewo binarne"
+      ],
+      "answer": "Drzewo binarne to struktura danych, w której każdy węzeł ma co najwyżej dwoje dzieci. Jest wykorzystywane między innymi w wyszukiwaniu, sortowaniu i reprezentacji struktur hierarchicznych."
+    },
+    {
+      "questions": [
+        "co to jest graf",
+        "czym jest graf w informatyce",
+        "struktura graf"
+      ],
+      "answer": "Graf składa się z wierzchołków i krawędzi opisujących relacje między nimi. Może być skierowany lub nieskierowany, ważony lub nieważony."
+    },
+    {
+      "questions": [
+        "co to jest bfs",
+        "czym jest breadth first search",
+        "algorytm bfs"
+      ],
+      "answer": "BFS, czyli Breadth-First Search, przeszukuje graf warstwami, zaczynając od wskazanego wierzchołka. Dla grafu nieważonego może znaleźć najkrótszą liczbę krawędzi do osiągalnych wierzchołków."
+    },
+    {
+      "questions": [
+        "co to jest dfs",
+        "czym jest depth first search",
+        "algorytm dfs"
+      ],
+      "answer": "DFS, czyli Depth-First Search, eksploruje graf możliwie głęboko, zanim cofnie się do poprzednich wierzchołków. Można go implementować rekurencyjnie lub za pomocą stosu."
+    },
+    {
+      "questions": [
+        "co to jest ai",
+        "czym jest sztuczna inteligencja",
+        "co oznacza ai"
+      ],
+      "answer": "AI, czyli sztuczna inteligencja, obejmuje metody pozwalające systemom wykonywać zadania wymagające określonych zdolności poznawczych, takich jak klasyfikacja, predykcja, rozpoznawanie wzorców czy generowanie treści."
+    },
+    {
+      "questions": [
+        "co to jest model językowy",
+        "czym jest llm",
+        "co oznacza llm"
+      ],
+      "answer": "LLM, czyli Large Language Model, to model uczenia maszynowego trenowany na dużych zbiorach tekstu w celu modelowania zależności językowych. Może między innymi generować tekst, odpowiadać na pytania i analizować informacje."
+    },
+    {
+      "questions": [
+        "co to jest token w ai",
+        "czym jest token",
+        "co oznacza token w llm"
+      ],
+      "answer": "Token to jednostka tekstu przetwarzana przez model językowy. Token nie musi odpowiadać pojedynczemu słowu; może reprezentować fragment słowa, znak lub kilka znaków."
+    },
+    {
+      "questions": [
+        "co to jest context window",
+        "czym jest kontekst modelu",
+        "co oznacza context 32768"
+      ],
+      "answer": "Context window określa maksymalną liczbę tokenów, które model może uwzględnić w pojedynczym kontekście. Wartość 32768 oznacza kontekst o rozmiarze do około 32 tysięcy tokenów, zależnie od konkretnej implementacji modelu."
+    },
+    {
+      "questions": [
+        "co to jest prompt",
+        "czym jest prompt",
+        "co oznacza prompt ai"
+      ],
+      "answer": "Prompt to instrukcja lub dane wejściowe przekazywane modelowi AI. Dobrze skonstruowany prompt jasno określa zadanie, kontekst, ograniczenia i oczekiwany format odpowiedzi."
+    },
+    {
+      "questions": [
+        "jak napisać dobry prompt",
+        "jak tworzyć prompty",
+        "dobre prompty ai"
+      ],
+      "answer": "Dobry prompt powinien jasno określać cel, dostarczać potrzebny kontekst, wskazywać ograniczenia i opisywać oczekiwany wynik. Przy zadaniach technicznych warto podać język programowania, wersję, komunikat błędu oraz odpowiedni fragment kodu."
+    },
+    {
+      "questions": [
+        "co to jest inference",
+        "czym jest inferencja modelu",
+        "co oznacza inference ai"
+      ],
+      "answer": "Inferencja to proces wykorzystania wytrenowanego modelu do wygenerowania predykcji lub odpowiedzi na podstawie danych wejściowych."
+    },
+    {
+      "questions": [
+        "co to jest quantization",
+        "czym jest kwantyzacja modelu",
+        "co oznacza quantization llm"
+      ],
+      "answer": "Kwantyzacja zmniejsza precyzję reprezentacji parametrów modelu, np. z FP16 do formatów o mniejszej liczbie bitów. Może zmniejszyć zużycie pamięci i przyspieszyć inferencję, kosztem pewnej utraty dokładności."
+    },
+    {
+      "questions": [
+        "co to jest gpu",
+        "czym jest gpu",
+        "do czego służy gpu"
+      ],
+      "answer": "GPU, czyli procesor graficzny, jest wyspecjalizowany w wykonywaniu dużej liczby operacji równolegle. Dzięki temu jest szczególnie użyteczny w grafice, obliczeniach równoległych i inferencji modeli AI."
+    },
+    {
+      "questions": [
+        "co to jest cpu",
+        "czym jest cpu",
+        "do czego służy cpu"
+      ],
+      "answer": "CPU jest głównym procesorem ogólnego przeznaczenia. Wykonuje instrukcje programu i obsługuje szeroki zakres zadań systemowych oraz obliczeniowych."
+    },
+    {
+      "questions": [
+        "cpu czy gpu do ai",
+        "czy ai działa na gpu",
+        "czy model można uruchomić na cpu"
+      ],
+      "answer": "Modele AI mogą działać zarówno na CPU, jak i GPU. GPU zwykle oferuje większą przepustowość dla wielu operacji równoległych, natomiast CPU może być wygodniejsze przy mniejszych modelach lub sprzęcie bez odpowiedniego GPU."
+    },
+    {
+      "questions": [
+        "co to jest lokalny model ai",
+        "czym jest local llm",
+        "co oznacza lokalne ai"
+      ],
+      "answer": "Lokalny model AI działa na urządzeniu użytkownika zamiast wymagać wysyłania każdego zapytania do zewnętrznego API. Zależnie od konfiguracji może to zwiększyć prywatność i umożliwić pracę bez internetu."
+    },
+    {
+      "questions": [
+        "co to jest model offline",
+        "czy ai może działać offline",
+        "jak działa ai offline"
+      ],
+      "answer": "Model offline może wykonywać inferencję bez połączenia z internetem, jeśli wszystkie wymagane pliki modelu, runtime i zależności znajdują się lokalnie."
+    },
+    {
+      "questions": [
+        "co to jest architektura programu",
+        "czym jest architektura aplikacji",
+        "jak projektować architekturę programu"
+      ],
+      "answer": "Architektura programu opisuje sposób podziału aplikacji na komponenty, ich odpowiedzialności i komunikację między nimi. Dobra architektura powinna ułatwiać rozwój, testowanie, debugowanie i utrzymanie."
+    },
+    {
+      "questions": [
+        "co to jest modularność",
+        "czym jest modularny kod",
+        "jak zrobić modularny program"
+      ],
+      "answer": "Modularność polega na dzieleniu programu na względnie niezależne moduły o jasno określonych odpowiedzialnościach i interfejsach."
+    },
+    {
+      "questions": [
+        "co to jest dependency injection",
+        "czym jest dependency injection",
+        "di programowanie"
+      ],
+      "answer": "Dependency Injection polega na dostarczaniu obiektowi jego zależności z zewnątrz zamiast tworzenia ich bezpośrednio wewnątrz obiektu. Ułatwia to testowanie i wymianę implementacji."
+    },
+    {
+      "questions": [
+        "co to jest test jednostkowy",
+        "czym jest unit test",
+        "co to są testy jednostkowe"
+      ],
+      "answer": "Test jednostkowy sprawdza mały, możliwie niezależny fragment programu, np. pojedynczą funkcję. Jego celem jest szybkie wykrywanie regresji i błędów logicznych."
+    },
+    {
+      "questions": [
+        "co to jest test integracyjny",
+        "czym jest integration test",
+        "testy integracyjne"
+      ],
+      "answer": "Test integracyjny sprawdza współpracę kilku komponentów, np. aplikacji z bazą danych lub modułu z zewnętrznym interfejsem."
+    },
+    {
+      "questions": [
+        "co to jest regresja",
+        "czym jest regression bug",
+        "błąd regresji"
+      ],
+      "answer": "Regresja występuje wtedy, gdy nowa zmiana powoduje ponowne pojawienie się błędu lub psuje wcześniej działającą funkcję."
+    },
+    {
+      "questions": [
+        "jak poprawić czytelność kodu",
+        "jak pisać czytelny kod",
+        "czytelny kod programowanie"
+      ],
+      "answer": "Używaj opisowych nazw, małych funkcji, logicznego podziału modułów, spójnego formatowania i komentarzy tylko tam, gdzie wyjaśniają coś, czego nie da się łatwo wywnioskować z kodu."
+    },
+    {
+      "questions": [
+        "jak nazwać zmienną",
+        "jak wybierać nazwy zmiennych",
+        "dobre nazwy zmiennych"
+      ],
+      "answer": "Nazwa powinna opisywać znaczenie wartości, a nie jej przypadkową reprezentację. Lepiej użyć user_points niż x, jeśli zmienna przechowuje punkty użytkownika."
+    },
+    {
+      "questions": [
+        "co to jest komentarz",
+        "czym jest komentarz w kodzie",
+        "po co są komentarze"
+      ],
+      "answer": "Komentarz to fragment kodu ignorowany przez interpreter lub kompilator. Powinien przede wszystkim wyjaśniać intencję, nietypowe rozwiązanie lub ważne ograniczenie, a nie powtarzać oczywiste działanie kodu."
+    },
+    {
+      "questions": [
+        "czy komentarze są potrzebne",
+        "kiedy używać komentarzy",
+        "czy komentować kod"
+      ],
+      "answer": "Komentarze są przydatne, gdy kod nie wyjaśnia sam z siebie istotnej decyzji projektowej. Nadmiar komentarzy opisujących oczywiste instrukcje może natomiast utrudniać utrzymanie kodu."
+    },
+    {
+      "questions": [
+        "co to jest dokumentacja",
+        "czym jest dokumentacja programu",
+        "po co dokumentować kod"
+      ],
+      "answer": "Dokumentacja opisuje sposób działania systemu, jego konfigurację, API, wymagania, instalację i istotne decyzje projektowe. Dobra dokumentacja skraca czas potrzebny na zrozumienie projektu."
+    },
+    {
+      "questions": [
+        "jak zrobić README",
+        "co powinien zawierać readme",
+        "readme github"
+      ],
+      "answer": "README zwykle powinien zawierać nazwę projektu, krótki opis, wymagania, instrukcję instalacji, sposób uruchomienia, podstawowe użycie, konfigurację oraz informacje o licencji lub współpracy, jeśli są potrzebne."
+    },
+    {
+      "questions": [
+        "co to jest open source",
+        "czym jest open source",
+        "co oznacza open source"
+      ],
+      "answer": "Open source oznacza, że kod źródłowy projektu jest udostępniany na warunkach określonej licencji pozwalającej na określone użycie, modyfikowanie lub rozpowszechnianie. Konkretne prawa zależą od licencji."
+    },
+    {
+      "questions": [
+        "co to jest licencja mit",
+        "czym jest mit license",
+        "licencja mit"
+      ],
+      "answer": "MIT License jest krótką i liberalną licencją open source. Pozwala między innymi używać, modyfikować i rozpowszechniać oprogramowanie, pod warunkiem zachowania wymaganych informacji o prawach autorskich i licencji."
+    },
+    {
+      "questions": [
+        "co to jest semver",
+        "czym jest semantic versioning",
+        "wersjonowanie semver"
+      ],
+      "answer": "SemVer to sposób numerowania wersji w formacie MAJOR.MINOR.PATCH. Zwiększenie MAJOR zwykle oznacza niekompatybilne zmiany API, MINOR nowe kompatybilne funkcje, a PATCH poprawki błędów."
+    },
+    {
+      "questions": [
+        "jak wersjonować program",
+        "jak numerować wersje aplikacji",
+        "wersjonowanie aplikacji"
+      ],
+      "answer": "Możesz używać Semantic Versioning, np. 1.0.0. Przy każdej wersji warto jasno określić, czy są to poprawki, nowe funkcje, czy zmiany mogące łamać kompatybilność."
+    },
+    {
+      "questions": [
+        "co to jest config",
+        "czym jest plik konfiguracyjny",
+        "do czego służy config"
+      ],
+      "answer": "Plik konfiguracyjny przechowuje ustawienia aplikacji oddzielone od głównego kodu programu. Może zawierać między innymi ścieżki, limity, opcje funkcji i parametry działania."
+    },
+    {
+      "questions": [
+        "jak zrobić system konfiguracji",
+        "jak przechowywać konfigurację aplikacji",
+        "config json aplikacja"
+      ],
+      "answer": "Można użyć JSON, YAML, TOML lub innego formatu zależnie od projektu. Konfigurację warto walidować podczas uruchamiania, aby błędy były wykrywane od razu."
+    },
+    {
+      "questions": [
+        "co to jest walidacja",
+        "czym jest validation",
+        "do czego służy walidacja danych"
+      ],
+      "answer": "Walidacja sprawdza, czy dane spełniają określone wymagania, np. typ, zakres, długość lub format. Dane pochodzące od użytkownika powinny być walidowane przed wykorzystaniem."
+    },
+    {
+      "questions": [
+        "co to jest sanitizacja",
+        "czym jest sanitization",
+        "czym różni się walidacja od sanitizacji"
+      ],
+      "answer": "Walidacja sprawdza, czy dane są zgodne z wymaganiami, natomiast sanitizacja ma na celu bezpieczne przekształcenie danych lub usunięcie niepożądanych elementów. W bezpieczeństwie aplikacji oba mechanizmy mogą być potrzebne."
+    },
+    {
+      "questions": [
+        "co to jest logowanie programu",
+        "czym są logi",
+        "do czego służą logi"
+      ],
+      "answer": "Logi to informacje zapisywane przez aplikację podczas działania. Mogą pomóc w diagnozowaniu błędów, monitorowaniu systemu i analizie zachowania aplikacji."
+    },
+    {
+      "questions": [
+        "jak robić logi w pythonie",
+        "python logging",
+        "moduł logging python"
+      ],
+      "answer": "Python posiada standardowy moduł logging. Przykład:\n\nimport logging\n\nlogging.basicConfig(level=logging.INFO)\nlogging.info(\"Aplikacja uruchomiona\")"
+    },
+    {
+      "questions": [
+        "co to jest stdout",
+        "czym jest stdout",
+        "standard output"
+      ],
+      "answer": "stdout, czyli standardowe wyjście, to kanał używany przez program do przekazywania zwykłych danych wyjściowych. W aplikacjach konsolowych jest zwykle reprezentowany przez terminal."
+    },
+    {
+      "questions": [
+        "co to jest stderr",
+        "czym jest stderr",
+        "standard error"
+      ],
+      "answer": "stderr to standardowy kanał wyjścia przeznaczony przede wszystkim dla komunikatów błędów i diagnostyki."
+    },
+    {
+      "questions": [
+        "co to jest proces",
+        "czym jest proces systemowy",
+        "process system"
+      ],
+      "answer": "Proces to uruchomiona instancja programu posiadająca własną przestrzeń adresową i zasoby. System operacyjny zarządza jego wykonywaniem."
+    },
+    {
+      "questions": [
+        "co to jest wątek",
+        "czym jest thread",
+        "co to jest thread programowanie"
+      ],
+      "answer": "Wątek to jednostka wykonywania działająca wewnątrz procesu i współdzieląca z nim pamięć. Wątki mogą umożliwiać współbieżne wykonywanie zadań, ale wymagają poprawnej synchronizacji."
+    },
+    {
+      "questions": [
+        "co to jest concurrency",
+        "czym jest współbieżność",
+        "co oznacza concurrency"
+      ],
+      "answer": "Współbieżność oznacza organizację wielu zadań tak, aby ich wykonanie mogło się przeplatać lub postępować niezależnie. Nie musi oznaczać fizycznego wykonywania wszystkich zadań jednocześnie."
+    },
+    {
+      "questions": [
+        "co to jest parallelism",
+        "czym jest równoległość",
+        "co oznacza parallelism"
+      ],
+      "answer": "Równoległość oznacza faktyczne wykonywanie wielu operacji w tym samym czasie, zwykle na wielu rdzeniach lub jednostkach obliczeniowych."
+    },
+    {
+      "questions": [
+        "co to jest deadlock",
+        "czym jest zakleszczenie",
+        "deadlock programowanie"
+      ],
+      "answer": "Deadlock to sytuacja, w której kilka zadań czeka wzajemnie na zasoby lub zdarzenia i żadne nie może kontynuować działania."
+    },
+    {
+      "questions": [
+        "co to jest race condition",
+        "czym jest wyścig danych",
+        "race condition"
+      ],
+      "answer": "Race condition występuje, gdy wynik programu zależy od kolejności wykonywania współbieżnych operacji na współdzielonym stanie. Może prowadzić do trudnych do odtworzenia błędów."
+    },
+    {
+      "questions": [
+        "jak projektować dobry algorytm",
+        "jak stworzyć algorytm",
+        "projektowanie algorytmów"
+      ],
+      "answer": "Najpierw dokładnie zdefiniuj problem i dane wejściowe. Następnie określ oczekiwany wynik, ograniczenia, przypadki brzegowe oraz kryteria wydajności. Dopiero potem wybierz strukturę danych i algorytm."
+    },
+    {
+      "questions": [
+        "co to jest edge case",
+        "czym jest przypadek brzegowy",
+        "co oznacza edge case"
+      ],
+      "answer": "Edge case to nietypowy lub graniczny przypadek danych wejściowych, który może ujawnić błąd w algorytmie. Przykładami są pusta lista, liczba ujemna, bardzo duża wartość lub brakujący element."
+    },
+    {
+      "questions": [
+        "jak testować przypadki brzegowe",
+        "jak sprawdzać edge cases",
+        "testowanie przypadków brzegowych"
+      ],
+      "answer": "Warto świadomie przygotować testy dla wartości minimalnych, maksymalnych, pustych danych, duplikatów, niepoprawnych typów i nietypowych kombinacji danych."
+    },
+    {
+      "questions": [
+        "co to jest pseudokod",
+        "czym jest pseudokod",
+        "do czego służy pseudokod"
+      ],
+      "answer": "Pseudokod to opis algorytmu przypominający kod, ale niezależny od konkretnego języka programowania. Pomaga zaprojektować logikę przed implementacją."
+    },
+    {
+      "questions": [
+        "jak zamienić pseudokod na python",
+        "implementacja algorytmu w pythonie",
+        "jak przejść od algorytmu do kodu"
+      ],
+      "answer": "Najpierw rozbij pseudokod na konkretne operacje, dobierz struktury danych, a następnie implementuj poszczególne kroki. Po każdym większym fragmencie warto wykonać test z prostymi danymi."
+    },
+    {
+      "questions": [
+        "jak poprawić kod",
+        "jak ulepszyć program",
+        "co można poprawić w kodzie"
+      ],
+      "answer": "Najpierw należy ustalić, co dokładnie ma zostać poprawione: poprawność, wydajność, bezpieczeństwo, czytelność czy architektura. Dopiero wtedy można dobrać odpowiednią zmianę."
+    },
+    {
+      "questions": [
+        "jak znaleźć problem w dużym projekcie",
+        "debugowanie dużego projektu",
+        "jak debugować duży program"
+      ],
+      "answer": "Podziel problem na mniejsze komponenty i ustal, gdzie dokładnie występuje nieprawidłowe zachowanie. Pomagają logi, breakpointy, testy izolujące komponent oraz minimalny przypadek reprodukujący błąd."
+    },
+    {
+      "questions": [
+        "czy warto używać komentarzy w kodzie",
+        "czy komentarze są dobre",
+        "komentarze programowanie"
+      ],
+      "answer": "Tak, ale przede wszystkim do wyjaśniania intencji i nietypowych decyzji. Kod powinien sam opisywać oczywiste operacje poprzez dobrane nazwy i strukturę."
+    },
+    {
+      "questions": [
+        "co jest ważniejsze wydajność czy czytelność",
+        "czy optymalizować kod",
+        "czy zawsze trzeba optymalizować"
+      ],
+      "answer": "W większości przypadków najpierw warto zadbać o poprawność i czytelność, a następnie mierzyć wydajność. Optymalizacja powinna być oparta na rzeczywistych pomiarach i wymaganiach."
+    },
+    {
+      "questions": [
+        "czy możesz pomóc debugować",
+        "możesz znaleźć błąd w kodzie",
+        "pomożesz z błędem"
+      ],
+      "answer": "Tak. Najbardziej pomocne są: kod powodujący problem, dokładny komunikat błędu, informacja o środowisku oraz opis tego, co powinno się wydarzyć i co faktycznie się dzieje."
     }
   ]
 }
