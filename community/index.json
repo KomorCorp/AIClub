@@ -19,6 +19,11 @@
       "file": "tinygpt-code",
       "author": "TinyGPT",
       "version": "1.0"
+    },
+    {
+      "file": "tinygpt-nano",
+      "author": "TinyGPT",
+      "version": "1.0"
     }
   ]
 }
