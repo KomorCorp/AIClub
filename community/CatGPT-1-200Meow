@@ -709,7 +709,7 @@
   },
 
   {
-    "questions": ["cześć", "hej", "siema", witaj"],
+    "questions": ["cześć", "hej", "siema", "witaj"],
     "answer": "Hej! 😺 W czym mogę pomóc?"
   },
   {
