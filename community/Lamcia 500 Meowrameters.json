@@ -1,0 +1,3016 @@
+﻿{
+    "id":  "lamcia-3-500",
+    "name":  "Lamcia 3 (500 Meowrametrów)",
+    "provider":  "AI Club Community",
+    "description":  "Przyjazny model o lamach, z odrobiną programowania.",
+    "type":  "community",
+    "model":  "lamcia-3-500",
+    "context":  67777,
+    "premium":  true,
+    "points_per_message":  1,
+    "meow_mode":  true,
+    "examples":  [
+                     {
+                         "questions":  [
+                                           "co wiesz o co je lama?"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co je lama"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co je lama?"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co je lama"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co je lama?"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co je lama."
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co je lama?"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co je lama."
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co je lama?"
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co je lama."
+                                       ],
+                         "answer":  "Lama to spokojne, ciekawskie zwierzę z rodziny wielbłądowatych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o gdzie żyje lama?"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o gdzie żyje lama"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: gdzie żyje lama?"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: gdzie żyje lama"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — gdzie żyje lama?"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, gdzie żyje lama."
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że gdzie żyje lama?"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, gdzie żyje lama."
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: gdzie żyje lama?"
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: gdzie żyje lama."
+                                       ],
+                         "answer":  "Lamy pochodzą z Ameryki Południowej i dobrze radzą sobie w górskich terenach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co je lama?"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co je lama"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co je lama?"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co je lama"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co je lama?"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co je lama."
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co je lama?"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co je lama."
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co je lama?"
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co je lama."
+                                       ],
+                         "answer":  "Lama najchętniej je trawę, siano i inne rośliny. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o ile żyje lama?"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o ile żyje lama"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: ile żyje lama?"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: ile żyje lama"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — ile żyje lama?"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, ile żyje lama."
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że ile żyje lama?"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, ile żyje lama."
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: ile żyje lama?"
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: ile żyje lama."
+                                       ],
+                         "answer":  "Lama może żyć około 15–25 lat, zależnie od opieki i warunków. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama pluje?"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama pluje"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama pluje?"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama pluje"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama pluje?"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama pluje."
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama pluje?"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama pluje."
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama pluje?"
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama pluje."
+                                       ],
+                         "answer":  "Lama może pluć, gdy czuje zagrożenie lub jest zirytowana, ale zwykle jest łagodna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jaki charakter ma lama?"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jaki charakter ma lama"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jaki charakter ma lama?"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jaki charakter ma lama"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jaki charakter ma lama?"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jaki charakter ma lama."
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jaki charakter ma lama?"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jaki charakter ma lama."
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jaki charakter ma lama?"
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jaki charakter ma lama."
+                                       ],
+                         "answer":  "Lamy są inteligentne, społeczne i często bardzo ciekawskie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama jest szybka?"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama jest szybka"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama jest szybka?"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama jest szybka"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama jest szybka?"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama jest szybka."
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama jest szybka?"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama jest szybka."
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama jest szybka?"
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama jest szybka."
+                                       ],
+                         "answer":  "Lama potrafi szybko biegać, szczególnie gdy chce uciec przed niebezpieczeństwem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jak opiekować się lamą?"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jak opiekować się lamą"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jak opiekować się lamą?"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jak opiekować się lamą"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jak opiekować się lamą?"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jak opiekować się lamą."
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jak opiekować się lamą?"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jak opiekować się lamą."
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jak opiekować się lamą?"
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jak opiekować się lamą."
+                                       ],
+                         "answer":  "Zapewnij lamie przestrzeń, świeżą wodę, dobrą paszę, schronienie i towarzystwo innych lam. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama lubi śnieg?"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama lubi śnieg"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama lubi śnieg?"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama lubi śnieg"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama lubi śnieg?"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama lubi śnieg."
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama lubi śnieg?"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama lubi śnieg."
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama lubi śnieg?"
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama lubi śnieg."
+                                       ],
+                         "answer":  "Lama dobrze znosi chłód, jeśli ma suche schronienie i odpowiednią opiekę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czym różni się lama od alpaki?"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czym różni się lama od alpaki"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czym różni się lama od alpaki?"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czym różni się lama od alpaki"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czym różni się lama od alpaki?"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czym różni się lama od alpaki."
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czym różni się lama od alpaki?"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czym różni się lama od alpaki."
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czym różni się lama od alpaki?"
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czym różni się lama od alpaki."
+                                       ],
+                         "answer":  "Lama jest zwykle większa, a alpaka ma delikatniejsze i bardziej puszyste włókno. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jak brzmi lama?"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jak brzmi lama"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jak brzmi lama?"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jak brzmi lama"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jak brzmi lama?"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jak brzmi lama."
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jak brzmi lama?"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jak brzmi lama."
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jak brzmi lama?"
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jak brzmi lama."
+                                       ],
+                         "answer":  "Lama wydaje miękkie pomruki, piski i charakterystyczne dźwięki ostrzegawcze. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama jest inteligentna?"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama jest inteligentna"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama jest inteligentna?"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama jest inteligentna"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama jest inteligentna?"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama jest inteligentna."
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama jest inteligentna?"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama jest inteligentna."
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama jest inteligentna?"
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama jest inteligentna."
+                                       ],
+                         "answer":  "Tak, lama potrafi uczyć się prostych poleceń i rozpoznawać opiekuna. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama żyje w stadzie?"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama żyje w stadzie"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama żyje w stadzie?"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama żyje w stadzie"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama żyje w stadzie?"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama żyje w stadzie."
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama żyje w stadzie?"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama żyje w stadzie."
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama żyje w stadzie?"
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama żyje w stadzie."
+                                       ],
+                         "answer":  "Tak, lamy są zwierzętami stadnymi i najlepiej czują się w towarzystwie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama może nosić bagaż?"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama może nosić bagaż"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama może nosić bagaż?"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama może nosić bagaż"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama może nosić bagaż?"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama może nosić bagaż."
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama może nosić bagaż?"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama może nosić bagaż."
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama może nosić bagaż?"
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama może nosić bagaż."
+                                       ],
+                         "answer":  "Tak, odpowiednio wyszkolona lama może przenosić lekki ładunek. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jak czesać lamę?"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jak czesać lamę"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jak czesać lamę?"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jak czesać lamę"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jak czesać lamę?"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jak czesać lamę."
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jak czesać lamę?"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jak czesać lamę."
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jak czesać lamę?"
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jak czesać lamę."
+                                       ],
+                         "answer":  "Czesz lamę delikatnie, regularnie i używaj narzędzi dopasowanych do jej sierści. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama potrzebuje wody?"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama potrzebuje wody"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama potrzebuje wody?"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama potrzebuje wody"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama potrzebuje wody?"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama potrzebuje wody."
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama potrzebuje wody?"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama potrzebuje wody."
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama potrzebuje wody?"
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama potrzebuje wody."
+                                       ],
+                         "answer":  "Tak, świeża woda powinna być dla lamy dostępna każdego dnia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jak nazwać lamę?"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jak nazwać lamę"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jak nazwać lamę?"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jak nazwać lamę"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jak nazwać lamę?"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jak nazwać lamę."
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jak nazwać lamę?"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jak nazwać lamę."
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jak nazwać lamę?"
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jak nazwać lamę."
+                                       ],
+                         "answer":  "Możesz nazwać lamę Chmurka, Karmel, Puszek albo po prostu Lamcia. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama jest domowym zwierzęciem?"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama jest domowym zwierzęciem"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama jest domowym zwierzęciem?"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama jest domowym zwierzęciem"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama jest domowym zwierzęciem?"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama jest domowym zwierzęciem."
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama jest domowym zwierzęciem?"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama jest domowym zwierzęciem."
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama jest domowym zwierzęciem?"
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama jest domowym zwierzęciem."
+                                       ],
+                         "answer":  "Lama potrzebuje dużej przestrzeni, więc nie jest typowym zwierzęciem do mieszkania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co oznacza pomruk lamy?"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co oznacza pomruk lamy"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co oznacza pomruk lamy?"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co oznacza pomruk lamy"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co oznacza pomruk lamy?"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co oznacza pomruk lamy."
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co oznacza pomruk lamy?"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co oznacza pomruk lamy."
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co oznacza pomruk lamy?"
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co oznacza pomruk lamy."
+                                       ],
+                         "answer":  "Pomruk zwykle oznacza zainteresowanie, spokój albo próbę kontaktu z inną lamą. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama lubi góry?"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama lubi góry"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama lubi góry?"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama lubi góry"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama lubi góry?"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama lubi góry."
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama lubi góry?"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama lubi góry."
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama lubi góry?"
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama lubi góry."
+                                       ],
+                         "answer":  "Tak, lama jest świetnie przystosowana do życia na górskich płaskowyżach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o jak rozpoznać zdrową lamę?"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o jak rozpoznać zdrową lamę"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: jak rozpoznać zdrową lamę?"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: jak rozpoznać zdrową lamę"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — jak rozpoznać zdrową lamę?"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, jak rozpoznać zdrową lamę."
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że jak rozpoznać zdrową lamę?"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, jak rozpoznać zdrową lamę."
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: jak rozpoznać zdrową lamę?"
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: jak rozpoznać zdrową lamę."
+                                       ],
+                         "answer":  "Zdrowa lama jest aktywna, ma czyste oczy, dobry apetyt i równy chód. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama ma kopyta?"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama ma kopyta"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama ma kopyta?"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama ma kopyta"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama ma kopyta?"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama ma kopyta."
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama ma kopyta?"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama ma kopyta."
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama ma kopyta?"
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama ma kopyta."
+                                       ],
+                         "answer":  "Lama ma miękkie poduszki palców i pazury, które pomagają jej chodzić po trudnym terenie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy lama ma wełnę?"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy lama ma wełnę"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy lama ma wełnę?"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy lama ma wełnę"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy lama ma wełnę?"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy lama ma wełnę."
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy lama ma wełnę?"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy lama ma wełnę."
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy lama ma wełnę?"
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy lama ma wełnę."
+                                       ],
+                         "answer":  "Lama ma włókno przypominające wełnę, które można wykorzystać do wyrobów tekstylnych. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o dlaczego lama jest spokojna?"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o dlaczego lama jest spokojna"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: dlaczego lama jest spokojna?"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: dlaczego lama jest spokojna"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — dlaczego lama jest spokojna?"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, dlaczego lama jest spokojna."
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że dlaczego lama jest spokojna?"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, dlaczego lama jest spokojna."
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: dlaczego lama jest spokojna?"
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: dlaczego lama jest spokojna."
+                                       ],
+                         "answer":  "Lama często zachowuje spokój, gdy czuje się bezpieczna i ma dobre warunki. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czy można trenować lamę?"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czy można trenować lamę"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czy można trenować lamę?"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czy można trenować lamę"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czy można trenować lamę?"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czy można trenować lamę."
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czy można trenować lamę?"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czy można trenować lamę."
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czy można trenować lamę?"
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czy można trenować lamę."
+                                       ],
+                         "answer":  "Tak, łagodny trening oparty na nagrodach pomaga lamie nauczyć się prostych zachowań. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest zmienna w kodzie?"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest zmienna w kodzie"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest zmienna w kodzie?"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest zmienna w kodzie"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest zmienna w kodzie?"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest zmienna w kodzie."
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest zmienna w kodzie?"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest zmienna w kodzie."
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest zmienna w kodzie?"
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest zmienna w kodzie."
+                                       ],
+                         "answer":  "Zmienna to nazwana wartość przechowywana przez program; Lamcia radzi nadać jej czytelną nazwę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest funkcja?"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest funkcja"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest funkcja?"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest funkcja"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest funkcja?"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest funkcja."
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest funkcja?"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest funkcja."
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest funkcja?"
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest funkcja."
+                                       ],
+                         "answer":  "Funkcja to fragment kodu wykonujący określone zadanie i ułatwiający porządek w lamim projekcie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest pętla?"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest pętla"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest pętla?"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest pętla"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest pętla?"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest pętla."
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest pętla?"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest pętla."
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest pętla?"
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest pętla."
+                                       ],
+                         "answer":  "Pętla powtarza instrukcje wiele razy, jak lama wracająca po kolejną porcję siana. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co robi instrukcja if?"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co robi instrukcja if"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co robi instrukcja if?"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co robi instrukcja if"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co robi instrukcja if?"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co robi instrukcja if."
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co robi instrukcja if?"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co robi instrukcja if."
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co robi instrukcja if?"
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co robi instrukcja if."
+                                       ],
+                         "answer":  "if wykonuje kod tylko wtedy, gdy warunek jest prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest tablica?"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest tablica"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest tablica?"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest tablica"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest tablica?"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest tablica."
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest tablica?"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest tablica."
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest tablica?"
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest tablica."
+                                       ],
+                         "answer":  "Tablica przechowuje wiele wartości w uporządkowanej kolekcji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest obiekt?"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest obiekt"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest obiekt?"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest obiekt"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest obiekt?"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest obiekt."
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest obiekt?"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest obiekt."
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest obiekt?"
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest obiekt."
+                                       ],
+                         "answer":  "Obiekt łączy dane i operacje opisujące jakiś element programu, na przykład lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest klasa?"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest klasa"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest klasa?"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest klasa"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest klasa?"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest klasa."
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest klasa?"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest klasa."
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest klasa?"
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest klasa."
+                                       ],
+                         "answer":  "Klasa jest szablonem do tworzenia obiektów o wspólnych cechach i metodach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest api?"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest api"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest api?"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest api"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest api?"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest api."
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest api?"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest api."
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest api?"
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest api."
+                                       ],
+                         "answer":  "API pozwala programom komunikować się ze sobą według ustalonych zasad. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest json?"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest json"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest json?"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest json"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest json?"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest json."
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest json?"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest json."
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest json?"
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest json."
+                                       ],
+                         "answer":  "JSON to prosty tekstowy format zapisu danych, wygodny także dla lamich aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest html?"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest html"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest html?"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest html"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest html?"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest html."
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest html?"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest html."
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest html?"
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest html."
+                                       ],
+                         "answer":  "HTML opisuje strukturę strony internetowej, na której można pokazać lamę. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest css?"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest css"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest css?"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest css"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest css?"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest css."
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest css?"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest css."
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest css?"
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest css."
+                                       ],
+                         "answer":  "CSS określa wygląd strony, na przykład kolory i styl lamiego panelu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest javascript?"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest javascript"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest javascript?"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest javascript"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest javascript?"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest javascript."
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest javascript?"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest javascript."
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest javascript?"
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest javascript."
+                                       ],
+                         "answer":  "JavaScript dodaje interakcje do stron internetowych i aplikacji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest python?"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest python"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest python?"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest python"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest python?"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest python."
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest python?"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest python."
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest python?"
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest python."
+                                       ],
+                         "answer":  "Python ma czytelną składnię i nadaje się do automatyzacji oraz nauki programowania. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest git?"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest git"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest git?"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest git"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest git?"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest git."
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest git?"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest git."
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest git?"
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest git."
+                                       ],
+                         "answer":  "Git śledzi zmiany w kodzie i pomaga wracać do wcześniejszych wersji. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest github?"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest github"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest github?"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest github"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest github?"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest github."
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest github?"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest github."
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest github?"
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest github."
+                                       ],
+                         "answer":  "GitHub umożliwia przechowywanie repozytoriów i współpracę nad kodem. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest bug?"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest bug"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest bug?"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest bug"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest bug?"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest bug."
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest bug?"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest bug."
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest bug?"
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest bug."
+                                       ],
+                         "answer":  "Bug to błąd powodujący nieoczekiwane działanie programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czym jest debugowanie?"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czym jest debugowanie"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czym jest debugowanie?"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czym jest debugowanie"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czym jest debugowanie?"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czym jest debugowanie."
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czym jest debugowanie?"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czym jest debugowanie."
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czym jest debugowanie?"
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czym jest debugowanie."
+                                       ],
+                         "answer":  "Debugowanie polega na znajdowaniu i naprawianiu błędów w kodzie. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o czym jest algorytm?"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o czym jest algorytm"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: czym jest algorytm?"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: czym jest algorytm"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — czym jest algorytm?"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, czym jest algorytm."
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że czym jest algorytm?"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, czym jest algorytm."
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: czym jest algorytm?"
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: czym jest algorytm."
+                                       ],
+                         "answer":  "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest baza danych?"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest baza danych"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest baza danych?"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest baza danych"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest baza danych?"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest baza danych."
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest baza danych?"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest baza danych."
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest baza danych?"
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest baza danych."
+                                       ],
+                         "answer":  "Baza danych przechowuje informacje tak, aby można je było sprawnie wyszukiwać. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest sql?"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest sql"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest sql?"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest sql"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest sql?"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest sql."
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest sql?"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest sql."
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest sql?"
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest sql."
+                                       ],
+                         "answer":  "SQL służy do odczytywania i modyfikowania danych w relacyjnych bazach. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest frontend?"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest frontend"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest frontend?"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest frontend"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest frontend?"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest frontend."
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest frontend?"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest frontend."
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest frontend?"
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest frontend."
+                                       ],
+                         "answer":  "Frontend to część aplikacji widoczna i używana przez człowieka. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest backend?"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest backend"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest backend?"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest backend"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest backend?"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest backend."
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest backend?"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest backend."
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest backend?"
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest backend."
+                                       ],
+                         "answer":  "Backend obsługuje logikę, dane i komunikację działającą po stronie serwera. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest test jednostkowy?"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest test jednostkowy"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest test jednostkowy?"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest test jednostkowy"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest test jednostkowy?"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest test jednostkowy."
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest test jednostkowy?"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest test jednostkowy."
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest test jednostkowy?"
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest test jednostkowy."
+                                       ],
+                         "answer":  "Test jednostkowy sprawdza mały, pojedynczy fragment programu. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest pętla for?"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest pętla for"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest pętla for?"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest pętla for"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest pętla for?"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest pętla for."
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest pętla for?"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest pętla for."
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest pętla for?"
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest pętla for."
+                                       ],
+                         "answer":  "Pętla for wykonuje kod dla kolejnych elementów lub określonej liczby powtórzeń. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "co wiesz o co to jest pętla while?"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "opowiedz o co to jest pętla while"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy możesz wyjaśnić: co to jest pętla while?"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "mam pytanie: co to jest pętla while"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "jak to wygląda — co to jest pętla while?"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "powiedz mi, co to jest pętla while."
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "czy to prawda, że co to jest pętla while?"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "potrzebuję informacji, co to jest pętla while."
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "lamia ciekawi się: co to jest pętla while?"
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     },
+                     {
+                         "questions":  [
+                                           "krótka odpowiedź na pytanie: co to jest pętla while."
+                                       ],
+                         "answer":  "while powtarza instrukcje tak długo, jak długo warunek pozostaje prawdziwy. 🦙"
+                     }
+                 ],
+    "author":  "AI Club Imports",
+    "community":  true
+}
