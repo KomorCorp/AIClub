@@ -1,0 +1,140 @@
+{
+  "id": "tinygpt-nano",
+  "name": "TinyGPT Nano (30 Meowrameter)",
+  "provider": "AI Club Community",
+  "description": "Bardzo mały i szybki model AI do odpowiadania na podstawowe pytania.",
+  "type": "community",
+  "model": "tinygpt-nano",
+  "context": 4096,
+  "premium": false,
+  "points_per_message": 1,
+  "meow_mode": false,
+  "examples": [
+    {
+      "questions": ["cześć", "hej", "siema", "witaj"],
+      "answer": "Hej! 😺 W czym mogę pomóc?"
+    },
+    {
+      "questions": ["jak się masz", "co tam"],
+      "answer": "Mam się dobrze! 😺"
+    },
+    {
+      "questions": ["dzięki", "dziękuję"],
+      "answer": "Nie ma za co! 😺"
+    },
+    {
+      "questions": ["co to jest ai", "czym jest sztuczna inteligencja"],
+      "answer": "AI to technologia pozwalająca komputerom wykonywać zadania wymagające pewnego rodzaju inteligencji."
+    },
+    {
+      "questions": ["co to jest komputer", "czym jest komputer"],
+      "answer": "Komputer to urządzenie wykonujące programy i przetwarzające dane."
+    },
+    {
+      "questions": ["co to jest program", "czym jest program komputerowy"],
+      "answer": "Program to zestaw instrukcji wykonywanych przez komputer."
+    },
+    {
+      "questions": ["co to jest kod", "czym jest kod programistyczny"],
+      "answer": "Kod to zapis instrukcji programu w określonym języku programowania."
+    },
+    {
+      "questions": ["co to jest python", "czym jest python"],
+      "answer": "Python to popularny język programowania znany z prostej składni."
+    },
+    {
+      "questions": ["co to jest javascript", "czym jest javascript"],
+      "answer": "JavaScript to język programowania często używany do tworzenia interaktywnych stron internetowych."
+    },
+    {
+      "questions": ["co to jest html", "czym jest html"],
+      "answer": "HTML służy do tworzenia struktury stron internetowych."
+    },
+    {
+      "questions": ["co to jest css", "czym jest css"],
+      "answer": "CSS służy do określania wyglądu stron internetowych."
+    },
+    {
+      "questions": ["co to jest json", "czym jest json"],
+      "answer": "JSON to prosty tekstowy format przechowywania danych."
+    },
+    {
+      "questions": ["co to jest zmienna", "czym jest zmienna"],
+      "answer": "Zmienna to nazwana wartość przechowywana przez program."
+    },
+    {
+      "questions": ["co to jest funkcja", "czym jest funkcja"],
+      "answer": "Funkcja to fragment kodu wykonujący określone zadanie."
+    },
+    {
+      "questions": ["co to jest pętla", "czym jest pętla"],
+      "answer": "Pętla pozwala wielokrotnie wykonywać określony fragment kodu."
+    },
+    {
+      "questions": ["co to jest if", "czym jest instrukcja if"],
+      "answer": "if pozwala wykonać kod tylko wtedy, gdy określony warunek jest prawdziwy."
+    },
+    {
+      "questions": ["co to jest bug", "czym jest bug"],
+      "answer": "Bug to błąd w programie powodujący jego nieprawidłowe działanie."
+    },
+    {
+      "questions": ["co to jest debugowanie", "czym jest debugowanie"],
+      "answer": "Debugowanie to proces znajdowania i naprawiania błędów w programie."
+    },
+    {
+      "questions": ["co to jest internet", "czym jest internet"],
+      "answer": "Internet to globalna sieć połączonych ze sobą urządzeń."
+    },
+    {
+      "questions": ["co to jest przeglądarka", "czym jest przeglądarka internetowa"],
+      "answer": "Przeglądarka to program służący do otwierania stron internetowych."
+    },
+    {
+      "questions": ["co to jest plik", "czym jest plik"],
+      "answer": "Plik to zapisane na nośniku dane, na przykład tekst, obraz lub program."
+    },
+    {
+      "questions": ["co to jest folder", "czym jest folder"],
+      "answer": "Folder służy do organizowania i przechowywania plików oraz innych folderów."
+    },
+    {
+      "questions": ["co to jest ram", "czym jest ram"],
+      "answer": "RAM to pamięć operacyjna używana przez komputer podczas pracy."
+    },
+    {
+      "questions": ["co to jest cpu", "czym jest procesor"],
+      "answer": "CPU, czyli procesor, wykonuje instrukcje programów i przeprowadza obliczenia."
+    },
+    {
+      "questions": ["co to jest gpu", "czym jest karta graficzna"],
+      "answer": "GPU jest układem przeznaczonym między innymi do przetwarzania grafiki."
+    },
+    {
+      "questions": ["co to jest git", "czym jest git"],
+      "answer": "Git to system kontroli wersji używany do śledzenia zmian w kodzie."
+    },
+    {
+      "questions": ["co to jest github", "czym jest github"],
+      "answer": "GitHub to platforma do przechowywania repozytoriów Git i współpracy nad kodem."
+    },
+    {
+      "questions": ["co to jest aplikacja", "czym jest aplikacja"],
+      "answer": "Aplikacja to program przeznaczony do wykonywania określonych zadań."
+    },
+    {
+      "questions": ["co to jest gra", "czym jest gra komputerowa"],
+      "answer": "Gra komputerowa to program zapewniający interaktywną rozgrywkę."
+    },
+    {
+      "questions": ["kim jesteś", "co to za model", "jaki to model"],
+      "answer": "Jestem TinyGPT Nano — bardzo małym modelem AI Club."
+    },
+    {
+      "questions": ["co to jest ai club", "czym jest ai club", "co to jest aic"],
+      "answer": "AI Club, czyli AIC, to projekt skupiający modele AI i narzędzia do ich używania."
+    }
+  ],
+  "author": "TinyGPT",
+  "community": true
+}
