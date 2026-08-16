@@ -1,0 +1,734 @@
+{
+  "id": "catgpt-1",
+  "name": "CatGPT-1 (200 Meowrameter)",
+  "provider": "AI Club Community",
+  "description": "Duży model AI stworzony do miauczenia.",
+  "type": "community",
+  "model": "catgpt-1",
+  "context": 16777,
+  "premium": false,
+  "points_per_message": 6,
+  "meow_mode": false,
+ "examples": [
+  {
+    "questions": ["co to jest javascript", "wyjaśnij javascript"],
+    "answer": "JavaScript to język programowania używany głównie do tworzenia interaktywnych stron i aplikacji webowych."
+  },
+  {
+    "questions": ["co to jest python", "wyjaśnij python"],
+    "answer": "Python to popularny język programowania znany z prostej składni i szerokiego zastosowania."
+  },
+  {
+    "questions": ["co to jest html", "wyjaśnij html"],
+    "answer": "HTML to język znaczników używany do tworzenia struktury stron internetowych."
+  },
+  {
+    "questions": ["co to jest css", "wyjaśnij css"],
+    "answer": "CSS służy do określania wyglądu elementów strony internetowej."
+  },
+  {
+    "questions": ["co to jest json", "wyjaśnij json"],
+    "answer": "JSON to tekstowy format zapisu danych używany między innymi do konfiguracji i komunikacji między aplikacjami."
+  },
+  {
+    "questions": ["co to jest api", "wyjaśnij api"],
+    "answer": "API to interfejs pozwalający różnym programom komunikować się ze sobą."
+  },
+  {
+    "questions": ["co to jest zmienna", "wyjaśnij zmienne"],
+    "answer": "Zmienna to nazwana wartość przechowywana przez program, którą można później odczytywać lub zmieniać."
+  },
+  {
+    "questions": ["co to jest funkcja", "wyjaśnij funkcje"],
+    "answer": "Funkcja to fragment kodu wykonujący określone zadanie. Może przyjmować argumenty i zwracać wynik."
+  },
+  {
+    "questions": ["co to jest tablica", "wyjaśnij tablice"],
+    "answer": "Tablica to struktura danych przechowująca wiele wartości w określonej kolejności."
+  },
+  {
+    "questions": ["co to jest obiekt", "wyjaśnij obiekty"],
+    "answer": "Obiekt przechowuje dane i właściwości związane z jednym elementem oraz może zawierać metody."
+  },
+  {
+    "questions": ["jak zrobić pętlę", "jak stworzyć pętlę"],
+    "answer": "Pętle pozwalają wielokrotnie wykonywać fragment kodu. Popularne są między innymi for, while i for...of."
+  },
+  {
+    "questions": ["jak zrobić if", "jak używać if"],
+    "answer": "Instrukcja if wykonuje kod tylko wtedy, gdy określony warunek jest prawdziwy."
+  },
+  {
+    "questions": ["co to jest else", "do czego służy else"],
+    "answer": "else określa kod wykonywany wtedy, gdy warunek instrukcji if nie został spełniony."
+  },
+  {
+    "questions": ["co to jest const", "do czego służy const"],
+    "answer": "const deklaruje zmienną, której przypisania nie można później zastąpić inną wartością."
+  },
+  {
+    "questions": ["co to jest let", "do czego służy let"],
+    "answer": "let służy do deklarowania zmiennych, których wartość może zostać później zmieniona."
+  },
+  {
+    "questions": ["co to jest string", "wyjaśnij string"],
+    "answer": "String to typ danych reprezentujący tekst."
+  },
+  {
+    "questions": ["co to jest boolean", "wyjaśnij boolean"],
+    "answer": "Boolean to typ danych mogący przyjmować wartość true albo false."
+  },
+  {
+    "questions": ["co to jest null", "wyjaśnij null"],
+    "answer": "null oznacza celowy brak wartości."
+  },
+  {
+    "questions": ["co to jest undefined", "wyjaśnij undefined"],
+    "answer": "undefined oznacza, że wartość nie została określona albo nie istnieje."
+  },
+  {
+    "questions": ["co to jest integer", "wyjaśnij integer"],
+    "answer": "Integer oznacza liczbę całkowitą, na przykład -5, 0 albo 42."
+  },
+
+  {
+    "questions": ["jak debugować javascript", "jak znaleźć błąd w javascript"],
+    "answer": "Najłatwiej użyć DevTools przeglądarki, szczególnie zakładki Console, oraz console.log() do sprawdzania wartości."
+  },
+  {
+    "questions": ["co oznacza syntaxerror", "mam syntaxerror"],
+    "answer": "SyntaxError oznacza, że interpreter znalazł niepoprawną składnię kodu."
+  },
+  {
+    "questions": ["co oznacza referenceerror", "mam referenceerror"],
+    "answer": "ReferenceError zwykle oznacza próbę użycia zmiennej lub funkcji, która nie istnieje w danym zakresie."
+  },
+  {
+    "questions": ["co oznacza typeerror", "mam typeerror"],
+    "answer": "TypeError oznacza nieprawidłowe użycie wartości danego typu, na przykład wywołanie czegoś, co nie jest funkcją."
+  },
+  {
+    "questions": ["jak używać console log", "jak użyć console.log"],
+    "answer": "console.log() wypisuje informacje w konsoli przeglądarki lub środowiska JavaScript."
+  },
+  {
+    "questions": ["jak złapać błąd", "jak obsłużyć błąd"],
+    "answer": "W JavaScript można użyć konstrukcji try...catch do przechwytywania wyjątków."
+  },
+  {
+    "questions": ["co to jest try catch", "wyjaśnij try catch"],
+    "answer": "try...catch pozwala wykonać kod i przechwycić błędy, które wystąpią podczas jego działania."
+  },
+  {
+    "questions": ["co to jest async", "wyjaśnij async"],
+    "answer": "async oznacza funkcję asynchroniczną, która może korzystać z await."
+  },
+  {
+    "questions": ["co to jest await", "wyjaśnij await"],
+    "answer": "await pozwala poczekać na zakończenie Promise wewnątrz funkcji async."
+  },
+  {
+    "questions": ["co to jest promise", "wyjaśnij promise"],
+    "answer": "Promise reprezentuje wynik operacji asynchronicznej, który będzie dostępny w przyszłości."
+  },
+
+  {
+    "questions": ["jak pobrać json", "jak wczytać json javascript"],
+    "answer": "W przeglądarce można użyć fetch(), a następnie response.json()."
+  },
+  {
+    "questions": ["jak używać fetch", "jak działa fetch"],
+    "answer": "fetch() służy do wykonywania żądań HTTP i zwraca Promise."
+  },
+  {
+    "questions": ["jak sprawdzić response", "jak sprawdzić odpowiedź fetch"],
+    "answer": "Możesz sprawdzić response.ok, response.status oraz wywołać response.json() lub response.text()."
+  },
+  {
+    "questions": ["jak zapisać dane localstorage", "jak użyć localstorage"],
+    "answer": "localStorage.setItem('klucz', 'wartość') zapisuje dane w pamięci przeglądarki."
+  },
+  {
+    "questions": ["jak odczytać localstorage", "jak pobrać dane z localstorage"],
+    "answer": "Do odczytu danych z localStorage służy localStorage.getItem('klucz')."
+  },
+  {
+    "questions": ["jak usunąć localstorage", "jak wyczyścić localstorage"],
+    "answer": "Możesz użyć localStorage.removeItem('klucz') albo localStorage.clear() dla wszystkich danych."
+  },
+  {
+    "questions": ["co to jest dom", "wyjaśnij dom"],
+    "answer": "DOM to reprezentacja dokumentu HTML jako struktury obiektów, którą JavaScript może modyfikować."
+  },
+  {
+    "questions": ["jak znaleźć element html", "jak znaleźć element dom"],
+    "answer": "Możesz użyć document.getElementById(), querySelector() albo querySelectorAll()."
+  },
+  {
+    "questions": ["jak zmienić tekst html", "jak zmienić tekst elementu"],
+    "answer": "Najczęściej używa się właściwości textContent."
+  },
+  {
+    "questions": ["jak zmienić css javascript", "jak zmienić styl javascript"],
+    "answer": "Możesz zmieniać element.style albo używać classList do dodawania i usuwania klas CSS."
+  },
+
+  {
+    "questions": ["jak zrobić przycisk", "jak stworzyć button"],
+    "answer": "W HTML użyj elementu <button>, a jego działanie możesz obsłużyć przez addEventListener()."
+  },
+  {
+    "questions": ["jak obsłużyć kliknięcie", "jak zrobić onclick"],
+    "answer": "Najlepiej użyć element.addEventListener('click', funkcja)."
+  },
+  {
+    "questions": ["jak zrobić overlay", "jak zrobić okno modalne"],
+    "answer": "Overlay można stworzyć jako element position: fixed z pełnym rozmiarem ekranu i odpowiednim z-index."
+  },
+  {
+    "questions": ["jak ukryć element", "jak pokazać element"],
+    "answer": "Możesz zmieniać display, visibility lub klasy CSS za pomocą classList."
+  },
+  {
+    "questions": ["jak zrobić formularz", "jak stworzyć formularz html"],
+    "answer": "Użyj elementu <form> oraz pól input, select lub textarea. Zdarzenie submit pozwala obsłużyć wysłanie formularza."
+  },
+
+  {
+    "questions": ["jak zrobić serwer python", "jak stworzyć serwer w python"],
+    "answer": "Do prostych serwerów HTTP w Pythonie możesz użyć Flask, FastAPI albo wbudowanego modułu http.server."
+  },
+  {
+    "questions": ["co to jest fastapi", "wyjaśnij fastapi"],
+    "answer": "FastAPI to nowoczesny framework Pythona do tworzenia API i aplikacji webowych."
+  },
+  {
+    "questions": ["co to jest flask", "wyjaśnij flask"],
+    "answer": "Flask to lekki framework webowy dla Pythona."
+  },
+  {
+    "questions": ["jak zainstalować bibliotekę python", "jak zainstalować pakiet pip"],
+    "answer": "Najczęściej używa się polecenia pip install nazwa_pakietu."
+  },
+  {
+    "questions": ["co to jest pip", "wyjaśnij pip"],
+    "answer": "pip to menedżer pakietów używany do instalowania bibliotek Pythona."
+  },
+  {
+    "questions": ["jak otworzyć plik python", "jak czytać plik python"],
+    "answer": "Do odczytu pliku można użyć open() wraz z trybami 'r' lub 'rb'."
+  },
+  {
+    "questions": ["jak zapisać plik python", "jak pisać do pliku python"],
+    "answer": "Użyj open('plik.txt', 'w') albo 'a' do dopisywania danych."
+  },
+  {
+    "questions": ["co to jest list python", "wyjaśnij listę python"],
+    "answer": "Lista w Pythonie przechowuje wiele wartości i może być modyfikowana."
+  },
+  {
+    "questions": ["co to jest dictionary python", "wyjaśnij słownik python"],
+    "answer": "Słownik przechowuje dane w parach klucz-wartość."
+  },
+  {
+    "questions": ["co to jest tuple python", "wyjaśnij tuple"],
+    "answer": "Tuple to uporządkowana kolekcja wartości, której nie można modyfikować po utworzeniu."
+  },
+
+  {
+    "questions": ["jak zrobić klasę python", "jak stworzyć klasę w python"],
+    "answer": "Klasy w Pythonie definiuje się słowem class. Mogą zawierać atrybuty i metody."
+  },
+  {
+    "questions": ["co to jest obiekt python", "obiekt w python"],
+    "answer": "Obiekt jest instancją klasy i może posiadać własne dane oraz zachowanie."
+  },
+  {
+    "questions": ["co to jest import python", "jak importować bibliotekę"],
+    "answer": "Instrukcja import pozwala korzystać z modułów i bibliotek dostępnych w projekcie lub środowisku."
+  },
+  {
+    "questions": ["jak zrobić komentarz python", "komentarze python"],
+    "answer": "Komentarz jednoliniowy w Pythonie zaczyna się od znaku #."
+  },
+  {
+    "questions": ["jak zrobić komentarz javascript", "komentarze javascript"],
+    "answer": "W JavaScript komentarz jednoliniowy zaczyna się od //, a blokowy można zapisać jako /* komentarz */."
+  },
+
+  {
+    "questions": ["co to jest git", "wyjaśnij git"],
+    "answer": "Git to system kontroli wersji pozwalający śledzić zmiany w projekcie."
+  },
+  {
+    "questions": ["co to jest github", "wyjaśnij github"],
+    "answer": "GitHub to platforma do hostowania repozytoriów Git i współpracy nad projektami."
+  },
+  {
+    "questions": ["co to jest commit", "wyjaśnij commit"],
+    "answer": "Commit zapisuje określony zestaw zmian w historii repozytorium Git."
+  },
+  {
+    "questions": ["co to jest branch", "wyjaśnij branch"],
+    "answer": "Branch to osobna gałąź historii projektu, pozwalająca rozwijać zmiany niezależnie od głównej gałęzi."
+  },
+  {
+    "questions": ["co to jest merge", "wyjaśnij merge"],
+    "answer": "Merge łączy zmiany z jednej gałęzi Git z inną."
+  },
+  {
+    "questions": ["co to jest pull request", "wyjaśnij pull request"],
+    "answer": "Pull Request to propozycja wprowadzenia zmian z jednej gałęzi do innej, często używana do przeglądu kodu."
+  },
+  {
+    "questions": ["jak cofnąć commit", "jak przywrócić poprzedni commit"],
+    "answer": "Do cofania zmian można użyć między innymi git revert albo git reset, zależnie od sytuacji."
+  },
+  {
+    "questions": ["jak pobrać repozytorium", "jak sklonować github"],
+    "answer": "Repozytorium Git można sklonować poleceniem git clone URL."
+  },
+  {
+    "questions": ["jak wysłać zmiany github", "jak zrobić push"],
+    "answer": "Po zatwierdzeniu zmian commitem możesz użyć git push."
+  },
+  {
+    "questions": ["jak pobrać zmiany git", "jak zrobić pull"],
+    "answer": "Polecenie git pull pobiera zmiany z repozytorium zdalnego i integruje je z lokalną gałęzią."
+  },
+
+  {
+    "questions": ["co to jest linux", "wyjaśnij linux"],
+    "answer": "Linux to rodzina systemów operacyjnych opartych na jądrze Linux."
+  },
+  {
+    "questions": ["co to jest terminal", "wyjaśnij terminal"],
+    "answer": "Terminal umożliwia wykonywanie poleceń tekstowych i zarządzanie systemem lub programami."
+  },
+  {
+    "questions": ["co to jest bash", "wyjaśnij bash"],
+    "answer": "Bash to popularna powłoka systemowa używana między innymi w Linuksie."
+  },
+  {
+    "questions": ["jak sprawdzić pliki linux", "jak wyświetlić pliki"],
+    "answer": "Polecenie ls wyświetla zawartość bieżącego katalogu."
+  },
+  {
+    "questions": ["jak wejść do katalogu linux", "jak zmienić katalog"],
+    "answer": "Do zmiany katalogu służy polecenie cd."
+  },
+  {
+    "questions": ["jak stworzyć katalog linux", "jak zrobić folder terminal"],
+    "answer": "Polecenie mkdir nazwa tworzy nowy katalog."
+  },
+  {
+    "questions": ["jak usunąć plik linux", "jak skasować plik"],
+    "answer": "Do usuwania plików służy polecenie rm. Należy używać go ostrożnie."
+  },
+  {
+    "questions": ["jak sprawdzić procesy linux", "jak zobaczyć procesy"],
+    "answer": "Do sprawdzania procesów można użyć między innymi ps, top albo htop."
+  },
+  {
+    "questions": ["jak sprawdzić port linux", "jak zobaczyć otwarte porty"],
+    "answer": "Do sprawdzania portów można użyć narzędzi takich jak ss lub lsof."
+  },
+  {
+    "questions": ["jak uruchomić python linux", "jak odpalić program python"],
+    "answer": "Zwykle używa się polecenia python3 nazwa_pliku.py."
+  },
+
+  {
+    "questions": ["co to jest baza danych", "wyjaśnij bazę danych"],
+    "answer": "Baza danych służy do trwałego przechowywania, organizowania i wyszukiwania danych."
+  },
+  {
+    "questions": ["co to jest sqlite", "wyjaśnij sqlite"],
+    "answer": "SQLite to lekka relacyjna baza danych przechowywana zazwyczaj w jednym pliku."
+  },
+  {
+    "questions": ["co to jest sql", "wyjaśnij sql"],
+    "answer": "SQL to język używany do zarządzania i wykonywania zapytań do relacyjnych baz danych."
+  },
+  {
+    "questions": ["co to jest tabela sql", "wyjaśnij tabelę"],
+    "answer": "Tabela SQL przechowuje dane w wierszach i kolumnach."
+  },
+  {
+    "questions": ["co to jest select sql", "wyjaśnij select"],
+    "answer": "SELECT służy do pobierania danych z tabeli."
+  },
+  {
+    "questions": ["co to jest insert sql", "wyjaśnij insert"],
+    "answer": "INSERT służy do dodawania nowych rekordów do tabeli."
+  },
+  {
+    "questions": ["co to jest update sql", "wyjaśnij update"],
+    "answer": "UPDATE służy do modyfikowania istniejących rekordów."
+  },
+  {
+    "questions": ["co to jest delete sql", "wyjaśnij delete"],
+    "answer": "DELETE służy do usuwania rekordów z tabeli."
+  },
+  {
+    "questions": ["co to jest primary key", "wyjaśnij primary key"],
+    "answer": "Primary Key jednoznacznie identyfikuje rekord w tabeli."
+  },
+  {
+    "questions": ["co to jest foreign key", "wyjaśnij foreign key"],
+    "answer": "Foreign Key tworzy relację między rekordami w różnych tabelach."
+  },
+
+  {
+    "questions": ["jak zrobić grę", "jak stworzyć grę"],
+    "answer": "Do tworzenia gier możesz użyć silnika takiego jak Godot, Unity lub Unreal Engine, albo bibliotek takich jak Pygame."
+  },
+  {
+    "questions": ["co to jest pygame", "wyjaśnij pygame"],
+    "answer": "Pygame to biblioteka Pythona ułatwiająca tworzenie gier 2D."
+  },
+  {
+    "questions": ["jak zrobić ruch gracza", "jak zrobić poruszanie postaci"],
+    "answer": "Najpierw odczytaj wejście użytkownika, a następnie zmieniaj pozycję gracza zgodnie z kierunkiem i prędkością."
+  },
+  {
+    "questions": ["jak zrobić kolizję", "jak zrobić collision"],
+    "answer": "Kolizję można wykrywać przez sprawdzanie przecięcia prostokątów, okręgów lub innych obszarów kolizyjnych."
+  },
+  {
+    "questions": ["jak zrobić menu gry", "jak stworzyć menu"],
+    "answer": "Menu może składać się z przycisków, tekstów i paneli. Po kliknięciu przycisków zmieniaj stan gry."
+  },
+  {
+    "questions": ["jak zrobić zapis gry", "jak zapisać grę"],
+    "answer": "Zapis gry powinien przechowywać najważniejsze dane, takie jak pozycja, ekwipunek, postęp i ustawienia."
+  },
+  {
+    "questions": ["jak zrobić system questów", "jak stworzyć questy"],
+    "answer": "System questów może przechowywać cel, postęp, nagrodę i status każdego zadania."
+  },
+  {
+    "questions": ["jak zrobić ekwipunek", "jak stworzyć inventory"],
+    "answer": "Ekwipunek można reprezentować jako tablicę lub słownik zawierający przedmioty i ich ilości."
+  },
+  {
+    "questions": ["jak zrobić sklep w grze", "jak stworzyć sklep"],
+    "answer": "Sklep powinien posiadać listę przedmiotów, ceny oraz logikę sprawdzającą, czy gracz ma wystarczającą liczbę pieniędzy."
+  },
+  {
+    "questions": ["jak zrobić npc", "jak stworzyć npc"],
+    "answer": "NPC może posiadać pozycję, dialogi, zachowanie i opcjonalnie system zadań."
+  },
+
+  {
+    "questions": ["co to jest algorytm", "wyjaśnij algorytm"],
+    "answer": "Algorytm to uporządkowany sposób rozwiązywania określonego problemu."
+  },
+  {
+    "questions": ["co to jest pętla nieskończona", "wyjaśnij infinite loop"],
+    "answer": "Pętla nieskończona to pętla, której warunek nigdy nie staje się fałszywy."
+  },
+  {
+    "questions": ["co to jest rekurencja", "wyjaśnij rekurencję"],
+    "answer": "Rekurencja polega na tym, że funkcja wywołuje samą siebie, aż osiągnie warunek zakończenia."
+  },
+  {
+    "questions": ["co to jest sortowanie", "wyjaśnij sortowanie"],
+    "answer": "Sortowanie polega na uporządkowaniu danych według określonego kryterium."
+  },
+  {
+    "questions": ["co to jest wyszukiwanie binarne", "wyjaśnij binary search"],
+    "answer": "Wyszukiwanie binarne szybko znajduje element w posortowanej kolekcji, dzieląc zakres wyszukiwania na połowy."
+  },
+  {
+    "questions": ["co to jest stack", "wyjaśnij stos"],
+    "answer": "Stack to struktura LIFO, w której ostatni dodany element jest usuwany jako pierwszy."
+  },
+  {
+    "questions": ["co to jest queue", "wyjaśnij kolejkę"],
+    "answer": "Queue to struktura FIFO, w której pierwszy dodany element jest obsługiwany jako pierwszy."
+  },
+  {
+    "questions": ["co to jest bug", "wyjaśnij bug"],
+    "answer": "Bug to błąd w programie powodujący nieprawidłowe lub nieoczekiwane działanie."
+  },
+  {
+    "questions": ["co to jest debugowanie", "wyjaśnij debugowanie"],
+    "answer": "Debugowanie polega na znajdowaniu, analizowaniu i usuwaniu błędów w programie."
+  },
+  {
+    "questions": ["co to jest refaktoryzacja", "wyjaśnij refaktoryzację"],
+    "answer": "Refaktoryzacja polega na poprawianiu struktury kodu bez zmieniania jego podstawowego działania."
+  },
+
+  {
+    "questions": ["jak zoptymalizować kod", "jak poprawić wydajność kodu"],
+    "answer": "Najpierw zmierz wydajność, znajdź wąskie gardła, a następnie optymalizuj najbardziej kosztowne fragmenty."
+  },
+  {
+    "questions": ["jak nazwać zmienną", "jak dobrze nazywać zmienne"],
+    "answer": "Nazwa zmiennej powinna jasno opisywać przechowywaną wartość i być zgodna ze stylem projektu."
+  },
+  {
+    "questions": ["jak organizować kod", "jak uporządkować projekt"],
+    "answer": "Warto dzielić projekt na moduły, funkcje i pliki odpowiedzialne za konkretne zadania."
+  },
+  {
+    "questions": ["co to jest modularność", "wyjaśnij modularność"],
+    "answer": "Modularność oznacza dzielenie programu na niezależne, logiczne komponenty."
+  },
+  {
+    "questions": ["co to jest dry", "wyjaśnij zasadę dry"],
+    "answer": "DRY oznacza Don't Repeat Yourself i zachęca do unikania niepotrzebnego powielania kodu."
+  },
+  {
+    "questions": ["co to jest oop", "wyjaśnij oop"],
+    "answer": "OOP to programowanie obiektowe, oparte między innymi na klasach, obiektach, dziedziczeniu i enkapsulacji."
+  },
+  {
+    "questions": ["co to jest dziedziczenie", "wyjaśnij dziedziczenie"],
+    "answer": "Dziedziczenie pozwala jednej klasie przejmować właściwości i metody innej klasy."
+  },
+  {
+    "questions": ["co to jest enkapsulacja", "wyjaśnij enkapsulację"],
+    "answer": "Enkapsulacja polega na ukrywaniu szczegółów implementacji i kontrolowaniu dostępu do danych."
+  },
+  {
+    "questions": ["co to jest polimorfizm", "wyjaśnij polimorfizm"],
+    "answer": "Polimorfizm pozwala różnym obiektom reagować na ten sam interfejs w różny sposób."
+  },
+  {
+    "questions": ["co to jest abstrakcja", "wyjaśnij abstrakcję"],
+    "answer": "Abstrakcja polega na przedstawianiu najważniejszych cech obiektu bez ujawniania wszystkich szczegółów implementacji."
+  },
+
+  {
+    "questions": ["jak zrobić stronę internetową", "jak stworzyć stronę"],
+    "answer": "Podstawowa strona może używać HTML do struktury, CSS do wyglądu i JavaScript do interakcji."
+  },
+  {
+    "questions": ["jak zrobić responsywną stronę", "jak zrobić responsywność"],
+    "answer": "Responsywność można uzyskać między innymi przez CSS media queries, elastyczne jednostki i responsywne układy."
+  },
+  {
+    "questions": ["co to jest flexbox", "wyjaśnij flexbox"],
+    "answer": "Flexbox to system CSS ułatwiający układanie elementów w jednym wymiarze."
+  },
+  {
+    "questions": ["co to jest grid css", "wyjaśnij css grid"],
+    "answer": "CSS Grid umożliwia tworzenie dwuwymiarowych układów elementów."
+  },
+  {
+    "questions": ["co to jest media query", "wyjaśnij media queries"],
+    "answer": "Media query pozwala stosować różne style CSS zależnie od parametrów urządzenia lub ekranu."
+  },
+  {
+    "questions": ["jak zmienić kolor css", "jak ustawić kolor css"],
+    "answer": "Kolor tekstu ustawia się przez color, a kolor tła przez background lub background-color."
+  },
+  {
+    "questions": ["jak zrobić animację css", "jak stworzyć animację css"],
+    "answer": "Animacje CSS można tworzyć za pomocą @keyframes oraz właściwości animation."
+  },
+  {
+    "questions": ["co to jest transition css", "wyjaśnij transition"],
+    "answer": "transition pozwala płynnie animować zmianę wartości właściwości CSS."
+  },
+  {
+    "questions": ["jak zrobić cień css", "jak dodać shadow"],
+    "answer": "Cień elementu można utworzyć za pomocą box-shadow, a cień tekstu przez text-shadow."
+  },
+  {
+    "questions": ["jak zrobić zaokrąglenie css", "jak zaokrąglić element"],
+    "answer": "Do zaokrąglania rogów elementów służy właściwość border-radius."
+  },
+
+  {
+    "questions": ["co to jest token", "wyjaśnij tokeny ai"],
+    "answer": "Token to fragment tekstu używany przez model językowy podczas przetwarzania wejścia i generowania odpowiedzi."
+  },
+  {
+    "questions": ["co to jest llm", "wyjaśnij llm"],
+    "answer": "LLM to Large Language Model, czyli duży model językowy uczony na dużych zbiorach tekstu."
+  },
+  {
+    "questions": ["co to jest prompt", "wyjaśnij prompt"],
+    "answer": "Prompt to instrukcja lub tekst przekazywany modelowi AI jako wejście."
+  },
+  {
+    "questions": ["co to jest context window", "wyjaśnij context window"],
+    "answer": "Context window określa maksymalną ilość tokenów, które model może uwzględnić w danym kontekście."
+  },
+  {
+    "questions": ["co to jest temperatura ai", "wyjaśnij temperature"],
+    "answer": "Temperature kontroluje losowość generowania odpowiedzi. Wyższa wartość zwykle daje bardziej różnorodne odpowiedzi."
+  },
+  {
+    "questions": ["co to jest embedding", "wyjaśnij embedding"],
+    "answer": "Embedding to reprezentacja danych, na przykład tekstu, w postaci wektora liczb."
+  },
+  {
+    "questions": ["co to jest chatbot", "wyjaśnij chatbot"],
+    "answer": "Chatbot to program umożliwiający rozmowę z użytkownikiem za pomocą tekstu lub głosu."
+  },
+  {
+    "questions": ["co to jest ai", "wyjaśnij sztuczną inteligencję"],
+    "answer": "Sztuczna inteligencja to dziedzina informatyki zajmująca się tworzeniem systemów wykonujących zadania wymagające określonych zdolności poznawczych."
+  },
+  {
+    "questions": ["co to jest machine learning", "wyjaśnij uczenie maszynowe"],
+    "answer": "Machine Learning to metoda tworzenia systemów, które uczą się wzorców na podstawie danych."
+  },
+  {
+    "questions": ["co to jest neural network", "wyjaśnij sieć neuronową"],
+    "answer": "Sieć neuronowa to model obliczeniowy inspirowany sposobem działania neuronów biologicznych."
+  },
+
+  {
+    "questions": ["jak działa ai club", "co to jest ai club"],
+    "answer": "AI Club może korzystać z lokalnych plików modeli i przykładów JSON, aby odpowiadać bez konieczności korzystania z chmury."
+  },
+  {
+    "questions": ["co to jest model community", "czym jest community model"],
+    "answer": "Community model to model udostępniony przez społeczność AI Club."
+  },
+  {
+    "questions": ["jak dodać model community", "jak dodać model społeczności"],
+    "answer": "Model community powinien zostać zapisany jako poprawny JSON i dodany do rejestru community/index.json."
+  },
+  {
+    "questions": ["co powinien zawierać model json", "jak wygląda model json"],
+    "answer": "Model może zawierać między innymi id, name, provider, description, context, premium, points_per_message oraz examples."
+  },
+  {
+    "questions": ["co to jest examples w modelu", "jak działają examples"],
+    "answer": "examples zawiera przykładowe pytania i odpowiedzi, które lokalny silnik może wykorzystać do dopasowywania odpowiedzi."
+  },
+  {
+    "questions": ["jak zrobić własny model ai club", "jak stworzyć model ai club"],
+    "answer": "Utwórz JSON z identyfikatorem, nazwą, opisem oraz tablicą examples zawierającą pytania i odpowiedzi."
+  },
+  {
+    "questions": ["jak dodać więcej odpowiedzi", "jak rozbudować model"],
+    "answer": "Dodaj kolejne wpisy do tablicy examples, najlepiej z różnymi sposobami zadania tego samego pytania."
+  },
+  {
+    "questions": ["jak poprawić dopasowanie pytań", "jak poprawić matching"],
+    "answer": "Dodawaj synonimy, różne formy pytań i typowe literówki do tablicy questions."
+  },
+  {
+    "questions": ["jak zrobić model premium", "jak ustawić premium"],
+    "answer": "W JSON-ie modelu możesz ustawić pole premium na true i określić koszt użycia przez points_per_message."
+  },
+  {
+    "questions": ["jak działa koszt tokenów", "ile tokenów za punkt"],
+    "answer": "Jeżeli AI Club używa przelicznika 40 tokenów za 1 punkt, koszt można obliczać jako zaokrąglenie w górę liczby tokenów podzielonej przez 40."
+  },
+
+  {
+    "questions": ["co to jest komputer", "wyjaśnij komputer"],
+    "answer": "Komputer to urządzenie elektroniczne wykonujące instrukcje zapisane w programach."
+  },
+  {
+    "questions": ["co to jest cpu", "wyjaśnij procesor"],
+    "answer": "CPU jest główną jednostką wykonującą instrukcje programu i przeprowadzającą obliczenia."
+  },
+  {
+    "questions": ["co to jest gpu", "wyjaśnij gpu"],
+    "answer": "GPU to procesor wyspecjalizowany między innymi w wykonywaniu dużej liczby operacji równolegle."
+  },
+  {
+    "questions": ["co to jest ram", "wyjaśnij ram"],
+    "answer": "RAM to szybka pamięć operacyjna używana przez system i uruchomione programy."
+  },
+  {
+    "questions": ["co to jest ssd", "wyjaśnij ssd"],
+    "answer": "SSD to pamięć masowa wykorzystująca pamięć flash, zwykle znacznie szybsza od klasycznego dysku HDD."
+  },
+  {
+    "questions": ["co to jest hdd", "wyjaśnij hdd"],
+    "answer": "HDD to dysk wykorzystujący magnetyczne talerze do przechowywania danych."
+  },
+  {
+    "questions": ["co to jest usb", "wyjaśnij usb"],
+    "answer": "USB to standard komunikacji i podłączania urządzeń elektronicznych."
+  },
+  {
+    "questions": ["co to jest ethernet", "wyjaśnij ethernet"],
+    "answer": "Ethernet to popularny standard przewodowych sieci komputerowych."
+  },
+  {
+    "questions": ["co to jest wifi", "wyjaśnij wifi"],
+    "answer": "Wi-Fi umożliwia bezprzewodową komunikację urządzeń w sieci."
+  },
+  {
+    "questions": ["co to jest ip", "wyjaśnij adres ip"],
+    "answer": "Adres IP identyfikuje urządzenie lub interfejs w sieci IP."
+  },
+
+  {
+    "questions": ["jak zrobić backup", "jak zrobić kopię zapasową"],
+    "answer": "Kopia zapasowa powinna przechowywać ważne dane w niezależnym miejscu, najlepiej zgodnie z zasadą 3-2-1."
+  },
+  {
+    "questions": ["co to jest 3 2 1 backup", "wyjaśnij zasadę 3 2 1"],
+    "answer": "Zasada 3-2-1 oznacza posiadanie trzech kopii danych, na dwóch różnych typach nośników, z jedną kopią poza głównym miejscem."
+  },
+  {
+    "questions": ["jak chronić hasło", "jak zabezpieczyć hasło"],
+    "answer": "Używaj długich, unikalnych haseł oraz menedżera haseł i uwierzytelniania wieloskładnikowego."
+  },
+  {
+    "questions": ["co to jest 2fa", "wyjaśnij 2fa"],
+    "answer": "2FA to uwierzytelnianie dwuskładnikowe wymagające dwóch różnych elementów potwierdzających tożsamość."
+  },
+  {
+    "questions": ["co to jest phishing", "wyjaśnij phishing"],
+    "answer": "Phishing to próba wyłudzenia informacji poprzez podszywanie się pod zaufaną osobę, usługę lub organizację."
+  },
+
+  {
+    "questions": ["jak zacząć programować", "od czego zacząć programowanie"],
+    "answer": "Wybierz jeden język, naucz się podstaw składni i regularnie twórz małe projekty."
+  },
+  {
+    "questions": ["jaki język programowania wybrać", "jaki język wybrać"],
+    "answer": "Python jest dobrym wyborem na początek, JavaScript sprawdzi się w web development, a C# lub C++ często wykorzystuje się w gamedevie."
+  },
+  {
+    "questions": ["jak nauczyć się javascript", "jak nauczyć się js"],
+    "answer": "Zacznij od zmiennych, funkcji, tablic, obiektów, DOM i zdarzeń, a następnie twórz własne projekty."
+  },
+  {
+    "questions": ["jak nauczyć się python", "jak nauczyć się pythona"],
+    "answer": "Opanuj zmienne, warunki, pętle, funkcje, kolekcje, moduły i klasy, a potem zacznij tworzyć własne programy."
+  },
+  {
+    "questions": ["jak ćwiczyć programowanie", "jak trenować programowanie"],
+    "answer": "Najlepiej rozwiązywać małe problemy i regularnie budować projekty, które faktycznie Cię interesują."
+  },
+
+  {
+    "questions": ["cześć", "hej", "siema", witaj"],
+    "answer": "Hej! 😺 W czym mogę pomóc?"
+  },
+  {
+    "questions": ["jak się masz", "co tam"],
+    "answer": "Mam się dobrze i jestem gotowy do pomocy. 😺"
+  },
+  {
+    "questions": ["dzięki", "dziękuję"],
+    "answer": "Nie ma za co! 😺"
+  },
+  {
+    "questions": ["super", "świetnie"],
+    "answer": "😺 Miło to słyszeć!"
+  },
+  {
+    "questions": ["kim jesteś", "co to za ai"],
+    "answer": "Jestem CatGPT-1 — lokalnym modelem AI Club opartym na bazie przykładowych pytań i odpowiedzi."
+  }
+]
+  "author": "AI Club Imports",
+  "community": true
+}
