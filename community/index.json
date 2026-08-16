@@ -24,6 +24,11 @@
       "file": "tinygpt-nano.json",
       "author": "TinyGPT",
       "version": "1.0"
+    },
+    {
+      "file": "Lamcia 500 Meowrameters",
+      "author": "Fabian",
+      "version": "1.0"
     }
   ]
 }
