@@ -6,7 +6,7 @@
   "type": "community",
   "model": "catgpt-1",
   "context": 16777,
-  "premium": false,
+  "premium": true,
   "points_per_message": 6,
   "meow_mode": false,
  "examples": [
