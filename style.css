@@ -1792,6 +1792,100 @@ main {
     text-transform: uppercase;
 }
 
+.premium-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+}
+
+.premium-overlay.hidden {
+    display: none;
+}
+
+.premium-modal {
+    width: min(420px, calc(100% - 40px));
+    padding: 30px;
+
+    border-radius: 22px;
+
+    background: rgba(20, 25, 45, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.45);
+
+    text-align: center;
+
+    animation: premiumModalIn 0.2s ease-out;
+}
+
+@keyframes premiumModalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.premium-icon {
+    font-size: 52px;
+    margin-bottom: 12px;
+}
+
+.premium-modal h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.premium-modal p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.premium-modal-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.premium-modal-actions button {
+    flex: 1;
+    padding: 12px 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.secondary-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.premium-button {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+}
+
+.secondary-button:hover,
+.premium-button:hover {
+    transform: translateY(-1px);
+}
+
 
 /* =========================================
    MOBILE
