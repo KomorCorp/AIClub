@@ -1245,7 +1245,7 @@ function renderModels() {
                 );
 
             if (model) {
-                openChat(model);
+                useModel(model);
             }
         };
 }
