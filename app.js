@@ -93,6 +93,18 @@ const dailyBtn =
 const dailyStatus =
     document.getElementById("dailyStatus");
 
+const premiumOverlay =
+    document.getElementById("premiumOverlay");
+
+const premiumMessage =
+    document.getElementById("premiumMessage");
+
+const closePremiumMessage =
+    document.getElementById("closePremiumMessage");
+
+const premiumGoButton =
+    document.getElementById("premiumGoButton");
+
 /* =========================================================
    COMMUNITY DOM
    ========================================================= */
@@ -143,6 +155,23 @@ function escapeHTML(value) {
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+}
+
+
+function useModel(model) {
+
+    if (!model) {
+        return;
+    }
+
+    if (model.premium === true && !premium) {
+
+        showPremiumMessage(model);
+
+        return;
+    }
+
+    openChat(model);
 }
 
 /* =========================================================
@@ -325,6 +354,49 @@ if (exists(buyPremiumBtn)) {
 }
 
 updatePremiumUI();
+
+
+function showPremiumMessage(model) {
+
+    if (!exists(premiumOverlay)) {
+        return;
+    }
+
+    if (exists(premiumMessage)) {
+        premiumMessage.textContent =
+            `"${model.name}" jest dostępny tylko w AI Club Premium. Kup Premium za ${PREMIUM_PRICE} pkt, aby go odblokować.`;
+    }
+
+    premiumOverlay.classList.remove("hidden");
+}
+
+function closePremiumMessageOverlay() {
+
+    if (exists(premiumOverlay)) {
+        premiumOverlay.classList.add("hidden");
+    }
+}
+
+if (exists(closePremiumMessage)) {
+
+    closePremiumMessage.addEventListener(
+        "click",
+        closePremiumMessageOverlay
+    );
+}
+
+if (exists(premiumOverlay)) {
+
+    premiumOverlay.addEventListener(
+        "click",
+        event => {
+
+            if (event.target === premiumOverlay) {
+                closePremiumMessageOverlay();
+            }
+        }
+    );
+}
 
 /* =========================================================
    DAILY REWARD
