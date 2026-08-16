@@ -16,12 +16,12 @@
       "version": "1.0"
     },
     {
-      "file": "tinygpt-code",
+      "file": "tinygpt-code.json",
       "author": "TinyGPT",
       "version": "1.0"
     },
     {
-      "file": "tinygpt-nano",
+      "file": "tinygpt-nano.json",
       "author": "TinyGPT",
       "version": "1.0"
     }
