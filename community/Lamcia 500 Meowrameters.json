@@ -7,8 +7,8 @@
     "model": "lamcia-3-500",
     "context": 67777,
     "premium": true,
-    "points_per_message": 1,
-    "meow_mode": true,
+    "points_per_message": 21,
+    "meow_mode": false,
     "examples": [
         {
             "questions": [
