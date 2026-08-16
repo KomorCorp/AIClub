@@ -728,7 +728,7 @@
     "questions": ["kim jesteś", "co to za ai"],
     "answer": "Jestem CatGPT-1 — lokalnym modelem AI Club opartym na bazie przykładowych pytań i odpowiedzi."
   }
-]
+],
   "author": "AI Club Imports",
   "community": true
 }
