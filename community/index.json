@@ -39,6 +39,11 @@
       "file": "tinygpt-2-dev",
       "author": "TinyGPT",
       "version": "1.0"
+    },
+    {
+      "file": "tinygpt-coder-advanvced.json",
+      "author": "TinyGPT",
+      "version": "1.0"
     }
   ]
 }
