@@ -1,0 +1,982 @@
+{
+  "id": "tinygpt-2-dev",
+  "name": "TinyGPT 2 Dev",
+  "provider": "AI Club Community",
+  "description": "Lekki model AI przeznaczony do programowania, debugowania i podstawowych zagadnień developerskich.",
+  "type": "local",
+  "model": "tinygpt-2-dev",
+  "context": 100000,
+  "premium": false,
+  "points_per_message": 1,
+  "meow_mode": false,
+  "examples": [
+    {
+      "question": "Co to jest zmienna?",
+      "answer": "Zmienna to nazwana wartość przechowywana w pamięci programu, którą można odczytywać i zmieniać."
+    },
+    {
+      "question": "Co robi pętla while?",
+      "answer": "Pętla while wykonuje kod tak długo, jak długo podany warunek jest prawdziwy."
+    },
+    {
+      "question": "Co robi pętla for?",
+      "answer": "Pętla for służy do wielokrotnego wykonywania kodu, zwykle dla kolejnych elementów kolekcji albo określonej liczby iteracji."
+    },
+    {
+      "question": "Co to jest funkcja?",
+      "answer": "Funkcja to wydzielony fragment kodu wykonujący określone zadanie i opcjonalnie zwracający wynik."
+    },
+    {
+      "question": "Co oznacza return?",
+      "answer": "return kończy wykonywanie funkcji i może zwrócić z niej określoną wartość."
+    },
+    {
+      "question": "Co to jest tablica?",
+      "answer": "Tablica to struktura danych przechowująca wiele wartości w określonej kolejności."
+    },
+    {
+      "question": "Co to jest lista w Pythonie?",
+      "answer": "Lista w Pythonie to uporządkowana, modyfikowalna kolekcja elementów zapisywana np. jako [1, 2, 3]."
+    },
+    {
+      "question": "Jak dodać element do listy w Pythonie?",
+      "answer": "Możesz użyć metody append(), np. lista.append(10)."
+    },
+    {
+      "question": "Jak usunąć element z listy w Pythonie?",
+      "answer": "Możesz użyć remove(), pop() albo del, zależnie od tego, co dokładnie chcesz usunąć."
+    },
+    {
+      "question": "Co robi len()?",
+      "answer": "len() zwraca liczbę elementów obiektu, np. długość listy albo napisu."
+    },
+    {
+      "question": "Co robi print()?",
+      "answer": "print() wyświetla podane wartości w standardowym wyjściu."
+    },
+    {
+      "question": "Co robi input()?",
+      "answer": "input() pobiera tekst wpisany przez użytkownika."
+    },
+    {
+      "question": "Jak zamienić tekst na liczbę całkowitą w Pythonie?",
+      "answer": "Użyj int(), np. int('123')."
+    },
+    {
+      "question": "Jak zamienić tekst na liczbę zmiennoprzecinkową?",
+      "answer": "Użyj float(), np. float('3.14')."
+    },
+    {
+      "question": "Co to jest bool?",
+      "answer": "bool to typ logiczny posiadający dwie wartości: True i False."
+    },
+    {
+      "question": "Co oznacza operator ==?",
+      "answer": "Operator == sprawdza, czy dwie wartości są równe."
+    },
+    {
+      "question": "Co oznacza operator !=?",
+      "answer": "Operator != sprawdza, czy dwie wartości są różne."
+    },
+    {
+      "question": "Co oznacza operator >?",
+      "answer": "Sprawdza, czy lewa wartość jest większa od prawej."
+    },
+    {
+      "question": "Co oznacza operator <?",
+      "answer": "Sprawdza, czy lewa wartość jest mniejsza od prawej."
+    },
+    {
+      "question": "Co oznacza operator >=?",
+      "answer": "Sprawdza, czy wartość jest większa lub równa drugiej wartości."
+    },
+    {
+      "question": "Co oznacza operator <=?",
+      "answer": "Sprawdza, czy wartość jest mniejsza lub równa drugiej wartości."
+    },
+    {
+      "question": "Co oznacza operator and?",
+      "answer": "and zwraca True, gdy oba połączone warunki są prawdziwe."
+    },
+    {
+      "question": "Co oznacza operator or?",
+      "answer": "or zwraca True, gdy przynajmniej jeden z połączonych warunków jest prawdziwy."
+    },
+    {
+      "question": "Co oznacza operator not?",
+      "answer": "not odwraca wartość logiczną wyrażenia."
+    },
+    {
+      "question": "Co to jest if?",
+      "answer": "if pozwala wykonać kod tylko wtedy, gdy określony warunek jest prawdziwy."
+    },
+    {
+      "question": "Co to jest elif?",
+      "answer": "elif pozwala sprawdzić kolejny warunek, jeśli wcześniejszy if lub elif był fałszywy."
+    },
+    {
+      "question": "Co to jest else?",
+      "answer": "else wykonuje kod, gdy wcześniejsze warunki nie zostały spełnione."
+    },
+    {
+      "question": "Co to jest wyjątek?",
+      "answer": "Wyjątek to zdarzenie sygnalizujące problem podczas wykonywania programu."
+    },
+    {
+      "question": "Do czego służy try?",
+      "answer": "try oznacza blok kodu, w którym mogą wystąpić obsługiwane wyjątki."
+    },
+    {
+      "question": "Do czego służy except?",
+      "answer": "except pozwala przechwycić i obsłużyć wyjątek powstały w bloku try."
+    },
+    {
+      "question": "Co robi finally?",
+      "answer": "finally wykonuje się niezależnie od tego, czy wystąpił wyjątek."
+    },
+    {
+      "question": "Co to jest słownik w Pythonie?",
+      "answer": "Słownik przechowuje dane w parach klucz-wartość."
+    },
+    {
+      "question": "Jak utworzyć słownik w Pythonie?",
+      "answer": "Np. dane = {'imie': 'Jan', 'wiek': 20}."
+    },
+    {
+      "question": "Co to jest krotka?",
+      "answer": "Krotka to uporządkowana kolekcja, której zawartości nie można zmieniać po utworzeniu."
+    },
+    {
+      "question": "Co to jest set?",
+      "answer": "set to kolekcja przechowująca unikalne elementy bez gwarancji zachowania klasycznej kolejności."
+    },
+    {
+      "question": "Co to jest None w Pythonie?",
+      "answer": "None oznacza brak wartości."
+    },
+    {
+      "question": "Co oznacza pass?",
+      "answer": "pass jest pustą instrukcją używaną jako placeholder, gdy składnia wymaga instrukcji."
+    },
+    {
+      "question": "Co robi break?",
+      "answer": "break natychmiast przerywa działanie najbliższej pętli."
+    },
+    {
+      "question": "Co robi continue?",
+      "answer": "continue pomija resztę bieżącej iteracji i przechodzi do następnej."
+    },
+    {
+      "question": "Co to jest import?",
+      "answer": "import pozwala używać kodu znajdującego się w innym module lub pakiecie."
+    },
+    {
+      "question": "Co to jest moduł?",
+      "answer": "Moduł to plik zawierający kod, który można zaimportować do innego programu."
+    },
+    {
+      "question": "Co to jest biblioteka?",
+      "answer": "Biblioteka to zbiór gotowego kodu udostępniającego funkcje lub klasy do wykorzystania w programach."
+    },
+    {
+      "question": "Co to jest API?",
+      "answer": "API to interfejs umożliwiający komunikację programu z innym programem, usługą lub komponentem."
+    },
+    {
+      "question": "Co to jest JSON?",
+      "answer": "JSON to tekstowy format zapisu danych oparty na parach klucz-wartość, tablicach i podstawowych typach danych."
+    },
+    {
+      "question": "Jak wygląda poprawny JSON?",
+      "answer": "Np. {\"name\":\"TinyGPT\",\"context\":100000}."
+    },
+    {
+      "question": "Czy komentarze są dozwolone w JSON?",
+      "answer": "Nie. Standardowy JSON nie obsługuje komentarzy."
+    },
+    {
+      "question": "Co to jest HTML?",
+      "answer": "HTML to język znaczników używany do definiowania struktury stron internetowych."
+    },
+    {
+      "question": "Co to jest CSS?",
+      "answer": "CSS służy do definiowania wyglądu i układu elementów strony internetowej."
+    },
+    {
+      "question": "Co to jest JavaScript?",
+      "answer": "JavaScript to język programowania często używany do tworzenia interaktywności aplikacji i stron internetowych."
+    },
+    {
+      "question": "Co robi document.querySelector()?",
+      "answer": "document.querySelector() wyszukuje pierwszy element DOM pasujący do podanego selektora CSS."
+    },
+    {
+      "question": "Co robi addEventListener()?",
+      "answer": "addEventListener() rejestruje funkcję, która ma zostać wywołana po wystąpieniu określonego zdarzenia."
+    },
+    {
+      "question": "Co to jest DOM?",
+      "answer": "DOM to obiektowy model dokumentu HTML, który pozwala JavaScriptowi odczytywać i modyfikować stronę."
+    },
+    {
+      "question": "Co to jest event?",
+      "answer": "Event to zdarzenie, takie jak kliknięcie, wpisanie tekstu lub naciśnięcie klawisza."
+    },
+    {
+      "question": "Co to jest const w JavaScript?",
+      "answer": "const deklaruje zmienną, której nie można ponownie przypisać."
+    },
+    {
+      "question": "Co to jest let w JavaScript?",
+      "answer": "let deklaruje zmienną o zasięgu blokowym, której wartość można później zmienić."
+    },
+    {
+      "question": "Co to jest var?",
+      "answer": "var to starszy sposób deklarowania zmiennych w JavaScript, mający inne zasady zasięgu niż let i const."
+    },
+    {
+      "question": "Co to jest Promise?",
+      "answer": "Promise reprezentuje przyszły wynik operacji asynchronicznej."
+    },
+    {
+      "question": "Co robi async?",
+      "answer": "async oznacza funkcję jako asynchroniczną i sprawia, że zwraca Promise."
+    },
+    {
+      "question": "Co robi await?",
+      "answer": "await w funkcji async pozwala poczekać na rozstrzygnięcie Promise."
+    },
+    {
+      "question": "Co robi fetch()?",
+      "answer": "fetch() służy do wykonywania żądań sieciowych, np. pobierania danych z API."
+    },
+    {
+      "question": "Co to jest endpoint?",
+      "answer": "Endpoint to konkretny adres API obsługujący określony typ żądania lub zasób."
+    },
+    {
+      "question": "Co oznacza HTTP 200?",
+      "answer": "HTTP 200 oznacza, że żądanie zakończyło się powodzeniem."
+    },
+    {
+      "question": "Co oznacza HTTP 404?",
+      "answer": "HTTP 404 oznacza, że żądany zasób nie został znaleziony."
+    },
+    {
+      "question": "Co oznacza HTTP 500?",
+      "answer": "HTTP 500 oznacza wewnętrzny błąd serwera."
+    },
+    {
+      "question": "Co to jest Git?",
+      "answer": "Git to rozproszony system kontroli wersji używany do śledzenia zmian w kodzie."
+    },
+    {
+      "question": "Co to jest commit?",
+      "answer": "Commit zapisuje zestaw zmian w historii repozytorium Git."
+    },
+    {
+      "question": "Co to jest branch?",
+      "answer": "Branch to niezależna gałąź historii zmian w repozytorium Git."
+    },
+    {
+      "question": "Co robi git clone?",
+      "answer": "git clone kopiuje zdalne repozytorium Git na lokalny komputer."
+    },
+    {
+      "question": "Co robi git pull?",
+      "answer": "git pull pobiera zmiany ze zdalnego repozytorium i integruje je z lokalną gałęzią."
+    },
+    {
+      "question": "Co robi git push?",
+      "answer": "git push wysyła lokalne commity do zdalnego repozytorium."
+    },
+    {
+      "question": "Co robi git status?",
+      "answer": "git status pokazuje stan lokalnego repozytorium i informacje o zmienionych plikach."
+    },
+    {
+      "question": "Co to jest GitHub?",
+      "answer": "GitHub to platforma do hostowania repozytoriów Git oraz współpracy nad projektami."
+    },
+    {
+      "question": "Co to jest debugowanie?",
+      "answer": "Debugowanie to proces znajdowania i usuwania błędów w programie."
+    },
+    {
+      "question": "Co to jest bug?",
+      "answer": "Bug to błąd w oprogramowaniu powodujący nieprawidłowe działanie programu."
+    },
+    {
+      "question": "Co to jest syntax error?",
+      "answer": "Syntax error oznacza, że kod nie spełnia reguł składni danego języka."
+    },
+    {
+      "question": "Co to jest logic error?",
+      "answer": "Logic error występuje wtedy, gdy program działa składniowo poprawnie, ale wykonuje niewłaściwe operacje."
+    },
+    {
+      "question": "Co to jest runtime error?",
+      "answer": "Runtime error występuje podczas wykonywania programu."
+    },
+    {
+      "question": "Co to jest stack trace?",
+      "answer": "Stack trace pokazuje ścieżkę wywołań funkcji prowadzącą do miejsca wystąpienia błędu."
+    },
+    {
+      "question": "Co to jest IDE?",
+      "answer": "IDE to zintegrowane środowisko programistyczne zawierające narzędzia takie jak edytor kodu, debugger i system budowania."
+    },
+    {
+      "question": "Co to jest terminal?",
+      "answer": "Terminal pozwala wykonywać polecenia tekstowe systemu lub narzędzi programistycznych."
+    },
+    {
+      "question": "Co to jest CLI?",
+      "answer": "CLI to interfejs programu obsługiwany za pomocą poleceń tekstowych."
+    },
+    {
+      "question": "Co to jest GUI?",
+      "answer": "GUI to graficzny interfejs użytkownika."
+    },
+    {
+      "question": "Co to jest algorytm?",
+      "answer": "Algorytm to uporządkowany zestaw kroków prowadzących do rozwiązania problemu."
+    },
+    {
+      "question": "Co to jest złożoność czasowa?",
+      "answer": "Złożoność czasowa opisuje, jak czas działania algorytmu rośnie wraz z rozmiarem danych wejściowych."
+    },
+    {
+      "question": "Co oznacza Big O?",
+      "answer": "Notacja Big O opisuje asymptotyczny wzrost kosztu algorytmu, np. O(n), O(log n) lub O(n²)."
+    },
+    {
+      "question": "Co to jest rekurencja?",
+      "answer": "Rekurencja polega na tym, że funkcja wywołuje samą siebie, aż zostanie spełniony warunek zakończenia."
+    },
+    {
+      "question": "Co to jest OOP?",
+      "answer": "OOP to programowanie obiektowe, w którym program organizuje dane i zachowania za pomocą obiektów i klas."
+    },
+    {
+      "question": "Co to jest klasa?",
+      "answer": "Klasa jest szablonem definiującym strukturę i zachowanie obiektów."
+    },
+    {
+      "question": "Co to jest obiekt?",
+      "answer": "Obiekt to konkretna instancja klasy posiadająca własny stan i zachowanie."
+    },
+    {
+      "question": "Co to jest konstruktor?",
+      "answer": "Konstruktor to specjalna metoda uruchamiana podczas tworzenia obiektu."
+    },
+    {
+      "question": "Co to jest dziedziczenie?",
+      "answer": "Dziedziczenie pozwala klasie przejąć właściwości i metody innej klasy."
+    },
+    {
+      "question": "Co to jest enkapsulacja?",
+      "answer": "Enkapsulacja polega na ukrywaniu szczegółów implementacji i kontrolowaniu dostępu do danych obiektu."
+    },
+    {
+      "question": "Co to jest polimorfizm?",
+      "answer": "Polimorfizm pozwala różnym typom obiektów reagować na ten sam interfejs w różny sposób."
+    },
+    {
+      "question": "Co to jest dziedziczenie wielopoziomowe?",
+      "answer": "To sytuacja, w której klasa dziedziczy po klasie, która sama dziedziczy po innej klasie."
+    },
+    {
+      "question": "Co to jest typ danych?",
+      "answer": "Typ danych określa rodzaj wartości oraz operacje, które można na niej wykonywać."
+    },
+    {
+      "question": "Co to jest string?",
+      "answer": "String to typ danych reprezentujący ciąg znaków."
+    },
+    {
+      "question": "Co to jest integer?",
+      "answer": "Integer to liczba całkowita, np. -5, 0 lub 42."
+    },
+    {
+      "question": "Co to jest float?",
+      "answer": "Float to liczba zmiennoprzecinkowa, np. 3.14."
+    },
+    {
+      "question": "Co to jest casting?",
+      "answer": "Casting to konwersja wartości z jednego typu danych na inny."
+    },
+    {
+      "question": "Co to jest null?",
+      "answer": "null zwykle reprezentuje brak wartości w językach obsługujących ten typ."
+    },
+    {
+      "question": "Co to jest garbage collector?",
+      "answer": "Garbage collector automatycznie wykrywa i zwalnia pamięć zajmowaną przez nieużywane obiekty."
+    },
+    {
+      "question": "Co to jest pamięć RAM?",
+      "answer": "RAM to pamięć operacyjna używana przez komputer do przechowywania aktualnie potrzebnych danych i programów."
+    },
+    {
+      "question": "Co to jest CPU?",
+      "answer": "CPU to procesor wykonujący instrukcje programów."
+    },
+    {
+      "question": "Co to jest GPU?",
+      "answer": "GPU to procesor wyspecjalizowany między innymi w wykonywaniu dużej liczby operacji równolegle, szczególnie grafiki."
+    },
+    {
+      "question": "Co to jest system operacyjny?",
+      "answer": "System operacyjny zarządza sprzętem komputera i udostępnia środowisko do uruchamiania aplikacji."
+    },
+    {
+      "question": "Co to jest proces?",
+      "answer": "Proces to uruchomiona instancja programu posiadająca własne zasoby i przestrzeń adresową."
+    },
+    {
+      "question": "Co to jest wątek?",
+      "answer": "Wątek to jednostka wykonywania kodu działająca wewnątrz procesu."
+    },
+    {
+      "question": "Co to jest multithreading?",
+      "answer": "Multithreading polega na wykonywaniu wielu wątków w ramach procesu."
+    },
+    {
+      "question": "Co to jest concurrency?",
+      "answer": "Concurrency oznacza organizację wielu zadań tak, aby ich wykonywanie mogło się przeplatać."
+    },
+    {
+      "question": "Co to jest parallelism?",
+      "answer": "Parallelism oznacza rzeczywiste wykonywanie wielu operacji jednocześnie, np. na wielu rdzeniach CPU."
+    },
+    {
+      "question": "Co to jest baza danych?",
+      "answer": "Baza danych to uporządkowany system przechowywania i zarządzania informacjami."
+    },
+    {
+      "question": "Co to jest SQL?",
+      "answer": "SQL to język używany do zarządzania i odpytywania relacyjnych baz danych."
+    },
+    {
+      "question": "Co robi SELECT?",
+      "answer": "SELECT pobiera dane z bazy danych."
+    },
+    {
+      "question": "Co robi INSERT?",
+      "answer": "INSERT dodaje nowe rekordy do tabeli."
+    },
+    {
+      "question": "Co robi UPDATE?",
+      "answer": "UPDATE modyfikuje istniejące rekordy."
+    },
+    {
+      "question": "Co robi DELETE?",
+      "answer": "DELETE usuwa rekordy spełniające określony warunek."
+    },
+    {
+      "question": "Co to jest primary key?",
+      "answer": "Primary key jednoznacznie identyfikuje rekord w tabeli."
+    },
+    {
+      "question": "Co to jest foreign key?",
+      "answer": "Foreign key tworzy relację między rekordem w jednej tabeli a rekordem w innej tabeli."
+    },
+    {
+      "question": "Co to jest indeks w bazie danych?",
+      "answer": "Indeks przyspiesza wyszukiwanie danych kosztem dodatkowego miejsca i kosztu aktualizacji."
+    },
+    {
+      "question": "Co to jest serwer?",
+      "answer": "Serwer to system udostępniający usługi, zasoby lub dane innym urządzeniom lub programom."
+    },
+    {
+      "question": "Co to jest klient?",
+      "answer": "Klient to program lub urządzenie korzystające z usług serwera."
+    },
+    {
+      "question": "Co to jest localhost?",
+      "answer": "localhost oznacza lokalny komputer, na którym uruchamiany jest klient lub serwer."
+    },
+    {
+      "question": "Co oznacza adres 127.0.0.1?",
+      "answer": "127.0.0.1 to adres IPv4 interfejsu loopback, używany do komunikacji z lokalnym komputerem."
+    },
+    {
+      "question": "Co to jest port sieciowy?",
+      "answer": "Port identyfikuje konkretną usługę lub proces komunikujący się przez sieć."
+    },
+    {
+      "question": "Co to jest TCP?",
+      "answer": "TCP to protokół transportowy zapewniający uporządkowane i niezawodne dostarczanie danych."
+    },
+    {
+      "question": "Co to jest UDP?",
+      "answer": "UDP to lekki protokół transportowy bez gwarancji dostarczenia, często używany tam, gdzie ważne są małe opóźnienia."
+    },
+    {
+      "question": "Co to jest DNS?",
+      "answer": "DNS tłumaczy nazwy domen, takie jak example.com, na adresy IP."
+    },
+    {
+      "question": "Co to jest adres IP?",
+      "answer": "Adres IP identyfikuje urządzenie lub interfejs w sieci IP."
+    },
+    {
+      "question": "Co to jest localhost server?",
+      "answer": "To serwer uruchomiony lokalnie na komputerze użytkownika."
+    },
+    {
+      "question": "Co to jest frontend?",
+      "answer": "Frontend to część aplikacji odpowiedzialna za interfejs i interakcję z użytkownikiem."
+    },
+    {
+      "question": "Co to jest backend?",
+      "answer": "Backend obsługuje logikę aplikacji, dane, autoryzację i komunikację z innymi usługami."
+    },
+    {
+      "question": "Co to jest full stack?",
+      "answer": "Full stack obejmuje zarówno technologie frontendowe, jak i backendowe."
+    },
+    {
+      "question": "Co to jest framework?",
+      "answer": "Framework to zestaw narzędzi i reguł ułatwiających tworzenie aplikacji."
+    },
+    {
+      "question": "Co to jest biblioteka programistyczna?",
+      "answer": "Biblioteka dostarcza gotowe funkcje, klasy lub komponenty, które można wykorzystać we własnym kodzie."
+    },
+    {
+      "question": "Co to jest dependency?",
+      "answer": "Dependency to zewnętrzny komponent, biblioteka lub pakiet wymagany przez projekt."
+    },
+    {
+      "question": "Co to jest package manager?",
+      "answer": "Package manager automatyzuje instalowanie, aktualizowanie i usuwanie zależności projektu."
+    },
+    {
+      "question": "Co to jest pip?",
+      "answer": "pip to popularny menedżer pakietów dla Pythona."
+    },
+    {
+      "question": "Co to jest npm?",
+      "answer": "npm to menedżer pakietów używany głównie w ekosystemie JavaScript i Node.js."
+    },
+    {
+      "question": "Co to jest Node.js?",
+      "answer": "Node.js to środowisko uruchomieniowe pozwalające wykonywać JavaScript poza przeglądarką."
+    },
+    {
+      "question": "Co to jest Python?",
+      "answer": "Python to wysokopoziomowy język programowania znany z czytelnej składni i szerokiego zastosowania."
+    },
+    {
+      "question": "Co to jest Pygame?",
+      "answer": "Pygame to biblioteka Pythona przeznaczona między innymi do tworzenia gier 2D."
+    },
+    {
+      "question": "Co to jest Unity?",
+      "answer": "Unity to silnik gier i środowisko do tworzenia aplikacji 2D oraz 3D."
+    },
+    {
+      "question": "Co to jest prefab w Unity?",
+      "answer": "Prefab to zapisany obiekt lub hierarchia obiektów, którą można wielokrotnie używać w projekcie Unity."
+    },
+    {
+      "question": "Co to jest GameObject?",
+      "answer": "GameObject to podstawowy obiekt sceny w Unity, do którego można dodawać komponenty."
+    },
+    {
+      "question": "Co to jest komponent w Unity?",
+      "answer": "Komponent dodaje GameObjectowi określone dane lub zachowanie, np. Collider, Rigidbody albo skrypt."
+    },
+    {
+      "question": "Co to jest Rigidbody?",
+      "answer": "Rigidbody pozwala obiektowi Unity uczestniczyć w symulacji fizyki."
+    },
+    {
+      "question": "Co to jest Collider?",
+      "answer": "Collider definiuje kształt używany do wykrywania kolizji."
+    },
+    {
+      "question": "Co to jest FPS?",
+      "answer": "FPS oznacza liczbę klatek renderowanych w ciągu sekundy."
+    },
+    {
+      "question": "Co to jest deltaTime?",
+      "answer": "deltaTime oznacza czas, który upłynął od poprzedniej klatki lub aktualizacji."
+    },
+    {
+      "question": "Dlaczego warto używać deltaTime w ruchu gry?",
+      "answer": "Pozwala uzależnić ruch od czasu zamiast liczby klatek, dzięki czemu prędkość jest bardziej niezależna od FPS."
+    },
+    {
+      "question": "Co to jest refactoring?",
+      "answer": "Refactoring to poprawianie struktury kodu bez zmieniania jego zewnętrznego działania."
+    },
+    {
+      "question": "Co to jest clean code?",
+      "answer": "Clean code to kod czytelny, dobrze zorganizowany, łatwy do testowania i utrzymywania."
+    },
+    {
+      "question": "Dlaczego warto używać sensownych nazw zmiennych?",
+      "answer": "Dobre nazwy zwiększają czytelność kodu i ułatwiają jego późniejsze utrzymanie."
+    },
+    {
+      "question": "Co to jest test jednostkowy?",
+      "answer": "Test jednostkowy sprawdza działanie małego, izolowanego fragmentu kodu, np. pojedynczej funkcji."
+    },
+    {
+      "question": "Co to jest test integracyjny?",
+      "answer": "Test integracyjny sprawdza współpracę kilku komponentów systemu."
+    },
+    {
+      "question": "Co to jest CI?",
+      "answer": "CI, czyli Continuous Integration, automatycznie integruje i często testuje zmiany w kodzie."
+    },
+    {
+      "question": "Co to jest CD?",
+      "answer": "CD może oznaczać Continuous Delivery lub Continuous Deployment, czyli automatyzację dostarczania lub wdrażania oprogramowania."
+    },
+    {
+      "question": "Co to jest build?",
+      "answer": "Build to proces przekształcania kodu i zasobów projektu w uruchamialny artefakt."
+    },
+    {
+      "question": "Co to jest release?",
+      "answer": "Release to opublikowana wersja oprogramowania przeznaczona dla użytkowników."
+    },
+    {
+      "question": "Co to jest wersjonowanie semantyczne?",
+      "answer": "SemVer używa schematu MAJOR.MINOR.PATCH do komunikowania zmian kompatybilności i funkcjonalności."
+    },
+    {
+      "question": "Co oznacza wersja 2.4.1?",
+      "answer": "W SemVer oznacza to major 2, minor 4 i patch 1."
+    },
+    {
+      "question": "Co to jest open source?",
+      "answer": "Open source oznacza oprogramowanie, którego kod źródłowy jest udostępniony na określonych warunkach licencyjnych."
+    },
+    {
+      "question": "Co to jest licencja MIT?",
+      "answer": "MIT to liberalna licencja open source pozwalająca na szerokie wykorzystanie kodu przy zachowaniu wymaganych informacji o licencji."
+    },
+    {
+      "question": "Co to jest README?",
+      "answer": "README to dokument zawierający podstawowe informacje o projekcie, jego instalacji i użyciu."
+    },
+    {
+      "question": "Co to jest .gitignore?",
+      "answer": ".gitignore określa pliki i katalogi, które Git powinien pomijać."
+    },
+    {
+      "question": "Co to jest zmienna środowiskowa?",
+      "answer": "Zmienna środowiskowa to wartość udostępniana procesowi przez jego środowisko uruchomieniowe."
+    },
+    {
+      "question": "Czy klucze API powinny być wpisywane bezpośrednio do kodu?",
+      "answer": "Zwykle nie. Sekrety powinny być przechowywane poza kodem, np. w zmiennych środowiskowych lub bezpiecznym magazynie sekretów."
+    },
+    {
+      "question": "Co to jest hash?",
+      "answer": "Hash to wynik funkcji skrótu reprezentujący dane w postaci wartości o określonym rozmiarze."
+    },
+    {
+      "question": "Do czego używa się haszowania?",
+      "answer": "Między innymi do sprawdzania integralności danych, indeksowania oraz przechowywania haseł za pomocą odpowiednich funkcji."
+    },
+    {
+      "question": "Czy hasła powinny być przechowywane jako zwykły tekst?",
+      "answer": "Nie. Hasła powinny być przechowywane jako bezpieczne hashe z użyciem odpowiednich funkcji przeznaczonych do haseł."
+    },
+    {
+      "question": "Co to jest szyfrowanie?",
+      "answer": "Szyfrowanie przekształca dane do postaci, której odczytanie wymaga odpowiedniego klucza."
+    },
+    {
+      "question": "Co to jest uwierzytelnianie?",
+      "answer": "Uwierzytelnianie polega na sprawdzeniu, kim jest użytkownik lub system."
+    },
+    {
+      "question": "Co to jest autoryzacja?",
+      "answer": "Autoryzacja określa, do jakich zasobów lub operacji uwierzytelniony użytkownik ma dostęp."
+    },
+    {
+      "question": "Co to jest bugfix?",
+      "answer": "Bugfix to poprawka usuwająca konkretny błąd w oprogramowaniu."
+    },
+    {
+      "question": "Co to jest feature?",
+      "answer": "Feature to nowa funkcja lub możliwości dodane do programu."
+    },
+    {
+      "question": "Co to jest changelog?",
+      "answer": "Changelog to lista zmian wprowadzonych w kolejnych wersjach projektu."
+    },
+    {
+      "question": "Co to jest dependency hell?",
+      "answer": "Dependency hell to problem wynikający ze skomplikowanych lub konfliktujących zależności projektu."
+    },
+    {
+      "question": "Co to jest cache?",
+      "answer": "Cache to tymczasowe przechowywanie danych w celu przyspieszenia kolejnych operacji."
+    },
+    {
+      "question": "Co to jest serializacja?",
+      "answer": "Serializacja to przekształcenie obiektu lub danych do formatu, który można zapisać albo przesłać."
+    },
+    {
+      "question": "Co to jest deserializacja?",
+      "answer": "Deserializacja odtwarza dane lub obiekt z wcześniej zapisanej postaci."
+    },
+    {
+      "question": "Co to jest parser?",
+      "answer": "Parser analizuje dane wejściowe zgodnie z określoną składnią i przekształca je do struktury zrozumiałej dla programu."
+    },
+    {
+      "question": "Co to jest lexer?",
+      "answer": "Lexer dzieli tekst wejściowy na tokeny, które mogą być następnie analizowane przez parser."
+    },
+    {
+      "question": "Co to jest token?",
+      "answer": "Token to jednostka danych rozpoznana przez analizator, np. słowo kluczowe, liczba lub operator."
+    },
+    {
+      "question": "Co to jest kompilator?",
+      "answer": "Kompilator tłumaczy kod źródłowy na inną postać, np. kod maszynowy lub pośredni."
+    },
+    {
+      "question": "Co to jest interpreter?",
+      "answer": "Interpreter wykonuje kod programu za pomocą środowiska uruchomieniowego zamiast tworzenia klasycznego samodzielnego pliku wykonywalnego."
+    },
+    {
+      "question": "Czy Python jest kompilowany czy interpretowany?",
+      "answer": "Python korzysta z procesu kompilacji do bytecode i następnie wykonuje go w maszynie wirtualnej, więc określenie go wyłącznie jako interpretowanego jest uproszczeniem."
+    },
+    {
+      "question": "Co to jest bytecode?",
+      "answer": "Bytecode to pośrednia reprezentacja instrukcji wykonywana przez maszynę wirtualną."
+    },
+    {
+      "question": "Co to jest VM?",
+      "answer": "VM, czyli maszyna wirtualna, to programowe środowisko wykonujące kod lub emulujące określone środowisko sprzętowe."
+    },
+    {
+      "question": "Co to jest kontener?",
+      "answer": "Kontener izoluje aplikację i jej zależności w lekkim środowisku uruchomieniowym."
+    },
+    {
+      "question": "Co to jest Docker?",
+      "answer": "Docker to platforma służąca między innymi do tworzenia i uruchamiania aplikacji w kontenerach."
+    },
+    {
+      "question": "Co to jest Linux?",
+      "answer": "Linux to rodzina systemów operacyjnych opartych na jądrze Linux."
+    },
+    {
+      "question": "Co to jest chmod?",
+      "answer": "chmod zmienia uprawnienia dostępu do plików i katalogów w systemach Unix-like."
+    },
+    {
+      "question": "Co robi ls?",
+      "answer": "ls wyświetla zawartość katalogu w systemach Unix-like."
+    },
+    {
+      "question": "Co robi cd?",
+      "answer": "cd zmienia bieżący katalog w terminalu."
+    },
+    {
+      "question": "Co robi mkdir?",
+      "answer": "mkdir tworzy katalog."
+    },
+    {
+      "question": "Co robi rm?",
+      "answer": "rm usuwa pliki lub katalogi zgodnie z podanymi opcjami."
+    },
+    {
+      "question": "Co to jest ścieżka absolutna?",
+      "answer": "Ścieżka absolutna wskazuje położenie pliku lub katalogu od katalogu głównego systemu."
+    },
+    {
+      "question": "Co to jest ścieżka względna?",
+      "answer": "Ścieżka względna określa położenie względem bieżącego lub określonego katalogu bazowego."
+    },
+    {
+      "question": "Co to jest symlink?",
+      "answer": "Symlink to dowiązanie symboliczne wskazujące na inny plik lub katalog."
+    },
+    {
+      "question": "Co to jest proces zombie?",
+      "answer": "Proces zombie to zakończony proces, którego wpis nadal istnieje, ponieważ proces nadrzędny nie odebrał jeszcze jego statusu."
+    },
+    {
+      "question": "Co to jest deadlock?",
+      "answer": "Deadlock występuje, gdy procesy lub wątki wzajemnie czekają na zasoby i żaden nie może kontynuować."
+    },
+    {
+      "question": "Co to jest race condition?",
+      "answer": "Race condition występuje, gdy wynik programu zależy od niekontrolowanej kolejności wykonywania współbieżnych operacji."
+    },
+    {
+      "question": "Co to jest mutex?",
+      "answer": "Mutex to mechanizm synchronizacji zapewniający wyłączny dostęp do chronionego zasobu."
+    },
+    {
+      "question": "Co to jest semafor?",
+      "answer": "Semafor to mechanizm synchronizacji pozwalający kontrolować liczbę jednoczesnych dostępów do zasobu."
+    },
+    {
+      "question": "Co to jest memory leak?",
+      "answer": "Memory leak występuje, gdy program utrzymuje niepotrzebnie zajętą pamięć, przez co jej zużycie może rosnąć."
+    },
+    {
+      "question": "Jak poprawić czytelność kodu?",
+      "answer": "Stosuj sensowne nazwy, małe funkcje, spójne formatowanie, jasną strukturę i unikaj niepotrzebnej złożoności."
+    },
+    {
+      "question": "Jak znaleźć błąd w kodzie?",
+      "answer": "Przeczytaj komunikat błędu, odtwórz problem, zawęź miejsce wystąpienia i sprawdzaj wartości oraz przepływ programu za pomocą logów lub debuggera."
+    },
+    {
+      "question": "Co zrobić, gdy program działa wolno?",
+      "answer": "Najpierw zmierz wydajność i znajdź wąskie gardło, a dopiero potem optymalizuj konkretny fragment."
+    },
+    {
+      "question": "Czy należy optymalizować kod przed pomiarem?",
+      "answer": "Zwykle nie. Najpierw warto zmierzyć wydajność i ustalić rzeczywiste wąskie gardła."
+    },
+    {
+      "question": "Co to jest profiling?",
+      "answer": "Profiling polega na pomiarze zużycia czasu, pamięci lub innych zasobów przez program."
+    },
+    {
+      "question": "Co to jest dokumentacja API?",
+      "answer": "Dokumentacja API opisuje dostępne endpointy, parametry, formaty danych, odpowiedzi i zasady korzystania z API."
+    },
+    {
+      "question": "Co to jest schema?",
+      "answer": "Schema opisuje strukturę i reguły danych, np. strukturę dokumentu JSON."
+    },
+    {
+      "question": "Co to jest walidacja danych?",
+      "answer": "Walidacja sprawdza, czy dane spełniają wymagany format, typ i ograniczenia."
+    },
+    {
+      "question": "Co to jest sanitization?",
+      "answer": "Sanitization polega na oczyszczaniu danych wejściowych w celu ograniczenia niepożądanych treści lub interpretacji."
+    },
+    {
+      "question": "Co to jest SQL injection?",
+      "answer": "SQL injection to podatność polegająca na wstrzyknięciu złośliwego fragmentu SQL przez nieprawidłowo obsłużone dane wejściowe."
+    },
+    {
+      "question": "Jak ograniczyć SQL injection?",
+      "answer": "Należy używać parametryzowanych zapytań lub prepared statements i odpowiednio walidować dane wejściowe."
+    },
+    {
+      "question": "Co to jest XSS?",
+      "answer": "XSS to podatność pozwalająca na wykonanie niepożądanego kodu JavaScript w kontekście strony."
+    },
+    {
+      "question": "Jak ograniczyć XSS?",
+      "answer": "Należy odpowiednio kodować dane wyjściowe, walidować wejście i stosować odpowiednie mechanizmy bezpieczeństwa przeglądarki."
+    },
+    {
+      "question": "Co to jest CORS?",
+      "answer": "CORS to mechanizm przeglądarki kontrolujący, z jakich źródeł strona może wykonywać określone żądania do innych źródeł."
+    },
+    {
+      "question": "Co to jest HTTPS?",
+      "answer": "HTTPS to HTTP zabezpieczone za pomocą TLS."
+    },
+    {
+      "question": "Co to jest TLS?",
+      "answer": "TLS to protokół zapewniający szyfrowanie i uwierzytelnianie komunikacji sieciowej."
+    },
+    {
+      "question": "Co to jest localhost:8000?",
+      "answer": "To adres lokalnego hosta z usługą nasłuchującą na porcie 8000."
+    },
+    {
+      "question": "Co to jest JSON.parse()?",
+      "answer": "JSON.parse() przekształca poprawny tekst JSON w wartość JavaScript."
+    },
+    {
+      "question": "Co to jest JSON.stringify()?",
+      "answer": "JSON.stringify() przekształca wartość JavaScript w tekst JSON."
+    },
+    {
+      "question": "Dlaczego JSON może zgłaszać Unexpected token?",
+      "answer": "Najczęściej oznacza to, że parser napotkał znak niezgodny z oczekiwaną składnią JSON."
+    },
+    {
+      "question": "Czy JSON wymaga podwójnych cudzysłowów?",
+      "answer": "Tak. Nazwy kluczy i wartości tekstowe w standardowym JSON muszą używać podwójnych cudzysłowów."
+    },
+    {
+      "question": "Czy trailing comma jest dozwolony w JSON?",
+      "answer": "Nie. Standardowy JSON nie pozwala na końcowy przecinek."
+    },
+    {
+      "question": "Co to jest schema JSON?",
+      "answer": "JSON Schema to standard pozwalający opisywać i walidować strukturę dokumentów JSON."
+    },
+    {
+      "question": "Co to jest model AI?",
+      "answer": "Model AI to system wytrenowany lub skonfigurowany do wykonywania określonych zadań związanych ze sztuczną inteligencją."
+    },
+    {
+      "question": "Co to jest LLM?",
+      "answer": "LLM to duży model językowy przetwarzający i generujący tekst na podstawie wyuczonych wzorców."
+    },
+    {
+      "question": "Co to jest context window?",
+      "answer": "Context window określa maksymalną ilość informacji wejściowych i kontekstu, którą model może uwzględnić w danym żądaniu."
+    },
+    {
+      "question": "Co to jest token w LLM?",
+      "answer": "Token to fragment tekstu przetwarzany przez model językowy. Może odpowiadać całemu słowu, części słowa lub znakowi."
+    },
+    {
+      "question": "Co to jest prompt?",
+      "answer": "Prompt to instrukcja lub dane wejściowe przekazywane modelowi AI."
+    },
+    {
+      "question": "Co to jest temperatura w modelu językowym?",
+      "answer": "Temperatura wpływa na losowość wyboru kolejnych tokenów. Wyższa zwykle zwiększa różnorodność odpowiedzi."
+    },
+    {
+      "question": "Co to jest embedding?",
+      "answer": "Embedding to wektorowa reprezentacja danych, pozwalająca porównywać ich znaczenie lub podobieństwo."
+    },
+    {
+      "question": "Co to jest RAG?",
+      "answer": "RAG, czyli Retrieval-Augmented Generation, łączy generowanie odpowiedzi przez model z wyszukiwaniem informacji w zewnętrznych danych."
+    },
+    {
+      "question": "Co to jest fine-tuning?",
+      "answer": "Fine-tuning to dalsze trenowanie modelu na określonym zbiorze danych w celu dostosowania jego zachowania."
+    },
+    {
+      "question": "Co to jest inference?",
+      "answer": "Inference to proces używania wytrenowanego modelu do generowania wyniku na podstawie danych wejściowych."
+    },
+    {
+      "question": "Co to jest lokalny model AI?",
+      "answer": "Lokalny model AI działa na urządzeniu użytkownika zamiast wymagać zewnętrznego serwera do każdego zapytania."
+    },
+    {
+      "question": "Co oznacza model offline?",
+      "answer": "Model offline może działać bez połączenia z Internetem, jeśli wszystkie wymagane komponenty znajdują się lokalnie."
+    },
+    {
+      "question": "Jak sprawdzić, czy JSON jest poprawny?",
+      "answer": "Można użyć parsera JSON, walidatora JSON Schema albo funkcji JSON.parse() w JavaScript."
+    },
+    {
+      "question": "Co powinien zrobić program po wykryciu błędu?",
+      "answer": "Powinien odpowiednio obsłużyć sytuację, np. poinformować użytkownika, zapisać błąd w logach i bezpiecznie zakończyć wadliwą operację."
+    }
+]
+}
