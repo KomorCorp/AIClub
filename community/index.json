@@ -44,6 +44,11 @@
       "file": "tinygpt-coder-advanced.json",
       "author": "TinyGPT",
       "version": "1.0"
-    }
+    },
+    {
+      "file": "4vtgtg-1.0-pico.json",
+      "author": "4VTSTDS",
+      "version": "1.0"
+    },
   ]
 }
