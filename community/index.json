@@ -49,6 +49,11 @@
       "file": "4vtgtg-1.0-pico.json",
       "author": "4VTSTDS",
       "version": "1.0"
+    },
+    {
+      "file": "superlamagpt.json",
+      "author": "TurboDupciaLamy",
+      "version": "1.0"
     }
   ]
 }
