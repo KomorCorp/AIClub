@@ -1,0 +1,222 @@
+{
+  "id": "tinygpt-coder-advanved",
+  "name": "TinyGPT Coder Advanced",
+  "provider": "AI Club Community",
+  "description": "Mały model AI skoncentrowany na generowaniu kodu.",
+  "type": "local",
+  "model": "tinygpt-2-dev",
+  "context": 100000,
+  "premium": false,
+  "points_per_message": 8,
+  "meow_mode": false,
+  "examples": [
+    {
+      "question": "Napisz funkcję w Pythonie dodającą dwie liczby.",
+      "answer": "def add(a, b):\n    return a + b"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie sprawdzającą, czy liczba jest parzysta.",
+      "answer": "def is_even(n):\n    return n % 2 == 0"
+    },
+    {
+      "question": "Napisz pętlę for w Pythonie wypisującą liczby od 1 do 10.",
+      "answer": "for i in range(1, 11):\n    print(i)"
+    },
+    {
+      "question": "Napisz pętlę while w Pythonie odliczającą od 10 do 1.",
+      "answer": "i = 10\nwhile i >= 1:\n    print(i)\n    i -= 1"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie zwracającą większą z dwóch liczb.",
+      "answer": "def maximum(a, b):\n    return max(a, b)"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie obliczającą silnię.",
+      "answer": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie odwracającą tekst.",
+      "answer": "def reverse_text(text):\n    return text[::-1]"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie sprawdzającą palindrom.",
+      "answer": "def is_palindrome(text):\n    text = text.lower()\n    return text == text[::-1]"
+    },
+    {
+      "question": "Napisz program w Pythonie liczący elementy listy.",
+      "answer": "items = [1, 2, 3, 4, 5]\ncount = len(items)\nprint(count)"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie obliczającą średnią listy.",
+      "answer": "def average(numbers):\n    return sum(numbers) / len(numbers)"
+    },
+    {
+      "question": "Napisz kod Python tworzący listę kwadratów liczb od 1 do 10.",
+      "answer": "squares = [i ** 2 for i in range(1, 11)]"
+    },
+    {
+      "question": "Napisz funkcję w Pythonie usuwającą duplikaty z listy.",
+      "answer": "def remove_duplicates(items):\n    return list(dict.fromkeys(items))"
+    },
+    {
+      "question": "Napisz kod Python sortujący listę rosnąco.",
+      "answer": "numbers = [5, 2, 9, 1, 3]\nnumbers.sort()\nprint(numbers)"
+    },
+    {
+      "question": "Napisz kod Python zapisujący tekst do pliku.",
+      "answer": "with open('data.txt', 'w', encoding='utf-8') as file:\n    file.write('Hello World!')"
+    },
+    {
+      "question": "Napisz kod Python odczytujący plik tekstowy.",
+      "answer": "with open('data.txt', 'r', encoding='utf-8') as file:\n    text = file.read()\nprint(text)"
+    },
+    {
+      "question": "Napisz klasę Player w Pythonie z polem name.",
+      "answer": "class Player:\n    def __init__(self, name):\n        self.name = name"
+    },
+    {
+      "question": "Napisz klasę Car w Pythonie z metodą drive.",
+      "answer": "class Car:\n    def drive(self):\n        print('Car is driving')"
+    },
+    {
+      "question": "Napisz funkcję JavaScript dodającą dwie liczby.",
+      "answer": "function add(a, b) {\n    return a + b;\n}"
+    },
+    {
+      "question": "Napisz funkcję JavaScript sprawdzającą liczbę parzystą.",
+      "answer": "function isEven(n) {\n    return n % 2 === 0;\n}"
+    },
+    {
+      "question": "Napisz pętlę JavaScript wypisującą liczby od 1 do 10.",
+      "answer": "for (let i = 1; i <= 10; i++) {\n    console.log(i);\n}"
+    },
+    {
+      "question": "Napisz funkcję JavaScript odwracającą tekst.",
+      "answer": "function reverseText(text) {\n    return text.split('').reverse().join('');\n}"
+    },
+    {
+      "question": "Napisz funkcję JavaScript zwracającą większą z dwóch liczb.",
+      "answer": "function maximum(a, b) {\n    return Math.max(a, b);\n}"
+    },
+    {
+      "question": "Napisz kod JavaScript tworzący tablicę liczb od 1 do 5.",
+      "answer": "const numbers = [1, 2, 3, 4, 5];"
+    },
+    {
+      "question": "Napisz kod JavaScript wypisujący Hello World.",
+      "answer": "console.log('Hello World');"
+    },
+    {
+      "question": "Napisz funkcję JavaScript obliczającą silnię.",
+      "answer": "function factorial(n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}"
+    },
+    {
+      "question": "Napisz prosty HTML z nagłówkiem Hello World.",
+      "answer": "<!DOCTYPE html>\n<html>\n<body>\n    <h1>Hello World</h1>\n</body>\n</html>"
+    },
+    {
+      "question": "Napisz HTML zawierający przycisk.",
+      "answer": "<button>Click me</button>"
+    },
+    {
+      "question": "Napisz HTML zawierający pole tekstowe.",
+      "answer": "<input type=\"text\" placeholder=\"Wpisz tekst\">"
+    },
+    {
+      "question": "Napisz CSS ustawiający czerwony kolor tekstu.",
+      "answer": "p {\n    color: red;\n}"
+    },
+    {
+      "question": "Napisz CSS centrujący element za pomocą Flexboxa.",
+      "answer": ".container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}"
+    },
+    {
+      "question": "Napisz CSS tworzący zaokrąglony przycisk.",
+      "answer": ".button {\n    border-radius: 10px;\n    padding: 10px 20px;\n}"
+    },
+    {
+      "question": "Napisz prosty program C++ wypisujący Hello World.",
+      "answer": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello World!\";\n    return 0;\n}"
+    },
+    {
+      "question": "Napisz funkcję C++ dodającą dwie liczby.",
+      "answer": "int add(int a, int b) {\n    return a + b;\n}"
+    },
+    {
+      "question": "Napisz pętlę for w C++ wypisującą liczby od 1 do 10.",
+      "answer": "for (int i = 1; i <= 10; ++i) {\n    std::cout << i << std::endl;\n}"
+    },
+    {
+      "question": "Napisz prostą klasę Player w C++.",
+      "answer": "class Player {\npublic:\n    std::string name;\n};"
+    },
+    {
+      "question": "Napisz funkcję C++ sprawdzającą, czy liczba jest parzysta.",
+      "answer": "bool isEven(int n) {\n    return n % 2 == 0;\n}"
+    },
+    {
+      "question": "Napisz skrypt Bash wypisujący Hello World.",
+      "answer": "#!/bin/bash\necho \"Hello World!\""
+    },
+    {
+      "question": "Napisz skrypt Bash tworzący katalog test.",
+      "answer": "#!/bin/bash\nmkdir -p test"
+    },
+    {
+      "question": "Napisz kod Python generujący losową liczbę od 1 do 100.",
+      "answer": "import random\n\nnumber = random.randint(1, 100)\nprint(number)"
+    },
+    {
+      "question": "Napisz funkcję Python sprawdzającą, czy tekst zawiera słowo Python.",
+      "answer": "def contains_python(text):\n    return 'python' in text.lower()"
+    },
+    {
+      "question": "Napisz kod Python zamieniający stopnie Celsjusza na Fahrenheita.",
+      "answer": "def celsius_to_fahrenheit(celsius):\n    return celsius * 9 / 5 + 32"
+    },
+    {
+      "question": "Napisz funkcję Python obliczającą pole prostokąta.",
+      "answer": "def rectangle_area(width, height):\n    return width * height"
+    },
+    {
+      "question": "Napisz funkcję Python obliczającą pole koła.",
+      "answer": "import math\n\ndef circle_area(radius):\n    return math.pi * radius ** 2"
+    },
+    {
+      "question": "Napisz kod Python tworzący słownik użytkownika.",
+      "answer": "user = {\n    'name': 'User',\n    'age': 18\n}"
+    },
+    {
+      "question": "Napisz kod Python konwertujący listę stringów na wielkie litery.",
+      "answer": "words = ['hello', 'world']\nupper_words = [word.upper() for word in words]"
+    },
+    {
+      "question": "Napisz funkcję Python znajdującą najmniejszą liczbę w liście.",
+      "answer": "def minimum(numbers):\n    return min(numbers)"
+    },
+    {
+      "question": "Napisz funkcję Python znajdującą największą liczbę w liście.",
+      "answer": "def maximum(numbers):\n    return max(numbers)"
+    },
+    {
+      "question": "Napisz kod Python tworzący prostą funkcję kalkulatora.",
+      "answer": "def calculate(a, b, operation):\n    if operation == '+':\n        return a + b\n    if operation == '-':\n        return a - b\n    if operation == '*':\n        return a * b\n    if operation == '/':\n        return a / b\n    raise ValueError('Unknown operation')"
+    },
+    {
+      "question": "Napisz funkcję Python sprawdzającą, czy liczba jest pierwsza.",
+      "answer": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True"
+    },
+    {
+      "question": "Napisz prosty program Python zgadujący liczbę.",
+      "answer": "import random\n\nsecret = random.randint(1, 10)\nguess = int(input('Zgadnij liczbę: '))\n\nif guess == secret:\n    print('Dobrze!')\nelse:\n    print('Źle! Liczba to', secret)"
+    },
+    {
+      "question": "Napisz kod Python tworzący prosty licznik.",
+      "answer": "counter = 0\n\ncounter += 1\nprint(counter)"
+    },
+    {
+      "question": "Napisz funkcję Python filtrującą liczby parzyste z listy.",
+      "answer": "def even_numbers(numbers):\n    return [n for n in numbers if n % 2 == 0]"
+    }
+  ]
+}
